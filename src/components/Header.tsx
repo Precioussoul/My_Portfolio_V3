@@ -84,68 +84,45 @@ const Header = () => {
               </button>
               <ul className='nav-list'>
                 <li className='nav-item'>
-                  <Link
-                    href='/'
-                    className='nav-link active'
-                    onClick={executeHomeScroll}
-                  >
+                  <span className='nav-link active' onClick={executeHomeScroll}>
                     Home
-                  </Link>
+                  </span>
                 </li>
                 <li className='nav-item'>
-                  <Link
-                    href='/#features'
-                    scroll={false}
+                  <span
                     className='nav-link features__link'
                     onClick={executeFeatureScroll}
                   >
                     Features
-                  </Link>
+                  </span>
                 </li>
                 <li className='nav-item'>
-                  <Link
-                    href='#Resumee'
-                    className='nav-link'
-                    onClick={executeResumeeScroll}
-                  >
+                  <span className='nav-link' onClick={executeResumeeScroll}>
                     Resume
-                  </Link>
+                  </span>
                 </li>
                 <li className='nav-item'>
-                  <Link
-                    href='#Portfolio'
-                    className='nav-link'
-                    onClick={executePortfolioScroll}
-                  >
+                  <span className='nav-link' onClick={executePortfolioScroll}>
                     Portfolio
-                  </Link>
+                  </span>
                 </li>
                 <li className='nav-item'>
-                  <Link
-                    href='#Testimonial'
-                    className='nav-link'
-                    onClick={executeTestimonialScroll}
-                  >
+                  <span className='nav-link' onClick={executeTestimonialScroll}>
                     Testimonial
-                  </Link>
+                  </span>
                 </li>
                 <li className='nav-item'>
-                  <Link
-                    href='#Blog'
-                    className='nav-link'
-                    onClick={executeBlogScroll}
-                  >
+                  <span className='nav-link' onClick={executeBlogScroll}>
                     Blog
-                  </Link>
+                  </span>
                 </li>
               </ul>
-              <Link
-                href='#Contact'
+              <span
                 className='btn-secondary contact-me'
                 onClick={executeContactScroll}
               >
                 Contact Me
-              </Link>
+              </span>
             </nav>
           </div>
         </header>
@@ -193,67 +170,60 @@ const Header = () => {
 
             <ul className='mobile-menu__nav-list'>
               <li className='mobile-menu__nav-item'>
-                <Link
-                  href='#Home'
+                <span
                   className='mobile-menu__nav-link active'
                   onClick={executeHomeScroll}
                 >
                   Home
-                </Link>
+                </span>
               </li>
               <li className='mobile-menu__nav-item'>
-                <Link
-                  href='#features'
+                <span
                   className='mobile-menu__nav-link'
                   onClick={executeFeatureScroll}
                 >
                   Features
-                </Link>
+                </span>
               </li>
               <li className='mobile-menu__nav-item'>
-                <Link
-                  href='#Resumee'
+                <span
                   className='mobile-menu__nav-link'
                   onClick={executeResumeeScroll}
                 >
                   Resume
-                </Link>
+                </span>
               </li>
               <li className='mobile-menu__nav-item'>
-                <Link
-                  href='#Portfolio'
+                <span
                   className='mobile-menu__nav-link'
                   onClick={executePortfolioScroll}
                 >
                   Portfolio
-                </Link>
+                </span>
               </li>
               <li className='mobile-menu__nav-item'>
-                <Link
-                  href='#Testimonial'
+                <span
                   className='mobile-menu__nav-link'
                   onClick={executeTestimonialScroll}
                 >
                   Testimonial
-                </Link>
+                </span>
               </li>
               <li className='mobile-menu__nav-item'>
-                <Link
-                  href='#Blog'
+                <span
                   className='mobile-menu__nav-link'
                   onClick={executeBlogScroll}
                 >
                   Blog
-                </Link>
+                </span>
               </li>
               <li className='mobile-menu__nav-item'>
-                <Link
-                  href='#Contact'
+                <span
                   className='mobile-menu__nav-link'
                   onClick={executeContactScroll}
                 >
                   Contact
-                </Link>
+                </span>
               </li>
             </ul>
             <div className='mobile-menu find-me'>
