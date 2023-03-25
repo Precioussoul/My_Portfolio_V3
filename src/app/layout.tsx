@@ -5,7 +5,8 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/keyboard'
 import './globals.css'
-
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import Head from './head'
 import { useEffect } from 'react'
 
@@ -44,6 +45,9 @@ export default function RootLayout({
       setTimeout(TypingText, 150)
     }
     TypingText()
+    AOS.init({
+      once: true,
+    })
   }, [])
 
   return (

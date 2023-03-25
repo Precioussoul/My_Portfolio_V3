@@ -1,9 +1,11 @@
 'use client'
 import Link from 'next/link'
-import React, { useEffect } from 'react'
+import React, { useContext } from 'react'
 import Image from 'next/image'
+import { ContentContext } from '@/contexts/ScrollContext'
 
 const ResumeeSection = () => {
+  const { resumeeRef } = useContext(ContentContext)
   function openTab(evt: any, TabName: string) {
     const resumeeTabs = document.querySelectorAll('.resumee__tab-item')
     const tabContents = document.querySelectorAll('.tab-content')
@@ -24,6 +26,7 @@ const ResumeeSection = () => {
     <section
       className='resumee-section'
       id='Resumee'
+      ref={resumeeRef}
       data-aos='zoom-in'
       data-aos-delay='200'
       data-aos-duration='2000'

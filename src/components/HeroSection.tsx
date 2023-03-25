@@ -1,26 +1,18 @@
+'use client'
+
+import { ContentContext } from '@/contexts/ScrollContext'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useContext } from 'react'
 
 const HeroSection = () => {
+  const { homeRef } = useContext(ContentContext)
   return (
-    <section
-      className='hero-section'
-      id='Home'
-      data-aos='fade-down'
-      data-aos-anchor-placement='top-center'
-      data-aos-duration='2000'
-    >
+    <section className='hero-section' id='Home' ref={homeRef}>
       <div className='container'>
         <div className='hero__grid'>
           <div className='hero__text'>
-            <div
-              className='hero__author-intro'
-              data-aos='fade-down'
-              data-aos-offset='200'
-              data-aos-duration='1500'
-              data-aos-easing='ease-in-sine'
-            >
+            <div className='hero__author-intro'>
               <p className='padding-20 welcome-title'>Welcome to my World</p>
               <h1 className='padding-20 hero__author-name'>
                 Hi, I&apos;m
@@ -39,13 +31,7 @@ const HeroSection = () => {
                 match requirements.
               </p>
             </div>
-            <div
-              className='hero__author-contact'
-              data-aos='fade-up'
-              data-aos-offset='200'
-              data-aos-duration='1500'
-              data-aos-easing='ease-in-sine'
-            >
+            <div className='hero__author-contact'>
               <div className='hero__author-social-contact'>
                 <h3 className='hero__author-find-me'>Find me with</h3>
                 <ul className='hero__social-icon-list'>
@@ -106,13 +92,7 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          <div
-            className='hero__main-image'
-            data-aos='fade-up'
-            data-aos-offset='300'
-            data-aos-easing='ease-in-sine'
-            data-aos-duration='1500'
-          >
+          <div className='hero__main-image'>
             <div className='hero__image-box'>
               <Image
                 src='/assets/images/author/My_Image_Protrait_smile.png'
@@ -120,6 +100,7 @@ const HeroSection = () => {
                 className='hero__image'
                 width={500}
                 height={500}
+                priority
               />
             </div>
           </div>

@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -13,7 +15,7 @@ const Footer = () => {
       <div className='container'>
         <div className='footer__container'>
           <div className='footer__logo-box'>
-            <Link href='index.html' className='footer nav-logo'>
+            <Link href='/' className='footer nav-logo'>
               <div className='logo'>
                 <Image
                   src='/assets/images/logo/habsof-logo.png'

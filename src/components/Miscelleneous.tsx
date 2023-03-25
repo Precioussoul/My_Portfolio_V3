@@ -1,14 +1,16 @@
-import React from "react";
+'use client'
+
+import React from 'react'
 
 const Miscelleneous = () => {
   return (
     <>
-      <button className="back-to-top btn-secondary">
-        <i className="fas fa-arrow-alt-circle-up"></i>
+      <button className='back-to-top btn-secondary'>
+        <i className='fas fa-arrow-alt-circle-up'></i>
       </button>
-      <div className="progress-bar" />
+      <div className='progress-bar' />
     </>
-  );
-};
+  )
+}
 
-export default Miscelleneous;
+export default Miscelleneous

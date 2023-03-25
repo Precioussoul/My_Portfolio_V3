@@ -1,15 +1,12 @@
-import React from 'react'
+'use client'
+import { ContentContext } from '@/contexts/ScrollContext'
+import React, { useContext } from 'react'
 import FeatureItem from './FeatureItem'
 
 const MyServices = () => {
+  const { featureRef } = useContext(ContentContext)
   return (
-    <section
-      className='features-section'
-      id='features'
-      data-aos='zoom-in'
-      data-aos-anchor-placement='top-bottom'
-      data-aos-duration='2000'
-    >
+    <section className='features-section' ref={featureRef}>
       <div className='container'>
         <div className='features__header'>
           <p className='features__header-subtitle'>Features</p>

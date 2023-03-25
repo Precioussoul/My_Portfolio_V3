@@ -1,12 +1,16 @@
+'use client'
+import { ContentContext } from '@/contexts/ScrollContext'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useContext } from 'react'
 
 const Contact = () => {
+  const { contactRef } = useContext(ContentContext)
   return (
     <section
       className='contact-section'
       id='Contact'
+      ref={contactRef}
       data-aos='fade-up'
       data-aos-duration='2000'
     >

@@ -1,12 +1,14 @@
-import Link from 'next/link'
-import React from 'react'
+import { ContentContext } from '@/contexts/ScrollContext'
+import React, { useContext } from 'react'
 import PortfolioItem from './PortfolioItem'
 
 const PortfolioSection = () => {
+  const { portfolioRef } = useContext(ContentContext)
   return (
     <section
       className='portfolio-section'
       id='Portfolio'
+      ref={portfolioRef}
       data-aos='zoom-in'
       data-aos-duration='2000'
       data-aos-anchor-placement='top-bottom'

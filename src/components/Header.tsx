@@ -1,10 +1,21 @@
 'use client'
+import { ContentContext } from '@/contexts/ScrollContext'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
+import React, { useContext, useEffect, useState } from 'react'
 
 const Header = () => {
   const [desktopNav, setDesktopNav] = useState(true)
+  const {
+    executeHomeScroll,
+    executeFeatureScroll,
+    executeResumeeScroll,
+    executePortfolioScroll,
+    executeTestimonialScroll,
+    executeBlogScroll,
+    executeContactScroll,
+  } = useContext(ContentContext)
 
   const openMobileNav = () => {
     setDesktopNav(false)
@@ -56,7 +67,7 @@ const Header = () => {
         <header id='header' className='main_header'>
           <div className='container'>
             <nav className='navbar desktop-menu'>
-              <Link href='index.html' className='nav-logo'>
+              <Link href='/' className='nav-logo'>
                 <div className='logo'>
                   <Image
                     src='/assets/images/logo/habsof-logo.png'
@@ -73,37 +84,66 @@ const Header = () => {
               </button>
               <ul className='nav-list'>
                 <li className='nav-item'>
-                  <Link href='#Home' className='nav-link active'>
+                  <Link
+                    href='/'
+                    className='nav-link active'
+                    onClick={executeHomeScroll}
+                  >
                     Home
                   </Link>
                 </li>
                 <li className='nav-item'>
-                  <Link href='#features' className='nav-link features__link'>
+                  <Link
+                    href='/#features'
+                    scroll={false}
+                    className='nav-link features__link'
+                    onClick={executeFeatureScroll}
+                  >
                     Features
                   </Link>
                 </li>
                 <li className='nav-item'>
-                  <Link href='#Resumee' className='nav-link'>
+                  <Link
+                    href='#Resumee'
+                    className='nav-link'
+                    onClick={executeResumeeScroll}
+                  >
                     Resume
                   </Link>
                 </li>
                 <li className='nav-item'>
-                  <Link href='#Portfolio' className='nav-link'>
+                  <Link
+                    href='#Portfolio'
+                    className='nav-link'
+                    onClick={executePortfolioScroll}
+                  >
                     Portfolio
                   </Link>
                 </li>
                 <li className='nav-item'>
-                  <Link href='#Testimonial' className='nav-link'>
+                  <Link
+                    href='#Testimonial'
+                    className='nav-link'
+                    onClick={executeTestimonialScroll}
+                  >
                     Testimonial
                   </Link>
                 </li>
                 <li className='nav-item'>
-                  <Link href='#Blog' className='nav-link'>
+                  <Link
+                    href='#Blog'
+                    className='nav-link'
+                    onClick={executeBlogScroll}
+                  >
                     Blog
                   </Link>
                 </li>
               </ul>
-              <Link href='#Contact' className='btn-secondary contact-me'>
+              <Link
+                href='#Contact'
+                className='btn-secondary contact-me'
+                onClick={executeContactScroll}
+              >
                 Contact Me
               </Link>
             </nav>
@@ -153,37 +193,65 @@ const Header = () => {
 
             <ul className='mobile-menu__nav-list'>
               <li className='mobile-menu__nav-item'>
-                <Link href='#Home' className='mobile-menu__nav-link active'>
+                <Link
+                  href='#Home'
+                  className='mobile-menu__nav-link active'
+                  onClick={executeHomeScroll}
+                >
                   Home
                 </Link>
               </li>
               <li className='mobile-menu__nav-item'>
-                <Link href='#features' className='mobile-menu__nav-link'>
+                <Link
+                  href='#features'
+                  className='mobile-menu__nav-link'
+                  onClick={executeFeatureScroll}
+                >
                   Features
                 </Link>
               </li>
               <li className='mobile-menu__nav-item'>
-                <Link href='#Resumee' className='mobile-menu__nav-link'>
+                <Link
+                  href='#Resumee'
+                  className='mobile-menu__nav-link'
+                  onClick={executeResumeeScroll}
+                >
                   Resume
                 </Link>
               </li>
               <li className='mobile-menu__nav-item'>
-                <Link href='#Portfolio' className='mobile-menu__nav-link'>
+                <Link
+                  href='#Portfolio'
+                  className='mobile-menu__nav-link'
+                  onClick={executePortfolioScroll}
+                >
                   Portfolio
                 </Link>
               </li>
               <li className='mobile-menu__nav-item'>
-                <Link href='#Testimonial' className='mobile-menu__nav-link'>
+                <Link
+                  href='#Testimonial'
+                  className='mobile-menu__nav-link'
+                  onClick={executeTestimonialScroll}
+                >
                   Testimonial
                 </Link>
               </li>
               <li className='mobile-menu__nav-item'>
-                <Link href='#Blog' className='mobile-menu__nav-link'>
+                <Link
+                  href='#Blog'
+                  className='mobile-menu__nav-link'
+                  onClick={executeBlogScroll}
+                >
                   Blog
                 </Link>
               </li>
               <li className='mobile-menu__nav-item'>
-                <Link href='#Contact' className='mobile-menu__nav-link'>
+                <Link
+                  href='#Contact'
+                  className='mobile-menu__nav-link'
+                  onClick={executeContactScroll}
+                >
                   Contact
                 </Link>
               </li>
