@@ -81,9 +81,9 @@ const PortfolioSection = () => {
             project_name='Lulu Game (coming soon)'
           />
         </div>
-        <div className='portfolio-showmore'>
+        {/* <div className='portfolio-showmore'>
           <button className='btn-outline'>Show more</button>
-        </div>
+        </div> */}
       </div>
     </section>
   )
