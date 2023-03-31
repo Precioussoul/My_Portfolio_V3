@@ -347,13 +347,48 @@ const ResumeeSection = () => {
             <div className='resumee__list 2nd'>
               <div className='resumee__item'>
                 <div className='resumee__item--inner'>
+                  <h2 className='resumee__item--sub-heading'>Soora</h2>
+                  <div className='resumee__item--category'>
+                    <span className='major'>
+                      React-Native Developer{' '}
+                      <span className='highlighted'>@ Soora</span>
+                    </span>
+                    <span className='major'> (02/2023 - Present)</span>
+                    <span className='major'>Fully Remote | UK </span>
+                    <i className='fas fa-business-time resumee__item-icon fa-2x'></i>
+                  </div>
+                  <ul className='resumee__item--details'>
+                    <li>
+                      Implemented first-version enterprise social applications
+                      of Soora LTD Platform using Javascript, React-Native,
+                      Recoil, Typescript, ReactQuery, and MongoDB. (launching
+                      very soon)
+                    </li>
+                    <li>
+                      Developed lots of reusable components during the
+                      development and follows existing architectures when
+                      implementing tickets to fast tracked the development speed
+                      of the entire team by eighty percent (80%).
+                    </li>
+                    <li>
+                      Volunteered working as a React-Native Developer to
+                      fast-tracked the development of this startup company
+                      mobile application and worked with a team of five
+                      developers.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className='resumee__item'>
+                <div className='resumee__item--inner'>
                   <h2 className='resumee__item--sub-heading'>Connou</h2>
                   <div className='resumee__item--category'>
                     <span className='major'>
                       Software Engineer{' '}
                       <span className='highlighted'>@ Connou</span>
                     </span>
-                    <span className='major'> (09/2022 - Present)</span>
+                    <span className='major'> (09/2022 - 03/2023)</span>
                     <span className='major'>Fully Remote | Germany </span>
                     <i className='fas fa-business-time resumee__item-icon fa-2x'></i>
                   </div>
@@ -376,41 +411,6 @@ const ResumeeSection = () => {
                       Complete ownership and fully responsible for the company
                       website project. and also working with an amazing team and
                       beautiful people.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className='resumee__item'>
-                <div className='resumee__item--inner'>
-                  <h2 className='resumee__item--sub-heading'>Soora</h2>
-                  <div className='resumee__item--category'>
-                    <span className='major'>
-                      React-Native Developer{' '}
-                      <span className='highlighted'>@ Soora</span>
-                    </span>
-                    <span className='major'> (02/2023 - 04/2023)</span>
-                    <span className='major'>Fully Remote | UK </span>
-                    <i className='fas fa-business-time resumee__item-icon fa-2x'></i>
-                  </div>
-                  <ul className='resumee__item--details'>
-                    <li>
-                      Implemented first-version enterprise social applications
-                      of Soora LTD Platform using Javascript, React-Native,
-                      Recoil, Typescript, ReactQuery, and MongoDB. (launching
-                      very soon)
-                    </li>
-                    <li>
-                      Developed lots of reusable components during the
-                      development and follows existing architectures when
-                      implementing tickets to fast tracked the development speed
-                      of the entire team by eighty percent (80%).
-                    </li>
-                    <li>
-                      Volunteered working as a React-Native Developer to
-                      fast-tracked the development of this startup company
-                      mobile application and worked with a team of five
-                      developers.
                     </li>
                   </ul>
                 </div>
