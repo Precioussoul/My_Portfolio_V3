@@ -84,7 +84,7 @@ const PortfolioSection = () => {
             projectlink='https://wouldrathergame.netlify.app/'
             project_image_url='/assets/images/portfolio/WouldRatherGame_thumbnail.jpg'
             project_detailsText='A Poll Game that allow users to answer questions, create poll questions and see leaderboard of users with most answered questions.'
-            projectTechStack='HTML, CSS, JavaScript,React, Redux and Semantic UI '
+            projectTechStack='HTML, CSS, JavaScript,React, Redux and Semantic UI'
             project_category='Web application '
             project_name='Would rather game'
             projectGithubLink='https://github.com/Precioussoul/Would-You-Rather-ND-Project-2'
@@ -121,7 +121,7 @@ const PortfolioSection = () => {
             projectTechStack='Next.js, React, SanityCMS and Typescript '
             project_category='Website '
             project_name='Medium Blog Poweered by CMS'
-            projectGithubLink=''
+            projectGithubLink='https://github.com/Precioussoul/medium-blog-with-sanity-backend'
           />
           <PortfolioItem
             projectlink='https://myreadnd.netlify.app/'
@@ -130,6 +130,7 @@ const PortfolioSection = () => {
             projectTechStack='HTML, CSS, JavaScript,React and BookAPI'
             project_category='Web application '
             project_name='My Read Web application'
+            projectGithubLink='https://github.com/Precioussoul/MyRead----Book-lending-App-React-Nd'
           />
         </div>
         {/* <div className='portfolio-showmore'>
