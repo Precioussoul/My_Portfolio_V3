@@ -80,6 +80,57 @@ const PortfolioSection = () => {
             project_category='Website '
             project_name='Lulu Game (coming soon)'
           />
+          <PortfolioItem
+            projectlink='https://wouldrathergame.netlify.app/'
+            project_image_url='/assets/images/portfolio/WouldRatherGame_thumbnail.jpg'
+            project_detailsText='A Poll Game that allow users to answer questions, create poll questions and see leaderboard of users with most answered questions.'
+            projectTechStack='HTML, CSS, JavaScript,React, Redux and Semantic UI '
+            project_category='Web application '
+            project_name='Would rather game'
+            projectGithubLink='https://github.com/Precioussoul/Would-You-Rather-ND-Project-2'
+          />
+          <PortfolioItem
+            projectlink='https://cutt.ly/UUeawGs'
+            project_image_url='/assets/images/portfolio/Fitness-Tracker.jpg'
+            project_detailsText='A Fitness Tracker Mobile application that help fitness enthusiast to keep track of their daily exercise with historys. The app also have geo-spartial location feature enabled which tell users the direction they are heading to. Built with React Native, React Navigation, Async Storage etc. and other native features.'
+            projectTechStack='React-Native, React Navigation, Async Storage,and other native features'
+            project_category='mobile-application'
+            project_name='Fitness Tracker App'
+            projectGithubLink='https://github.com/Precioussoul/Fitness-Tracker---Mobile-Application'
+          />
+          <PortfolioItem
+            projectlink='https://3rdaugustgroup.org/'
+            project_image_url='/assets/images/portfolio/3rdAugust.jpg'
+            project_detailsText='A Muiltipurpose Company websites grouped together with a single codebase. Three companies websites linked together as demanded by the clients to save costs. Built with WordPress, Custom CSS, Javascript, Elementor pro page builder and adds-on plugins.'
+            projectTechStack='HTML, CSS, JavaScript, and WordPress'
+            project_category='Website'
+            project_name='3rd August Company'
+          />
+          <PortfolioItem
+            projectlink='https://monsuratajokefoundation.com.ng/'
+            project_image_url='/assets/images/portfolio/mafoundation.jpg'
+            project_detailsText='A Charity Foundation website built with the purpose of showcasing their work to partners through online presence. visitor can also make donations. Built with WordPress, Custom SVG, Custom CSS, Elementor Page Builder and other Add-ons Plugins.'
+            projectTechStack='HTML, CSS, JavaScript and Wordpress'
+            project_category='Website '
+            project_name='Ma Foundation'
+          />
+          <PortfolioItem
+            projectlink='https://medium-cms.vercel.app/'
+            project_detailsText='A web blogging website powered by sanity CMS for content management and Frontend built on top of NextJS and Typescript'
+            project_image_url='/assets/images/portfolio/medium-blog-website.jpg'
+            projectTechStack='Next.js, React, SanityCMS and Typescript '
+            project_category='Website '
+            project_name='Medium Blog Poweered by CMS'
+            projectGithubLink=''
+          />
+          <PortfolioItem
+            projectlink='https://myreadnd.netlify.app/'
+            project_image_url='/assets/images/portfolio/MyRead_thumbnail.jpg'
+            project_detailsText='A web application that keep you updated of list of books , you can search for books, filter catalog options (to read now, Currently reading and will read). Bult with React, CSS, and Use Book API to fetch data.'
+            projectTechStack='HTML, CSS, JavaScript,React and BookAPI'
+            project_category='Web application '
+            project_name='My Read Web application'
+          />
         </div>
         {/* <div className='portfolio-showmore'>
           <button className='btn-outline'>Show more</button>
