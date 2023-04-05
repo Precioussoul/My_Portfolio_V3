@@ -120,7 +120,7 @@ const PortfolioSection = () => {
             project_image_url='/assets/images/portfolio/medium-blog-website.jpg'
             projectTechStack='Next.js, React, SanityCMS and Typescript '
             project_category='Website '
-            project_name='Medium Blog Poweered by CMS'
+            project_name='Medium Clone Powered by CMS'
             projectGithubLink='https://github.com/Precioussoul/medium-blog-with-sanity-backend'
           />
           <PortfolioItem
