@@ -1,8 +1,8 @@
-'use client'
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import { portfolioItemProps } from 'types'
+"use client"
+import React from "react"
+import Link from "next/link"
+import Image from "next/image"
+import {portfolioItemProps} from "types"
 
 const PortfolioItem = ({
   project_image_url,
@@ -37,8 +37,8 @@ const PortfolioItem = ({
           <p className='portfolio-text'>{project_detailsText}</p>
           <br />
           <p className='portfolio-text'>
-            <span className='highlighted bold'>Built with :</span>{' '}
-            {projectTechStack}{' '}
+            <span className='highlighted bold'>Built with :</span>{" "}
+            {projectTechStack}{" "}
           </p>
         </div>
       </div>
@@ -54,17 +54,13 @@ const PortfolioItem = ({
           </span>
         </div>
         <div className='project__name-box'>
-          <Link
-            href='https://hbs-drive.web.app/'
-            target='_blank'
-            className='project__name'
-          >
-            {project_name}{' '}
+          <Link href={projectlink} target='_blank' className='project__name'>
+            {project_name}{" "}
           </Link>
         </div>
         <div className='project__link-box'>
           <Link href={projectlink}>
-            {' '}
+            {" "}
             <i className='fas fa-location-arrow project__link-icon'></i>
           </Link>
           {projectGithubLink ? (
