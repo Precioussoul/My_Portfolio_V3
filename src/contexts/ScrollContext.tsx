@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, {useRef, useState} from "react"
 
 export const ContentContext = React.createContext<any>({})
 
@@ -6,7 +6,8 @@ type ChildrenContextProps = {
   children: React.ReactNode
 }
 
-const ContentContextProvider = ({ children }: ChildrenContextProps) => {
+const ContentContextProvider = ({children}: ChildrenContextProps) => {
+  const [mode, setMode] = useState("light")
   const homeRef = useRef<any>()
   const featureRef = useRef<any>()
   const resumeeRef = useRef<any>()
@@ -24,6 +25,8 @@ const ContentContextProvider = ({ children }: ChildrenContextProps) => {
   const executeContactScroll = () => contactRef.current.scrollIntoView()
 
   const values = {
+    mode,
+    setMode,
     homeRef,
     featureRef,
     resumeeRef,

@@ -1,30 +1,28 @@
-'use client'
+"use client"
 // Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import 'swiper/css/keyboard'
-import './globals.css'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import Head from './head'
-import { useEffect } from 'react'
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import "swiper/css/keyboard"
+import "./globals.css"
+import AOS from "aos"
+import "aos/dist/aos.css"
+import Head from "./head"
+import {useContext, useEffect} from "react"
+import ContentContextProvider, {ContentContext} from "@/contexts/ScrollContext"
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({children}: {children: React.ReactNode}) {
+  const {mode} = useContext(ContentContext)
   useEffect(() => {
     const Titles = [
-      'Software Engineer',
-      'Full-Stack Developer',
-      'Cloud Developer',
+      "Software Engineer",
+      "Full-Stack Developer",
+      "Cloud Developer",
     ]
     let count = 0
     let index = 0
-    let currentTitle = ''
-    let title = ''
+    let currentTitle = ""
+    let title = ""
 
     function TypingText() {
       if (count === Titles.length) {
@@ -35,7 +33,7 @@ export default function RootLayout({
       title = currentTitle.slice(0, ++index)
 
       document
-        .querySelectorAll('.typing-text')
+        .querySelectorAll(".typing-text")
         .forEach((typing) => (typing.textContent = title))
 
       if (title.length === currentTitle.length) {
@@ -57,7 +55,9 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <Head />
-      <body>{children}</body>
+      <ContentContextProvider>
+        <body className={`${mode}`}>{children}</body>
+      </ContentContextProvider>
     </html>
   )
 }

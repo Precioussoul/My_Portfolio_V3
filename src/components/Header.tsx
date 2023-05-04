@@ -1,9 +1,9 @@
-'use client'
-import { ContentContext } from '@/contexts/ScrollContext'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import React, { useContext, useEffect, useState } from 'react'
+"use client"
+import {ContentContext} from "@/contexts/ScrollContext"
+import Image from "next/image"
+import Link from "next/link"
+import {useRouter} from "next/router"
+import React, {useContext, useEffect, useState} from "react"
 
 const Header = () => {
   const [desktopNav, setDesktopNav] = useState(true)
@@ -15,8 +15,13 @@ const Header = () => {
     executeTestimonialScroll,
     executeBlogScroll,
     executeContactScroll,
+    mode,
+    setMode,
   } = useContext(ContentContext)
 
+  console.log("====================================")
+  console.log(mode)
+  console.log("====================================")
   const openMobileNav = () => {
     setDesktopNav(false)
   }
@@ -26,35 +31,35 @@ const Header = () => {
 
   // Get the container element
   useEffect(() => {
-    var naavy = window.document.querySelectorAll('.nav-link')
-    var naavyMobile = window.document.querySelectorAll('.mobile-menu__nav-link')
+    var naavy = window.document.querySelectorAll(".nav-link")
+    var naavyMobile = window.document.querySelectorAll(".mobile-menu__nav-link")
     var length = naavy.length
     var lengthMobile = naavyMobile.length
 
     function highlight(element: any) {
       for (var i = 0; i < length; i++) {
-        naavy[i].classList.remove('active')
+        naavy[i].classList.remove("active")
       }
 
-      element.classList.add('active')
+      element.classList.add("active")
     }
 
     function highlightMobile(element: any) {
       for (var i = 0; i < length; i++) {
-        naavyMobile[i].classList.remove('active')
+        naavyMobile[i].classList.remove("active")
       }
 
-      element.classList.add('active')
+      element.classList.add("active")
     }
 
     for (var i = 0; i < length; i++) {
-      naavy[i].addEventListener('click', function () {
+      naavy[i].addEventListener("click", function () {
         // @ts-ignore
         highlight(this)
       })
     }
     for (var i = 0; i < lengthMobile; i++) {
-      naavyMobile[i].addEventListener('click', function () {
+      naavyMobile[i].addEventListener("click", function () {
         //@ts-ignore
         highlightMobile(this)
       })
@@ -117,12 +122,20 @@ const Header = () => {
                   </span>
                 </li>
               </ul>
-              <span
-                className='btn-secondary contact-me'
-                onClick={executeContactScroll}
-              >
-                Contact Me
-              </span>
+              <div>
+                <span className='toggle-mode-container tooltip'>
+                  <i className={"far fa-sun toggle-icon "} />
+                  <span className='tooltiptext'>
+                    Change system setting to dark/light mode
+                  </span>
+                </span>
+                <span
+                  className='btn-secondary contact-me'
+                  onClick={executeContactScroll}
+                >
+                  Contact Me
+                </span>
+              </div>
             </nav>
           </div>
         </header>
@@ -151,7 +164,7 @@ const Header = () => {
                 <h3 className='mobile-menu__author-name'>
                   Hi, i&apos;m
                   <span className='name-highlight pka-line'>
-                    {' '}
+                    {" "}
                     Sofiyullah Abdullah
                   </span>
                 </h3>

@@ -59,7 +59,7 @@ const PortfolioItem = ({
           </Link>
         </div>
         <div className='project__link-box'>
-          <Link href={projectlink}>
+          <Link href={projectlink} target={"_blank"}>
             {" "}
             <i className='fas fa-location-arrow project__link-icon'></i>
           </Link>

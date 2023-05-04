@@ -1,25 +1,25 @@
-'use client'
-import Link from 'next/link'
-import React, { useContext } from 'react'
-import Image from 'next/image'
-import { ContentContext } from '@/contexts/ScrollContext'
+"use client"
+import Link from "next/link"
+import React, {useContext} from "react"
+import Image from "next/image"
+import {ContentContext} from "@/contexts/ScrollContext"
 
 const ResumeeSection = () => {
-  const { resumeeRef } = useContext(ContentContext)
+  const {resumeeRef} = useContext(ContentContext)
   function openTab(evt: any, TabName: string) {
-    const resumeeTabs = document.querySelectorAll('.resumee__tab-item')
-    const tabContents = document.querySelectorAll('.tab-content')
+    const resumeeTabs = document.querySelectorAll(".resumee__tab-item")
+    const tabContents = document.querySelectorAll(".tab-content")
 
     tabContents.forEach((tabContent: any) => {
-      tabContent.style.display = 'none'
+      tabContent.style.display = "none"
     })
 
     resumeeTabs.forEach((resumeTab) => {
-      resumeTab.className = resumeTab.className.replace(' active', ' ')
+      resumeTab.className = resumeTab.className.replace(" active", " ")
     })
 
-    document.getElementById(TabName)!.style.display = 'block'
-    evt.currentTarget.className += ' active'
+    document.getElementById(TabName)!.style.display = "block"
+    evt.currentTarget.className += " active"
   }
 
   return (
@@ -43,31 +43,31 @@ const ResumeeSection = () => {
         >
           <li
             className='resumee__tab-item active'
-            onClick={(event) => openTab(event, 'Summary')}
+            onClick={(event) => openTab(event, "Summary")}
           >
             Summary
           </li>
           <li
             className='resumee__tab-item'
-            onClick={(event) => openTab(event, 'My_Skills')}
+            onClick={(event) => openTab(event, "My_Skills")}
           >
             My Skills
           </li>
           <li
             className='resumee__tab-item'
-            onClick={(event) => openTab(event, 'Experience')}
+            onClick={(event) => openTab(event, "Experience")}
           >
             Work Experience
           </li>
           <li
             className='resumee__tab-item'
-            onClick={(event) => openTab(event, 'Education_Certification')}
+            onClick={(event) => openTab(event, "Education_Certification")}
           >
             Education <span className='option-display'>& Certification</span>
           </li>
         </ul>
 
-        <div className='tab-content' id='Summary' style={{ display: 'block' }}>
+        <div className='tab-content' id='Summary' style={{display: "block"}}>
           <div className='Summary__grid'>
             <div className='Summary__author-image'>
               <Image
@@ -334,7 +334,7 @@ const ResumeeSection = () => {
             </div>
           </div>
           <div className='blog-more'>
-            <p> Developing myself into a competent machine </p>{' '}
+            <p> Developing myself into a competent machine </p>{" "}
           </div>
         </div>
 
@@ -350,10 +350,10 @@ const ResumeeSection = () => {
                   <h2 className='resumee__item--sub-heading'>Soora</h2>
                   <div className='resumee__item--category'>
                     <span className='major'>
-                      React-Native Developer{' '}
+                      React-Native Developer{" "}
                       <span className='highlighted'>@ Soora</span>
                     </span>
-                    <span className='major'> (02/2023 - Present)</span>
+                    <span className='major'> (02/2023 - 04/2023)</span>
                     <span className='major'>Fully Remote | UK </span>
                     <i className='fas fa-business-time resumee__item-icon fa-2x'></i>
                   </div>
@@ -385,7 +385,7 @@ const ResumeeSection = () => {
                   <h2 className='resumee__item--sub-heading'>Connou</h2>
                   <div className='resumee__item--category'>
                     <span className='major'>
-                      Software Engineer{' '}
+                      Software Engineer{" "}
                       <span className='highlighted'>@ Connou</span>
                     </span>
                     <span className='major'> (09/2022 - 03/2023)</span>
@@ -423,8 +423,8 @@ const ResumeeSection = () => {
                     <span className='major'>Software engineer Intern</span>
                     <span className='major'> (02/2022 - present)</span>
                     <span className='major'>
-                      {' '}
-                      Fully Remote | Africans Only{' '}
+                      {" "}
+                      Fully Remote | Africans Only{" "}
                     </span>
                     <i className='fas fa-business-time resumee__item-icon fa-2x'></i>
                   </div>
@@ -441,11 +441,11 @@ const ResumeeSection = () => {
                     </li>
                     <li>
                       Engaged in the foundation phase of the programmed and met
-                      the minimum requirement{' '}
+                      the minimum requirement{" "}
                     </li>
                     <li>
                       Engaged in the Specialization phase of the programmed and
-                      met the minimum requirement (frontend Development){' '}
+                      met the minimum requirement (frontend Development){" "}
                     </li>
                     <li>
                       Completed my internship and rewarded a certificate as a
@@ -489,7 +489,7 @@ const ResumeeSection = () => {
                     </li>
                     <li>
                       Completed Project Phase and Gained Intermediate level
-                      Google Cloud Developer Skills 🙂 from the competition{' '}
+                      Google Cloud Developer Skills 🙂 from the competition{" "}
                     </li>
                   </ul>
                 </div>
@@ -504,8 +504,8 @@ const ResumeeSection = () => {
                     <span className='major'>AWS Cloud Developer Intern</span>
                     <span className='major'> (05/2022 - 08-2022)</span>
                     <span className='major'>
-                      {' '}
-                      Fully Remote | Africans Only{' '}
+                      {" "}
+                      Fully Remote | Africans Only{" "}
                     </span>
                     <i className='fas fa-business-time resumee__item-icon fa-2x'></i>
                   </div>
@@ -547,22 +547,22 @@ const ResumeeSection = () => {
               <div className='resumee__item'>
                 <div className='resumee__item--inner'>
                   <h2 className='resumee__item--sub-heading'>
-                    CodeDrill Cooperation{' '}
+                    CodeDrill Cooperation{" "}
                     <span className='rn-highlight'>
                       [self-employed company nickname]
                     </span>
                   </h2>
                   <div className='resumee__item--category'>
                     <span className='major'>
-                      Frontend Developer{' '}
+                      Frontend Developer{" "}
                       <span className='highlighted'>
-                        {' '}
+                        {" "}
                         @ self-employed | on campus
-                      </span>{' '}
+                      </span>{" "}
                     </span>
                     <span className='major'> (02/2021 - 07/2022)</span>
                     <span className='major location'>
-                      Nigeria (While Schooling){' '}
+                      Nigeria (While Schooling){" "}
                     </span>
                     <i className='fas fa-business-time resumee__item-icon fa-2x'></i>
                   </div>
@@ -588,12 +588,12 @@ const ResumeeSection = () => {
               <div className='resumee__item'>
                 <div className='resumee__item--inner'>
                   <h2 className='resumee__item--sub-heading'>
-                    BeeSpeed Technology{' '}
+                    BeeSpeed Technology{" "}
                   </h2>
                   <div className='resumee__item--category'>
                     <span className='major'>
-                      WordPress Developer{' '}
-                      <span className='highlighted'> @ BeeSpeed</span>{' '}
+                      WordPress Developer{" "}
+                      <span className='highlighted'> @ BeeSpeed</span>{" "}
                     </span>
                     <span className='major'> (03/2020 - 02/2021)</span>
                     <span className='major location'> Hybrid | Nigeria</span>
@@ -741,7 +741,7 @@ const ResumeeSection = () => {
                   <div className='resumee__item--certified'>
                     <Link
                       href={
-                        'https://www.credly.com/badges/17303f0a-b89f-4c41-8d2b-08496b8b6065/linked_in_profile'
+                        "https://www.credly.com/badges/17303f0a-b89f-4c41-8d2b-08496b8b6065/linked_in_profile"
                       }
                       target='_blank'
                       className='resumee__certified_item'
@@ -760,7 +760,7 @@ const ResumeeSection = () => {
                       </div>
                     </Link>
                     <Link
-                      href={'https://confirm.udacity.com/FJZMPSGZ'}
+                      href={"https://confirm.udacity.com/FJZMPSGZ"}
                       target='_blank'
                       className='resumee__certified_item'
                     >
@@ -773,12 +773,12 @@ const ResumeeSection = () => {
                           height={500}
                         />
                         <p className='major center'>
-                          React Developer Nanodegree{' '}
+                          React Developer Nanodegree{" "}
                         </p>
                       </div>
                     </Link>
                     <Link
-                      href={'https://confirm.udacity.com/ALWLSJAX'}
+                      href={"https://confirm.udacity.com/ALWLSJAX"}
                       target='_blank'
                       className='resumee__certified_item'
                     >
@@ -797,7 +797,7 @@ const ResumeeSection = () => {
                     </Link>
                     <Link
                       href={
-                        'https://www.credly.com/badges/b162ccd6-1730-4c3e-b65a-98a73db7c8af'
+                        "https://www.credly.com/badges/b162ccd6-1730-4c3e-b65a-98a73db7c8af"
                       }
                       target='_blank'
                       className='resumee__certified_item'
