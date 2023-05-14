@@ -39,20 +39,20 @@ const PortfolioSection = () => {
             projectGithubLink='https://github.com/Precioussoul/Lytebox'
           />
           <PortfolioItem
-            projectlink='https://wealthymomnow.com'
-            project_image_url='/assets/images/portfolio/wealthmomnow.jpg'
-            project_detailsText='A onliine course platform that allows you to be become a solo-instructor and started selling your course online, you can create as many course you want and get paid in $$$'
-            projectTechStack='Built with Tutor LMS, WordPress, Elementor, and custom CSS & JavaScript, Paypal integration for payments.'
-            project_category='Website | EduTech'
-            project_name='WealthyMom - Online courses website'
-          />
-          <PortfolioItem
             projectlink='https://sooratheapp.com/'
             project_image_url='/assets/images/portfolio/soorapp.png'
             project_detailsText='A social media app for Muslims and non Muslims to interact with each other, sharing pictures, videos & going on lives together..Worked as a volunteering React-Native Engineer at SooraLTD for months and Implemented lots of tickets and completed all frontend tickets before leaving'
             projectTechStack='React-Native, Typescript, Nest.JS, MongoDB'
             project_category='Mobile application'
             project_name='Soora app - (Coming soon) '
+          />
+          <PortfolioItem
+            projectlink='https://connou.app'
+            project_image_url='/assets/images/portfolio/connouapp-website.jpg'
+            project_detailsText=' Connou | The App that Connects You with Like-minded Humans.Working at connou as a full-time software developer, responsible for development of the company website and also contribute to the development of the company mobile app using flutter'
+            projectTechStack='React,NextJS, Typescript, and Sanity CMS for content management'
+            project_category='Company website'
+            project_name='Connou | The App that Connects You with Like-minded Humans.'
           />
           <PortfolioItem
             projectlink='https://github.com/Precioussoul/Cloud-Image-Filter'
@@ -63,14 +63,7 @@ const PortfolioSection = () => {
             project_name='Udagram Image Filtering Microservice'
             projectGithubLink='https://github.com/Precioussoul/Cloud-Image-Filter'
           />
-          <PortfolioItem
-            projectlink='https://connou.app'
-            project_image_url='/assets/images/portfolio/connouapp-website.jpg'
-            project_detailsText=' Connou | The App that Connects You with Like-minded Humans.Working at connou as a full-time software developer, responsible for development of the company website and also contribute to the development of the company mobile app using flutter'
-            projectTechStack='React,NextJS, Typescript, and Sanity CMS for content management'
-            project_category='Company website'
-            project_name='Connou | The App that Connects You with Like-minded Humans.'
-          />
+
           <PortfolioItem
             projectlink='https://luluweb.netlify.app/'
             project_image_url='/assets/images/portfolio/Lulu-game-africa.jpg'
@@ -132,6 +125,14 @@ const PortfolioSection = () => {
             projectTechStack='HTML, CSS, JavaScript and Wordpress'
             project_category='Company website'
             project_name='Ma Foundation'
+          />
+          <PortfolioItem
+            projectlink='https://medium-cms.vercel.app'
+            project_image_url='/assets/images/portfolio/medium-blog-website.jpg'
+            project_detailsText='A blog powered by next.js and sanity cms where you can manage content from the content management system and it will reflect on the website'
+            projectTechStack='HTML, CSS, JavaScript and Next.js and SANITY CMS'
+            project_category='Blog website'
+            project_name='Medium Blog Powered by CMS'
           />
         </div>
         {/* <div className='portfolio-showmore'>
