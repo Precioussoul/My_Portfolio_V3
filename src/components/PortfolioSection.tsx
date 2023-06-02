@@ -39,12 +39,12 @@ const PortfolioSection = () => {
             projectGithubLink='https://github.com/Precioussoul/Lytebox'
           />
           <PortfolioItem
-            projectlink='https://sooratheapp.com/'
-            project_image_url='/assets/images/portfolio/soorapp.png'
-            project_detailsText='A social media app for Muslims and non Muslims to interact with each other, sharing pictures, videos & going on lives together..Worked as a volunteering React-Native Engineer at SooraLTD for months and Implemented lots of tickets and completed all frontend tickets before leaving'
-            projectTechStack='React-Native, Typescript, Nest.JS, MongoDB'
-            project_category='Mobile application'
-            project_name='Soora app - (Coming soon) '
+            projectlink='https://wealthymomnow.com/'
+            project_image_url='/assets/images/portfolio/wealthmomnow.jpg'
+            project_detailsText='Wealthymomnow Website is an online-courses website for solo-instructor. I am responsible for building this website from scratch together with the design, content and couses upload to the backend of the website. '
+            projectTechStack='Built with WordPress, LMS System, Elementor Page Builder,and more'
+            project_category='Company website'
+            project_name='WealthMomNow | E-learning website'
           />
           <PortfolioItem
             projectlink='https://connou.app'
@@ -55,51 +55,12 @@ const PortfolioSection = () => {
             project_name='Connou | The App that Connects You with Like-minded Humans.'
           />
           <PortfolioItem
-            projectlink='https://github.com/Precioussoul/Cloud-Image-Filter'
-            project_image_url='/assets/images/portfolio/cloud-image-filter.png'
-            project_detailsText='Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.'
-            projectTechStack='AWS ElasticBeanstalk, NodeJS, Express, AWS S3'
-            project_category='Cloud Backend with AWS'
-            project_name='Udagram Image Filtering Microservice'
-            projectGithubLink='https://github.com/Precioussoul/Cloud-Image-Filter'
-          />
-
-          <PortfolioItem
-            projectlink='https://luluweb.netlify.app/'
-            project_image_url='/assets/images/portfolio/Lulu-game-africa.jpg'
-            project_detailsText=' Lulu is a gaming application built on top of blockchain to reward users for keeping their africa dialect by translating words to different Africa languages and earn a token and LuLu NFT. Worked with MyComDAO as a volunteer Frontend Developer as a infant startup'
-            projectTechStack='HTML, CSS  and JavaScript'
-            project_category='Company website V1'
-            project_name='Lulu Game (coming soon)'
-          />
-
-          <PortfolioItem
-            projectlink='https://github.com/Precioussoul/Monolith_to_Microservices'
-            project_image_url='/assets/images/portfolio/microservice3-min.png'
-            project_detailsText='Udagram is a monolithic web application broken down into microservices such that database is AWS RDS, the backend is NodeJS and is further broken down into two microservices (user API, and feed API) and connected together with reverse-proxy nginx and the frontend is listening to the API on exposed port on LoadBalancer 8080 inside AWS EKS.'
-            projectTechStack='React-Iconic,Typescript, NodeJS, Express, travis CI, Docker, Kubernetes,AWS EKS, and Shell '
-            project_category='Microservice Architecture'
-            project_name='Monolithic application breakdown to Microservice'
-            projectGithubLink='https://github.com/Precioussoul/Monolith_to_Microservices'
-          />
-
-          <PortfolioItem
-            projectlink='https://wouldrathergame.netlify.app/'
-            project_image_url='/assets/images/portfolio/WouldRatherGame_thumbnail.jpg'
-            project_detailsText='A Poll Game that allow users to answer questions, create poll questions and see leaderboard of users with most answered questions.'
-            projectTechStack='HTML, CSS, JavaScript,React, Redux and Semantic UI'
-            project_category='Web application '
-            project_name='Would rather game'
-            projectGithubLink='https://github.com/Precioussoul/Would-You-Rather-ND-Project-2'
-          />
-          <PortfolioItem
-            projectlink='https://cutt.ly/UUeawGs'
-            project_image_url='/assets/images/portfolio/Fitness-Tracker.jpg'
-            project_detailsText='A Fitness Tracker Mobile application that help fitness enthusiast to keep track of their daily exercise with historys. The app also have geo-spartial location feature enabled which tell users the direction they are heading to. Built with React Native, React Navigation, Async Storage etc. and other native features.'
-            projectTechStack='React-Native, React Navigation, Async Storage,and other native features'
-            project_category='Mobile-application'
-            project_name='Fitness Tracker App'
-            projectGithubLink='https://github.com/Precioussoul/Fitness-Tracker---Mobile-Application'
+            projectlink='https://sooratheapp.com/'
+            project_image_url='/assets/images/portfolio/soorapp.png'
+            project_detailsText='A social media app for Muslims and non Muslims to interact with each other, sharing pictures, videos & going on lives together..Worked as a volunteering React-Native Engineer at SooraLTD for months and Implemented lots of tickets and completed all frontend tickets before leaving'
+            projectTechStack='React-Native, Typescript, Nest.JS, MongoDB'
+            project_category='Mobile application'
+            project_name='Soora app - (Coming soon) '
           />
           <PortfolioItem
             projectlink='https://3rdaugustgroup.org/'
@@ -133,6 +94,53 @@ const PortfolioSection = () => {
             projectTechStack='HTML, CSS, JavaScript and Next.js and SANITY CMS'
             project_category='Blog website'
             project_name='Medium Blog Powered by CMS'
+          />
+
+          {/* <PortfolioItem
+            projectlink='https://github.com/Precioussoul/Monolith_to_Microservices'
+            project_image_url='/assets/images/portfolio/microservice3-min.png'
+            project_detailsText='Udagram is a monolithic web application broken down into microservices such that database is AWS RDS, the backend is NodeJS and is further broken down into two microservices (user API, and feed API) and connected together with reverse-proxy nginx and the frontend is listening to the API on exposed port on LoadBalancer 8080 inside AWS EKS.'
+            projectTechStack='React-Iconic,Typescript, NodeJS, Express, travis CI, Docker, Kubernetes,AWS EKS, and Shell '
+            project_category='Microservice Architecture'
+            project_name='Monolithic application breakdown to Microservice'
+            projectGithubLink='https://github.com/Precioussoul/Monolith_to_Microservices'
+          /> */}
+
+          <PortfolioItem
+            projectlink='https://wouldrathergame.netlify.app/'
+            project_image_url='/assets/images/portfolio/WouldRatherGame_thumbnail.jpg'
+            project_detailsText='A Poll Game that allow users to answer questions, create poll questions and see leaderboard of users with most answered questions.'
+            projectTechStack='HTML, CSS, JavaScript,React, Redux and Semantic UI'
+            project_category='Web application '
+            project_name='Would rather game'
+            projectGithubLink='https://github.com/Precioussoul/Would-You-Rather-ND-Project-2'
+          />
+          <PortfolioItem
+            projectlink='https://cutt.ly/UUeawGs'
+            project_image_url='/assets/images/portfolio/Fitness-Tracker.jpg'
+            project_detailsText='A Fitness Tracker Mobile application that help fitness enthusiast to keep track of their daily exercise with historys. The app also have geo-spartial location feature enabled which tell users the direction they are heading to. Built with React Native, React Navigation, Async Storage etc. and other native features.'
+            projectTechStack='React-Native, React Navigation, Async Storage,and other native features'
+            project_category='Mobile-application'
+            project_name='Fitness Tracker App'
+            projectGithubLink='https://github.com/Precioussoul/Fitness-Tracker---Mobile-Application'
+          />
+          <PortfolioItem
+            projectlink='https://github.com/Precioussoul/Cloud-Image-Filter'
+            project_image_url='/assets/images/portfolio/cloud-image-filter.png'
+            project_detailsText='Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.'
+            projectTechStack='AWS ElasticBeanstalk, NodeJS, Express, AWS S3'
+            project_category='Cloud Backend with AWS'
+            project_name='Udagram Image Filtering Microservice'
+            projectGithubLink='https://github.com/Precioussoul/Cloud-Image-Filter'
+          />
+
+          <PortfolioItem
+            projectlink='https://luluweb.netlify.app/'
+            project_image_url='/assets/images/portfolio/Lulu-game-africa.jpg'
+            project_detailsText=' Lulu is a gaming application built on top of blockchain to reward users for keeping their africa dialect by translating words to different Africa languages and earn a token and LuLu NFT. Worked with MyComDAO as a volunteer Frontend Developer as a infant startup'
+            projectTechStack='HTML, CSS  and JavaScript'
+            project_category='Company website V1'
+            project_name='Lulu Game (coming soon)'
           />
         </div>
         {/* <div className='portfolio-showmore'>
