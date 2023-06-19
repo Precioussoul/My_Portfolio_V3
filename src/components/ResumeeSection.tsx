@@ -239,7 +239,7 @@ const ResumeeSection = () => {
                   </div>
                 </div>
                 <Link
-                  href='/assets/images/author/Sofiyullah_Abdullah_SoftwareEngineer.pdf'
+                  href='/assets/images/author/SofiyullahAbdullah_Full-stackEngineer_1.pdf'
                   download
                   className='Download-btn'
                 >
