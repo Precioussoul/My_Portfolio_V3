@@ -1,17 +1,12 @@
-'use client'
+"use client"
 
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import Image from "next/image"
+import Link from "next/link"
+import React from "react"
 
 const Footer = () => {
   return (
-    <footer
-      className='footer-section'
-      data-aos='fade-up'
-      data-aos-duration='2000'
-      data-aos-delay='400'
-    >
+    <footer className='footer-section'>
       <div className='container'>
         <div className='footer__container'>
           <div className='footer__logo-box'>
@@ -31,10 +26,10 @@ const Footer = () => {
           <div className='footer__copyright'>
             <div className='footer__author-info'>
               <h2 className='made-withLove'>
-                Made with{' '}
+                Made with{" "}
                 <span className='footer-icon'>
                   <i className='fas fa-heart'></i>
-                </span>{' '}
+                </span>{" "}
                 by Sofiyullah Abdullah.
               </h2>
 

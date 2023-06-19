@@ -1,21 +1,17 @@
-'use client'
-import React, { useContext } from 'react'
-import TestimonialItem from './TestimonialItem'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, Keyboard } from 'swiper'
-import { ContentContext } from '@/contexts/ScrollContext'
+"use client"
+import React, {useContext} from "react"
+import TestimonialItem from "./TestimonialItem"
+import {Swiper, SwiperSlide} from "swiper/react"
+import {Pagination, Keyboard} from "swiper"
+import {ContentContext} from "@/contexts/ScrollContext"
 
 const Testimonial = () => {
-  const { testimonialRef } = useContext(ContentContext)
+  const {testimonialRef} = useContext(ContentContext)
   return (
     <section
       className='testimonial__section'
       id='Testimonial'
       ref={testimonialRef}
-      data-aos='flip-left'
-      data-aos-duration='2000'
-      data-aos-delay='300'
-      data-aos-easing='ease-out-cubic'
     >
       <div className='container testimonial__container'>
         <div className='testimonial__header'>
@@ -27,7 +23,7 @@ const Testimonial = () => {
 
         <Swiper
           spaceBetween={50}
-          onSlideChange={() => console.log('slide change')}
+          onSlideChange={() => console.log("slide change")}
           slidesPerView={1}
           breakpoints={{
             // when window width is >= 480px

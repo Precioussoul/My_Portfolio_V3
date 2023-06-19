@@ -1,21 +1,13 @@
-'use client'
+"use client"
 
-import { ContentContext } from '@/contexts/ScrollContext'
-import React, { useContext } from 'react'
-import BlogItem from './BlogItem'
+import {ContentContext} from "@/contexts/ScrollContext"
+import React, {useContext} from "react"
+import BlogItem from "./BlogItem"
 
 const BlogSection = () => {
-  const { blogRef } = useContext(ContentContext)
+  const {blogRef} = useContext(ContentContext)
   return (
-    <section
-      className='blog-section'
-      id='Blog'
-      ref={blogRef}
-      data-aos='zoom-in'
-      data-aos-duration='2000'
-      data-aos-anchor-placement='top-center'
-      data-aos-delay='600'
-    >
+    <section className='blog-section' id='Blog' ref={blogRef}>
       <div className='container'>
         <div className='blog__header'>
           <p className='blog__header-subtitle'>

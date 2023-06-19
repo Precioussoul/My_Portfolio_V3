@@ -23,24 +23,13 @@ const ResumeeSection = () => {
   }
 
   return (
-    <section
-      className='resumee-section'
-      id='Resumee'
-      ref={resumeeRef}
-      data-aos='zoom-in'
-      data-aos-delay='200'
-      data-aos-duration='2000'
-    >
+    <section className='resumee-section' id='Resumee' ref={resumeeRef}>
       <div className='container'>
         <div className='resumee__header'>
           <p className='resumee__header-subtitle'>Every Details About Me</p>
           <h2 className='resumee__header-title'>Resume</h2>
         </div>
-        <ul
-          className='resumee__tabs'
-          data-aos='fade-up'
-          data-aos-duration='1500'
-        >
+        <ul className='resumee__tabs'>
           <li
             className='resumee__tab-item active'
             onClick={(event) => openTab(event, "Summary")}
@@ -79,12 +68,7 @@ const ResumeeSection = () => {
             </div>
 
             <div className='Summary__Details'>
-              <div
-                className='Summary__preview-text'
-                data-aos='fade-down'
-                data-aos-duration='1500'
-                data-aos-delay='400'
-              >
+              <div className='Summary__preview-text'>
                 <p>
                   Hey everyone, My name is Sofiyullah. I&apos;m a motivated,
                   detail-oriented and committed software engineer with over 3
@@ -98,24 +82,14 @@ const ResumeeSection = () => {
               </div>
 
               <div className='Summary__stacks'>
-                <h4
-                  className='Summary__stacks-info'
-                  data-aos='fade-up'
-                  data-aos-duration='1500'
-                  data-aos-delay='400'
-                >
+                <h4 className='Summary__stacks-info'>
                   Technologies that am using and worked with (
                   <span className='rn-highlight fwb'>
                     Full-Stack Software Engineer
                   </span>
                   ):
                 </h4>
-                <div
-                  className='Summary__stacks-icon-box'
-                  data-aos='fade-up'
-                  data-aos-duration='1500'
-                  data-aos-delay='550'
-                >
+                <div className='Summary__stacks-icon-box'>
                   <div className='Summary__stacks-icon'>
                     <Image
                       src='/assets/images/icons/icons-18.png'
@@ -190,12 +164,7 @@ const ResumeeSection = () => {
                   </div>
                 </div>
 
-                <div
-                  className='Summary__stacks-icon-box 2nd'
-                  data-aos='fade-up'
-                  data-aos-duration='1500'
-                  data-aos-delay='550'
-                >
+                <div className='Summary__stacks-icon-box 2nd'>
                   <div className='Summary__stacks-icon'>
                     <Image
                       src='/assets/images/icons/grapQl.png'
@@ -273,9 +242,6 @@ const ResumeeSection = () => {
                   href='/assets/images/author/Sofiyullah_Abdullah_SoftwareEngineer.pdf'
                   download
                   className='Download-btn'
-                  data-aos='fade-up'
-                  data-aos-duration='1500'
-                  data-aos-delay='750'
                 >
                   Download CV
                 </Link>
@@ -284,15 +250,7 @@ const ResumeeSection = () => {
           </div>
         </div>
 
-        <div
-          className='tab-content'
-          id='My_Skills'
-          data-aos='fade-up'
-          data-aos-offset='200'
-          data-aos-easing='ease-in-sine'
-          data-aos-duration='1500'
-          data-aos-delay='200'
-        >
+        <div className='tab-content' id='My_Skills'>
           <div className='resumee__skills'>
             <div className='resumee__heading'>
               <h1 className='resumee__heading-title'>Technical Skills</h1>

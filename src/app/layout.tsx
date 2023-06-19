@@ -43,9 +43,9 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       setTimeout(TypingText, 150)
     }
     TypingText()
-    AOS.init({
-      once: true,
-    })
+    // AOS.init({
+    //   once: true,
+    // })
   }, [])
 
   return (

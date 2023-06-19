@@ -1,12 +1,12 @@
-'use client'
+"use client"
 
-import { ContentContext } from '@/contexts/ScrollContext'
-import Image from 'next/image'
-import Link from 'next/link'
-import React, { useContext } from 'react'
+import {ContentContext} from "@/contexts/ScrollContext"
+import Image from "next/image"
+import Link from "next/link"
+import React, {useContext} from "react"
 
 const HeroSection = () => {
-  const { homeRef } = useContext(ContentContext)
+  const {homeRef} = useContext(ContentContext)
   return (
     <section className='hero-section' id='Home' ref={homeRef}>
       <div className='container'>
@@ -16,7 +16,7 @@ const HeroSection = () => {
               <p className='padding-20 welcome-title'>Welcome to my World</p>
               <h1 className='padding-20 hero__author-name'>
                 Hi, I&apos;m
-                <span className='highlighted' style={{ display: 'block' }}>
+                <span className='highlighted' style={{display: "block"}}>
                   Sofiyullah Abdullah
                 </span>
               </h1>

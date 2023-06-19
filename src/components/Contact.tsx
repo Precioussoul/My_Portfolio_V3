@@ -1,19 +1,13 @@
-'use client'
-import { ContentContext } from '@/contexts/ScrollContext'
-import Image from 'next/image'
-import Link from 'next/link'
-import React, { useContext } from 'react'
+"use client"
+import {ContentContext} from "@/contexts/ScrollContext"
+import Image from "next/image"
+import Link from "next/link"
+import React, {useContext} from "react"
 
 const Contact = () => {
-  const { contactRef } = useContext(ContentContext)
+  const {contactRef} = useContext(ContentContext)
   return (
-    <section
-      className='contact-section'
-      id='Contact'
-      ref={contactRef}
-      data-aos='fade-up'
-      data-aos-duration='2000'
-    >
+    <section className='contact-section' id='Contact' ref={contactRef}>
       <div className='container'>
         <div className='contact__header'>
           <p className='contact__header-subtitle'>Let Connect 👨‍💻</p>
@@ -30,12 +24,7 @@ const Contact = () => {
               />
             </div>
             <div className='contact__intro-text'>
-              <div
-                className='contact__intro-heading'
-                data-aos='zoom-in'
-                data-aos-delay='300'
-                data-aos-duration='1500'
-              >
+              <div className='contact__intro-heading'>
                 <h3 className='contact__intro-heading-title'>
                   Sofiyullah Abdullah
                 </h3>
@@ -45,12 +34,7 @@ const Contact = () => {
                 </p>
               </div>
               {/* <!-- contact intro heading ends here --> */}
-              <div
-                className='contact__intro-offer'
-                data-aos='fade-down'
-                data-aos-duration='1500'
-                data-aos-delay='350'
-              >
+              <div className='contact__intro-offer'>
                 <p className='contact__intro-job'>
                   I am open to Full-time job and Freelance work. Connect with me
                   via gmail and call in on my account.
@@ -69,12 +53,7 @@ const Contact = () => {
                 </ul>
               </div>
               {/* <!-- contact intro offer ends here --> */}
-              <div
-                className='contact find-me'
-                data-aos='fade-up'
-                data-aos-duration='1500'
-                data-aos-delay='400'
-              >
+              <div className='contact find-me'>
                 <h3 className='contact find-text'>Find me with</h3>
                 <ul className='contact social-icon-list'>
                   <li className='social-item'>

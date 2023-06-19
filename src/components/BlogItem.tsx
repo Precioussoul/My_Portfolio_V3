@@ -1,8 +1,8 @@
-'use client'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import { BlogItemProps } from 'types'
+"use client"
+import Image from "next/image"
+import Link from "next/link"
+import React from "react"
+import {BlogItemProps} from "types"
 
 const BlogItem = ({
   blog_imageUrl,
@@ -12,12 +12,7 @@ const BlogItem = ({
   blogPost_name,
 }: BlogItemProps) => {
   return (
-    <div
-      className='blog__item'
-      data-aos='fade-up'
-      data-aos-duration='1500'
-      data-aos-delay='200'
-    >
+    <div className='blog__item'>
       <div className='blog__image-box'>
         <Link href={blogPost_link} id='Health-post'>
           <Image

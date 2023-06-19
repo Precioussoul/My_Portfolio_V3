@@ -14,14 +14,7 @@ const PortfolioItem = ({
   projectGithubLink,
 }: portfolioItemProps) => {
   return (
-    <div
-      className='portfolio__item'
-      data-aos='fade-up'
-      data-aos-offset='200'
-      data-aos-easing='ease-in-sine'
-      data-aos-duration='1500'
-      data-aos-delay='100'
-    >
+    <div className='portfolio__item'>
       <div className='portfolio__image-box'>
         <Link href={projectlink} target='_blank'>
           <Image
