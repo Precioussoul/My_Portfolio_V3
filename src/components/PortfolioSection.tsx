@@ -201,6 +201,7 @@ const PortfolioSection = () => {
               project_image_url={portfolio.project_image_url}
               project_name={portfolio.project_name}
               projectlink={portfolio.projectlink}
+              projectGithubLink={portfolio.projectGithubLink}
             />
           ))}
         </div>
