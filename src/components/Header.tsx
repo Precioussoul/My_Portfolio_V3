@@ -122,14 +122,12 @@ const Header = () => {
                   </span>
                 </li>
               </ul>
-              <div>
                 <span
                   className='btn-secondary contact-me'
                   onClick={executeContactScroll}
                 >
                   Contact Me
                 </span>
-              </div>
             </nav>
           </div>
         </header>
