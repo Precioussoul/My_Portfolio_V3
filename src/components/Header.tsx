@@ -123,12 +123,6 @@ const Header = () => {
                 </li>
               </ul>
               <div>
-                <span className='toggle-mode-container tooltip'>
-                  <i className={"far fa-sun toggle-icon "} />
-                  <span className='tooltiptext'>
-                    Change system setting to dark/light mode
-                  </span>
-                </span>
                 <span
                   className='btn-secondary contact-me'
                   onClick={executeContactScroll}
