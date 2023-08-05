@@ -275,7 +275,7 @@ const ResumeeSection = () => {
               <p className='resumee__skill-name'>Bootstrap</p>
               <p className='resumee__skill-name'>Material UI</p>
               <p className='resumee__skill-name'>Chakra UI</p>
-              <p className='resumee__skill-name'>Chakra UI</p>
+              <p className='resumee__skill-name'>Typescript</p>
               <p className='resumee__skill-name'>Redux</p>
               <p className='resumee__skill-name'>Redux-Toolkit</p>
               <p className='resumee__skill-name'>RTK Query</p>
@@ -308,6 +308,17 @@ const ResumeeSection = () => {
               <p className='resumee__skill-name'>Creativity</p>
               <p className='resumee__skill-name'>Optimistic</p>
               <p className='resumee__skill-name'>Less supervision</p>
+              <p className='resumee__skill-name'>Agile/Scrum Methodology</p>
+              <p className='resumee__skill-name'>Start-up experience</p>
+              <p className='resumee__skill-name'>Fin-tech experience</p>
+              <p className='resumee__skill-name'>Humility</p>
+              <p className='resumee__skill-name'>Empathy</p>
+              <p className='resumee__skill-name'>Sensitive</p>
+              <p className='resumee__skill-name'>Respect</p>
+              <p className='resumee__skill-name'>Honesty</p>
+              <p className='resumee__skill-name'>Integrity</p>
+              <p className='resumee__skill-name'>Result-oriented</p>
+              <p className='resumee__skill-name'>Easy-going</p>
             </div>
           </div>
           <div className='blog-more'>
@@ -332,8 +343,8 @@ const ResumeeSection = () => {
                       React/React-Native Engineer
                       <span className='highlighted'> @ Aladdin bank </span>
                     </span>
-                    <span className='major'> (02/2023 - 04/2023)</span>
-                    <span className='major'>Fully Remote | UK </span>
+                    <span className='major'> (06/2023 - Present)</span>
+                    <span className='major'>Fully Remote</span>
                     <i className='fas fa-business-time resumee__item-icon fa-2x'></i>
                   </div>
                   <ul className='resumee__item--details'>
