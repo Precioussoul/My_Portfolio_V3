@@ -95,7 +95,7 @@ const HeroSection = () => {
           <div className='hero__main-image'>
             <div className='hero__image-box'>
               <Image
-                src='/assets/images/author/My_Image_Protrait_smile.png'
+                src='/assets/images/author/sofiyullah-avatar.png'
                 alt='Habsof the Developer'
                 className='hero__image'
                 width={500}

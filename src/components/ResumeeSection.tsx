@@ -30,12 +30,12 @@ const ResumeeSection = () => {
           <h2 className='resumee__header-title'>Resume</h2>
         </div>
         <ul className='resumee__tabs'>
-          <li
+          {/* <li
             className='resumee__tab-item active'
             onClick={(event) => openTab(event, "Summary")}
           >
             Summary
-          </li>
+          </li> */}
           <li
             className='resumee__tab-item'
             onClick={(event) => openTab(event, "My_Skills")}
@@ -56,15 +56,27 @@ const ResumeeSection = () => {
           </li>
         </ul>
 
-        <div className='tab-content' id='Summary' style={{display: "block"}}>
+        <div className='tab-content' id='Summary'>
           <div className='Summary__grid'>
-            <div className='Summary__author-image'>
+            {/* <div className='Summary__author-image'>
               <Image
-                src='/assets/images/author/My_Image_Protrait_smile.png'
+                src='/assets/images/author/sofiyullah-linkedin.png'
                 alt='Sofiyullah-Author-image'
                 width={500}
                 height={500}
               />
+            </div> */}
+            <div className='Summary__preview-text'>
+              <p>
+                Hey everyone, My name is Sofiyullah. I&apos;m a motivated,
+                detail-oriented and committed software engineer with over 3
+                years of experience in gathering requirements, designing,
+                implementing, testing, deploying and delivering pixel-perfect
+                frontends, complex backends, mobile apps and cloud solutions
+                using varieties of programming languages, frameworks,
+                technologies and cloud vendors services as a solo engineer and
+                as part of an engineering team.
+              </p>
             </div>
 
             <div className='Summary__Details'>
@@ -238,29 +250,36 @@ const ResumeeSection = () => {
                     />
                   </div>
                 </div>
-                <Link
-                  href='/assets/images/author/SofiyullahAbdullah_Full-stackFrontendEngineer_1.pdf'
-                  download
-                  className='Download-btn'
-                >
-                  Download CV
-                </Link>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='tab-content' id='My_Skills'>
+        <div
+          className='tab-content active'
+          id='My_Skills'
+          style={{display: "block"}}
+        >
           <div className='resumee__skills'>
             <div className='resumee__heading'>
               <h1 className='resumee__heading-title'>Technical Skills</h1>
             </div>
 
             <div className='resumee__skill-showcase'>
+              <p className='resumee__skill-name'>HTML/CSS</p>
+              <p className='resumee__skill-name'>Javascript</p>
               <p className='resumee__skill-name'>React</p>
-              <p className='resumee__skill-name'>NextJS</p>
               <p className='resumee__skill-name'>React Native</p>
+              <p className='resumee__skill-name'>NextJS</p>
+              <p className='resumee__skill-name'>Tailwind-CSS</p>
+              <p className='resumee__skill-name'>Bootstrap</p>
+              <p className='resumee__skill-name'>Material UI</p>
+              <p className='resumee__skill-name'>Chakra UI</p>
+              <p className='resumee__skill-name'>Chakra UI</p>
               <p className='resumee__skill-name'>Redux</p>
+              <p className='resumee__skill-name'>Redux-Toolkit</p>
+              <p className='resumee__skill-name'>RTK Query</p>
+              <p className='resumee__skill-name'>React Query</p>
               <p className='resumee__skill-name'>Nodejs</p>
               <p className='resumee__skill-name'>Express</p>
               <p className='resumee__skill-name'>MongoDB</p>

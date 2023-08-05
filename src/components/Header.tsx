@@ -75,7 +75,7 @@ const Header = () => {
               <Link href='/' className='nav-logo'>
                 <div className='logo'>
                   <Image
-                    src='/assets/images/logo/habsof-logo.png'
+                    src='/assets/images/author/sofiyullah-avatar.png'
                     alt='website logo'
                     className='logo-image'
                     width={300}
@@ -123,12 +123,6 @@ const Header = () => {
                 </li>
               </ul>
 
-              <span className='toggle-mode-container tooltip'>
-                <i className={"far fa-sun toggle-icon "} />
-                <span className='tooltiptext'>
-                  Change system setting to dark/light mode
-                </span>
-              </span>
               <span
                 className='btn-secondary contact-me'
                 onClick={executeContactScroll}

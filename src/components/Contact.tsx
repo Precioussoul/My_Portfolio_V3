@@ -54,8 +54,9 @@ const Contact = () => {
               </div>
               {/* <!-- contact intro offer ends here --> */}
               <div className='contact find-me'>
-                <h3 className='contact find-text'>Find me with</h3>
-                <ul className='contact social-icon-list'>
+                <h3 className='contact find-text'>Hire Me Now</h3>
+
+                {/* <ul className='contact social-icon-list'>
                   <li className='social-item'>
                     <Link
                       href='https://web.facebook.com/profile.php?id=100065549805843'
@@ -89,7 +90,14 @@ const Contact = () => {
                       <i className='fab fa-linkedin-in'></i>
                     </Link>
                   </li>
-                </ul>
+                </ul> */}
+                <Link
+                  href='/assets/images/author/SofiyullahAbdullah_Full-stackFrontendEngineer_1.pdf'
+                  download
+                  className='Download-btn'
+                >
+                  Download CV
+                </Link>
               </div>
               {/* <!-- find me ends here --> */}
             </div>

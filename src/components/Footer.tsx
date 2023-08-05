@@ -13,7 +13,7 @@ const Footer = () => {
             <Link href='/' className='footer nav-logo'>
               <div className='logo'>
                 <Image
-                  src='/assets/images/logo/habsof-logo.png'
+                  src='/assets/images/author/sofiyullah-avatar.png'
                   alt='website logo'
                   className='logo-image'
                   width={500}
