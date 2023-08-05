@@ -122,14 +122,19 @@ const Header = () => {
                   </span>
                 </li>
               </ul>
-              <div>
-                <span
-                  className='btn-secondary contact-me'
-                  onClick={executeContactScroll}
-                >
-                  Contact Me
+
+              <span className='toggle-mode-container tooltip'>
+                <i className={"far fa-sun toggle-icon "} />
+                <span className='tooltiptext'>
+                  Change system setting to dark/light mode
                 </span>
-              </div>
+              </span>
+              <span
+                className='btn-secondary contact-me'
+                onClick={executeContactScroll}
+              >
+                Contact Me
+              </span>
             </nav>
           </div>
         </header>
