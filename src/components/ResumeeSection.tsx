@@ -302,7 +302,44 @@ const ResumeeSection = () => {
               <small className='resumee__heading-date'>2020 - Present</small>
               <h1 className='resumee__heading-title'>Work Experience</h1>
             </div>
-            <div className='resumee__list 2nd'>
+            <div className='resumee__list '>
+              <div className='resumee__item'>
+                <div className='resumee__item--inner'>
+                  <h2 className='resumee__item--sub-heading'>
+                    Aladdin Digital Bank
+                  </h2>
+                  <div className='resumee__item--category'>
+                    <span className='major'>
+                      React/React-Native Engineer
+                      <span className='highlighted'> @ Aladdin bank </span>
+                    </span>
+                    <span className='major'> (02/2023 - 04/2023)</span>
+                    <span className='major'>Fully Remote | UK </span>
+                    <i className='fas fa-business-time resumee__item-icon fa-2x'></i>
+                  </div>
+                  <ul className='resumee__item--details'>
+                    <li>
+                      - Implementing and contributing to the revamping old
+                      design of the Aladdin Mobile app to a completely new fresh
+                      design. (React-Native, Emotions, Typescript, and more )
+                    </li>
+                    <li>
+                      - Implementing and contributing to a new web project
+                      portal for business account users . Aladdin Business
+                      web-app at the same time. (the business account features
+                      side of the mobile app is currently being implement on the
+                      web-app by me singlehandedly) (React , Typescript, Chakra
+                      UI and more
+                    </li>
+                    <li>
+                      - Implementing a whole lot of screens, chat systems, and
+                      API integration and functionalities and developing at an
+                      extremely fast pace as the new update needs to be shipped
+                      out soon.
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <div className='resumee__item'>
                 <div className='resumee__item--inner'>
                   <h2 className='resumee__item--sub-heading'>Soora</h2>

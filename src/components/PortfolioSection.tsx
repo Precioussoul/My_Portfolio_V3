@@ -5,6 +5,17 @@ import PortfolioItem from "./PortfolioItem"
 const portfolioData = [
   {
     projectId: 1,
+    projectlink: "https://aladdin.ng/",
+    project_image_url: "/assets/images/portfolio/Aladdin-web.png",
+    project_detailsText:
+      "Working at Aladdin as React/React Native Engineer building Aladdin Mobile Application and Aladdin Business Web applications (coming soon) which i am 100% in charge of its Frontend Development",
+    projectTechStack:
+      "React,React Native, Typescript, Redux-toolkit, RTK Query and more",
+    project_category: "Web application & Mobile Application",
+    project_name: "Aladdin Mobile Application",
+  },
+  {
+    projectId: 2,
     projectlink: "https://lytebox.web.app/",
     project_image_url: "/assets/images/portfolio/hbs drive.png",
     project_detailsText:
@@ -16,7 +27,7 @@ const portfolioData = [
     projectGithubLink: "https://github.com/Precioussoul/Lytebox",
   },
   {
-    projectId: 2,
+    projectId: 3,
     projectlink: "https://homevibe.vercel.app/",
     project_image_url: "/assets/images/portfolio/homevibe-screenshot.png",
     project_detailsText:
@@ -28,7 +39,7 @@ const portfolioData = [
     projectGithubLink: "https://github.com/Precioussoul/HomeVibe",
   },
   {
-    projectId: 3,
+    projectId: 4,
     projectlink: "https://wealthymomnow.com/",
     project_image_url: "/assets/images/portfolio/wealthmomnow.jpg",
     project_detailsText:
@@ -39,7 +50,7 @@ const portfolioData = [
     project_name: "WealthMomNow | E-learning website",
   },
   {
-    projectId: 4,
+    projectId: 5,
     projectlink: "https://connou.app",
     project_image_url: "/assets/images/portfolio/connouapp-website.jpg",
     project_detailsText:
@@ -50,7 +61,7 @@ const portfolioData = [
     project_name: "Connou | The App that Connects You with Like-minded Humans.",
   },
   {
-    projectId: 5,
+    projectId: 6,
     projectlink: "https://sooratheapp.com/",
     project_image_url: "/assets/images/portfolio/soorapp.png",
     project_detailsText:
@@ -61,7 +72,7 @@ const portfolioData = [
   },
 
   {
-    projectId: 6,
+    projectId: 7,
     projectlink: "https://cutt.ly/UUeawGs",
     project_image_url: "/assets/images/portfolio/Fitness-Tracker.jpg",
     project_detailsText:
@@ -74,7 +85,7 @@ const portfolioData = [
       "https://github.com/Precioussoul/Fitness-Tracker---Mobile-Application",
   },
   {
-    projectId: 7,
+    projectId: 8,
     projectlink: "https://myreadnd.netlify.app/",
     project_image_url: "/assets/images/portfolio/MyRead_thumbnail.jpg",
     project_detailsText:
@@ -86,7 +97,7 @@ const portfolioData = [
       "https://github.com/Precioussoul/MyRead----Book-lending-App-React-Nd",
   },
   {
-    projectId: 8,
+    projectId: 9,
     projectlink: "https://monsuratajokefoundation.com.ng/",
     project_image_url: "/assets/images/portfolio/mafoundation.jpg",
     project_detailsText:
@@ -96,7 +107,7 @@ const portfolioData = [
     project_name: "Ma Foundation",
   },
   {
-    projectId: 9,
+    projectId: 10,
     projectlink: "https://medium-cms.vercel.app",
     project_image_url: "/assets/images/portfolio/medium-blog-website.jpg",
     project_detailsText:
@@ -106,7 +117,7 @@ const portfolioData = [
     project_name: "Medium Blog Powered by CMS",
   },
   {
-    projectId: 10,
+    projectId: 11,
     projectlink: "https://github.com/Precioussoul/Monolith_to_Microservices",
     project_image_url: "/assets/images/portfolio/microservice3-min.png",
     project_detailsText:
@@ -119,7 +130,7 @@ const portfolioData = [
       "https://github.com/Precioussoul/Monolith_to_Microservices",
   },
   {
-    projectId: 11,
+    projectId: 12,
     projectlink: "https://wouldrathergame.netlify.app/",
     project_image_url: "/assets/images/portfolio/WouldRatherGame_thumbnail.jpg",
     project_detailsText:
@@ -131,7 +142,7 @@ const portfolioData = [
       "https://github.com/Precioussoul/Would-You-Rather-ND-Project-2",
   },
   {
-    projectId: 12,
+    projectId: 13,
     projectlink: "https://3rdaugustgroup.org/",
     project_image_url: "/assets/images/portfolio/3rdAugust.jpg",
     project_detailsText:
@@ -141,7 +152,7 @@ const portfolioData = [
     project_name: "3rd August Company",
   },
   {
-    projectId: 13,
+    projectId: 14,
     projectlink: "https://github.com/Precioussoul/Cloud-Image-Filter",
     project_image_url: "/assets/images/portfolio/cloud-image-filter.png",
     project_detailsText:
@@ -152,7 +163,7 @@ const portfolioData = [
     projectGithubLink: "https://github.com/Precioussoul/Cloud-Image-Filter",
   },
   {
-    projectId: 14,
+    projectId: 15,
     projectlink: "https://luluweb.netlify.app/",
     project_image_url: "/assets/images/portfolio/Lulu-game-africa.jpg",
     project_detailsText:
