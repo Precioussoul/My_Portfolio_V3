@@ -9,10 +9,10 @@ const portfolioData = [
       "https://play.google.com/store/apps/details?id=com.aladdin.digital&pli=1",
     project_image_url: "/assets/images/portfolio/Aladdin-Mobile.png",
     project_detailsText:
-      "Working at Aladdin as React/React Native Engineer building Aladdin Mobile Application and Aladdin Business Web applications (coming soon) which i am 100% in charge of its Frontend Development",
+      "Working at Aladdin as React/React Native Engineer building and contributing to Aladdin Mobile Application development and Aladdin Business Web applications (coming soon) which i am 100% in charge of its Frontend Development",
     projectTechStack:
       "React,React Native, Typescript, Redux-toolkit, RTK Query and more",
-    project_category: "Web application & Mobile Application",
+    project_category: "Mobile Application",
     project_name: "Aladdin Mobile Application",
   },
   {
