@@ -54,7 +54,10 @@ const Contact = () => {
               </div>
               {/* <!-- contact intro offer ends here --> */}
               <div className='contact find-me'>
-                <h3 className='contact find-text'>Hire Me Now</h3>
+                <h3 className='contact find-text'>Hire Me</h3>
+                <p className='contact hire_me'>
+                  You will never regret it. Mark my word
+                </p>
 
                 {/* <ul className='contact social-icon-list'>
                   <li className='social-item'>
