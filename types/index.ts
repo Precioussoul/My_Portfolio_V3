@@ -8,7 +8,7 @@ export type featuresProps = {
 export type portfolioItemProps = {
   project_image_url: string
   projectlink: string
-  project_detailsText: string
+  project_detailsText: any
   projectTechStack: string
   project_category: string
   project_name: string

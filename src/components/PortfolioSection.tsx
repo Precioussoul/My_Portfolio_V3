@@ -50,6 +50,17 @@ const portfolioData = [
     project_category: "Company website",
     project_name: "WealthMomNow | E-learning website",
   },
+
+  {
+    projectId: 6,
+    projectlink: "https://breej.io",
+    project_image_url: "/assets/images/portfolio/breej.png",
+    project_detailsText:
+      "Get What You Need, Without Spending Cash. Empowering growth through collaboration. Breej - where entrepreneurs, businesses, freelancers unite to fuel growth. Exchange, Connect, Thrive.",
+    projectTechStack: "Next.js, Typescript, Tailwind, React-Query, and More",
+    project_category: "Fintech - web application",
+    project_name: "Breej | Marketplace ",
+  },
   {
     projectId: 5,
     projectlink: "https://connou.app",
@@ -60,16 +71,6 @@ const portfolioData = [
       "React,NextJS, Typescript, and Sanity CMS for content management",
     project_category: "Company website",
     project_name: "Connou | The App that Connects You with Like-minded Humans.",
-  },
-  {
-    projectId: 6,
-    projectlink: "https://aladdin.ng/business",
-    project_image_url: "/assets/images/portfolio/businessHero.png",
-    project_detailsText:
-      "Alladdin Business: A Business web application that serves as a tools to accelerate your business with our business account. Working as a frontend developer for this project",
-    projectTechStack: "React, Typescript, Chakra UI, and More",
-    project_category: "Fintech - web application",
-    project_name: "Aladdin Business - (Coming soon) ",
   },
 
   // {
@@ -129,6 +130,39 @@ const portfolioData = [
   //   project_name: "Monolithic application breakdown to Microservice",
   //   projectGithubLink:
   //     "https://github.com/Precioussoul/Monolith_to_Microservices",
+  // },
+  // {
+  //   projectId: 12,
+  //   projectlink: "https://github.com/Precioussoul/Serverless-c4-project",
+  //   project_image_url: "/assets/images/portfolio/github.jpeg",
+  //   project_detailsText: (
+  //     <p>
+  //       - Developed a serverless REST API using Node.js, Typescript, AWS API
+  //       Gateway, and AWS Lambda. <br /> - Implemented the API to interact with
+  //       the application frontend developed with React, <br /> - Stored Todo User
+  //       data on AWS DynamoDB, and images on AWS S3 Bucket,
+  //       <br /> - Configured an IAM Policy to allow communication and authorized
+  //       access to the targeted AWS resources needed during the development.{" "}
+  //       <br /> - Secured the application with SignIn and SignOut features using
+  //       Auth0 authentication, and Integrate the secrets and certificate into the
+  //       application. <br /> - Deployed the Stacks of Instructions written inside{" "}
+  //       <code>Serverless.yaml</code> to AWS CloudFormation to initialize
+  //       necessary AWS Resources for our CloudNative Todo App using a Serverless
+  //       framework. <br /> - AWS CloudFormation is IaaC ( Infrastructure as a
+  //       Code), and CloudFormation knows which AWS Resources own the code we
+  //       wrote inside the <code>serverless</code> framework based on the
+  //       instruction written and where to deploy to. <br /> - Checked AWS API
+  //       Gateway to see our REST API endpoint and tested it with Postman after
+  //       deployment. <br /> - Everything worked as expected and My Todo React
+  //       Application consumed the Serverless REST API Effortlessly.
+  //     </p>
+  //   ),
+  //   projectTechStack:
+  //     "Typescript, NodeJS, Express,Serveless Framework, API GATEWAY, AWS CLOUDFORMATION,AWS EKS,AWS LAMDBA ",
+  //   project_category: "Serveless with NodeJS and AWS",
+  //   project_name:
+  //     "Serverless Todo application using AWS Lambda, AWS API Gateway and Serverless framework.",
+  //   projectGithubLink: "https://github.com/Precioussoul/Serverless-c4-project",
   // },
   // {
   //   projectId: 12,
