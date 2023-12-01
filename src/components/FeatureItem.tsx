@@ -7,22 +7,27 @@ const FeatureItem = ({
   feature_heading,
   feature_details,
   highlightText,
-  faIconBig,
+  active,
   faIconSmall,
 }: featuresProps) => {
   return (
     <div className='features__item'>
-      <span className='features__icon'>
-        <i className={`${faIconBig} features__icon-big`}></i>
-        <i className={`${faIconSmall} features__icon-small`}></i>
-      </span>
-      <div className='features__summary'>
-        <h2 className='features__heading'>
+      <div className='features__icon'>
+        <h2 className={`features__heading ${active && "active"}`}>
           {feature_heading}{" "}
           {highlightText && (
             <span className='rn-highlight'>{highlightText}</span>
           )}
-        </h2>
+        </h2>{" "}
+        <i className={`${faIconSmall} features__icon-small`}></i>
+      </div>
+      <div className='features__summary'>
+        {/* <h2 className='features__heading'>
+          {feature_heading}{" "}
+          {highlightText && (
+            <span className='rn-highlight'>{highlightText}</span>
+          )}
+        </h2> */}
         <p className='features__details'>{feature_details}</p>
       </div>
     </div>
