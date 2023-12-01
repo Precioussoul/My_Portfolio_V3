@@ -1,5 +1,6 @@
 import {ContentContext} from "@/contexts/ScrollContext"
 import React, {useContext, useState} from "react"
+import NewPortfolioItem from "./NewPortfolioItem"
 import PortfolioItem from "./PortfolioItem"
 
 const portfolioData = [
@@ -39,39 +40,39 @@ const portfolioData = [
     project_name: "Homevibe | book your vacations",
     projectGithubLink: "https://github.com/Precioussoul/HomeVibe",
   },
-  {
-    projectId: 4,
-    projectlink: "https://wealthymomnow.com/",
-    project_image_url: "/assets/images/portfolio/wealthmomnow.jpg",
-    project_detailsText:
-      "Wealthymomnow Website is an online-courses website for solo-instructor. I am responsible for building this website from scratch together with the design, content and couses upload to the backend of the website. ",
-    projectTechStack:
-      "Built with WordPress, LMS System, Elementor Page Builder,and more",
-    project_category: "Company website",
-    project_name: "WealthMomNow | E-learning website",
-  },
+  // {
+  //   projectId: 4,
+  //   projectlink: "https://wealthymomnow.com/",
+  //   project_image_url: "/assets/images/portfolio/wealthmomnow.jpg",
+  //   project_detailsText:
+  //     "Wealthymomnow Website is an online-courses website for solo-instructor. I am responsible for building this website from scratch together with the design, content and couses upload to the backend of the website. ",
+  //   projectTechStack:
+  //     "Built with WordPress, LMS System, Elementor Page Builder,and more",
+  //   project_category: "Company website",
+  //   project_name: "WealthMomNow | E-learning website",
+  // },
 
-  {
-    projectId: 6,
-    projectlink: "https://breej.io",
-    project_image_url: "/assets/images/portfolio/breej.png",
-    project_detailsText:
-      "Get What You Need, Without Spending Cash. Empowering growth through collaboration. Breej - where entrepreneurs, businesses, freelancers unite to fuel growth. Exchange, Connect, Thrive.",
-    projectTechStack: "Next.js, Typescript, Tailwind, React-Query, and More",
-    project_category: "Fintech - web application",
-    project_name: "Breej | Marketplace ",
-  },
-  {
-    projectId: 5,
-    projectlink: "https://connou.app",
-    project_image_url: "/assets/images/portfolio/connouapp-website.jpg",
-    project_detailsText:
-      " Connou | The App that Connects You with Like-minded Humans.Working at connou as a full-time software developer, responsible for development of the company website and also contribute to the development of the company mobile app using flutter",
-    projectTechStack:
-      "React,NextJS, Typescript, and Sanity CMS for content management",
-    project_category: "Company website",
-    project_name: "Connou | The App that Connects You with Like-minded Humans.",
-  },
+  // {
+  //   projectId: 6,
+  //   projectlink: "https://breej.io",
+  //   project_image_url: "/assets/images/portfolio/breej.png",
+  //   project_detailsText:
+  //     "Get What You Need, Without Spending Cash. Empowering growth through collaboration. Breej - where entrepreneurs, businesses, freelancers unite to fuel growth. Exchange, Connect, Thrive.",
+  //   projectTechStack: "Next.js, Typescript, Tailwind, React-Query, and More",
+  //   project_category: "Fintech - web application",
+  //   project_name: "Breej | Marketplace ",
+  // },
+  // {
+  //   projectId: 5,
+  //   projectlink: "https://connou.app",
+  //   project_image_url: "/assets/images/portfolio/connouapp-website.jpg",
+  //   project_detailsText:
+  //     " Connou | The App that Connects You with Like-minded Humans.Working at connou as a full-time software developer, responsible for development of the company website and also contribute to the development of the company mobile app using flutter",
+  //   projectTechStack:
+  //     "React,NextJS, Typescript, and Sanity CMS for content management",
+  //   project_category: "Company website",
+  //   project_name: "Connou | The App that Connects You with Like-minded Humans.",
+  // },
 
   // {
   //   projectId: 7,
@@ -238,7 +239,7 @@ const PortfolioSection = () => {
           <p className='sm-prjt'></p>
         </div>
         <div className='portfolio__grid'>
-          {projectDatas.map((portfolio) => (
+          {/* {projectDatas.map((portfolio) => (
             <PortfolioItem
               key={portfolio.projectId}
               projectTechStack={portfolio.projectTechStack}
@@ -249,8 +250,10 @@ const PortfolioSection = () => {
               projectlink={portfolio.projectlink}
               projectGithubLink={portfolio.projectGithubLink}
             />
-          ))}
+          ))} */}
         </div>
+        <NewPortfolioItem />
+
         {/* <div className='portfolio-showmore'>
           <button
             className='btn-outline'
