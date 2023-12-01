@@ -3,7 +3,7 @@ export type featuresProps = {
   feature_details: string
   highlightText?: string
   faIconBig: string
-  active?: boolean
+  isActive?: boolean
   faIconSmall: string
 }
 export type portfolioItemProps = {
