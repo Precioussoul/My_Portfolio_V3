@@ -75,7 +75,7 @@ const Header = () => {
               <Link href='/' className='nav-logo'>
                 <div className='logo'>
                   <Image
-                    src='/assets/images/author/sofiyullah-avatar.png'
+                    src='/assets/images/author/Ai-sofiyullah.jpeg'
                     alt='website logo'
                     className='logo-image'
                     width={300}
