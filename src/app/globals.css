@@ -666,15 +666,15 @@ a {
 /* #################### Features section */
 
 .features-section {
-  padding: 3rem 0;
+  padding: 5rem 0;
   color: var(--color-lightn);
 }
 
 .features__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 4rem;
+  grid-column-gap: 4rem;
+  /* grid-row-gap: 4rem; */
   margin: 2rem 0;
 }
 
@@ -692,12 +692,13 @@ a {
 .features__introduce {
   display: flex;
   flex-direction: column;
+  gap: 3rem;
 }
 
 .features__introduce-subHeading {
   font-size: 1rem;
   font-family: var(--font-secondary);
-  color: var(--color-body-white);
+  color: var(--color-primary);
 }
 
 .features__heading,
@@ -1298,6 +1299,10 @@ a {
   margin: 2rem 0;
   padding-bottom: 2rem;
   border-bottom: var(--border-bottom-light);
+}
+
+.Summary__stacks-icon-box:last-child {
+  border: none;
 }
 
 .Summary__stacks-icon {

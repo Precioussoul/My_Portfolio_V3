@@ -8,13 +8,14 @@ const FeatureItem = ({
   feature_details,
   highlightText,
   isActive,
-  faIconSmall,
+  ratingNumer = 1,
 }: featuresProps) => {
   const [active, setactive] = useState(false)
 
   const handleActive = useCallback(() => {
     setactive((prev) => !prev)
   }, [])
+
   return (
     <div className='features__item' onClick={handleActive}>
       <div className='features__icon'>
@@ -24,7 +25,14 @@ const FeatureItem = ({
             <span className='rn-highlight'>{highlightText}</span>
           )}
         </h2>{" "}
-        <i className={`${faIconSmall} features__icon-small`}></i>
+        {/* <i className={`${faIconSmall} features__icon-small`}></i> */}
+        <div className='testimonial__author-rating'>
+          {Array(ratingNumer)
+            .fill("1")
+            .map((_, n) => (
+              <i key={n} className='fa fa-star testimonial__rating-icon'></i>
+            ))}
+        </div>
       </div>
       <div className='features__summary'>
         <p className='features__details'>{feature_details}</p>

@@ -5,6 +5,7 @@ export type featuresProps = {
   faIconBig: string
   isActive?: boolean
   faIconSmall: string
+  ratingNumer?: number
 }
 export type portfolioItemProps = {
   project_image_url: string
