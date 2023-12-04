@@ -1,50 +1,60 @@
 import Image from "next/image"
 import React, {useEffect} from "react"
-import AladImg1 from "../assets/images/portfolio/Aladdin-web.png"
-import AladImg2 from "../assets/images/portfolio/Aladdin-Mobile.png"
+import Slider from "react-slick"
 
 const NewPortfolioItem = () => {
-  useEffect(() => {
-    let slides = document.getElementsByClassName("portfolio-new__item-img-box")
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  }
 
-    function addActive(slide: any) {
-      slide.classList.add("active")
-    }
-
-    function removeActive(slide: any) {
-      slide.classList.remove("active")
-    }
-
-    addActive(slides[0])
-    setInterval(function () {
-      for (let i = 0; i < slides.length; i++) {
-        if (i + 1 == slides.length) {
-          addActive(slides[0])
-          setTimeout(removeActive, 1000, slides[i])
-          break
-        }
-        if (slides[i].classList.contains("active")) {
-          setTimeout(removeActive, 1000, slides[i])
-          addActive(slides[i + 1])
-          break
-        }
-      }
-    }, 3000)
-  }, [])
   return (
     <div className='portfolio-new__item'>
-      <div className='relative w-1/2 h-full'>
-        <div className='portfolio-new__img-item'>
-          <div className='portfolio-new__item-img-box'>
-            <Image
-              width={500}
-              height={500}
-              alt=''
-              src={AladImg1}
-              className={"portfolio-new__item-img"}
-            />
+      <div className='relative w-[700px] h-full'>
+        <Slider {...settings}>
+          <div className='portfolio-new__img-item'>
+            <div className='portfolio-new__item-img-box'>
+              <Image
+                width={500}
+                height={500}
+                unoptimized
+                alt=''
+                src={"/assets/images/portfolio/Aladdin-web.png"}
+                className={"portfolio-new__item-img"}
+              />
+            </div>
           </div>
-        </div>
+          <div className='portfolio-new__img-item'>
+            <div className='portfolio-new__item-img-box'>
+              <Image
+                width={500}
+                height={500}
+                unoptimized
+                alt=''
+                src={"/assets/images/portfolio/businessHero.png"}
+                className={"portfolio-new__item-img"}
+              />
+            </div>
+          </div>
+          <div className='portfolio-new__img-item'>
+            <div className='portfolio-new__item-img-box'>
+              <Image
+                width={500}
+                height={500}
+                unoptimized
+                alt=''
+                src={"/assets/images/portfolio/businessAcc.png"}
+                className={"portfolio-new__item-img"}
+              />
+            </div>
+          </div>
+        </Slider>
       </div>
       <div className='portfolio-new__summary'>
         <div className='portfolio-new__heading inline-flex flex-col justify-end items-end w-full p-4'>
