@@ -5,7 +5,7 @@ import Slider from "react-slick"
 import {FiExternalLink} from "react-icons/fi"
 import {FaBuildingLock, FaGithub} from "react-icons/fa6"
 
-type NewPortFolioItemProps = {
+export type NewPortFolioItemProps = {
   isPrivateRepo?: boolean
   images?: string[]
   isFeatured?: boolean
@@ -96,7 +96,7 @@ const NewPortfolioItem = ({
               ? "Under Development"
               : ""}
           </span>
-          <h2 className='portfolio-new__heading-title font-bold mt-4 text-2xl'>
+          <h2 className='portfolio-new__heading-title font-bold mt-4 text-xl'>
             {projectTitle}
           </h2>
         </div>
