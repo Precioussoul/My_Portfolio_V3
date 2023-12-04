@@ -2037,6 +2037,13 @@ select:-webkit-autofill:focus {
     grid-template-columns: 100%;
     grid-row-gap: 3rem;
   }
+  .portfolio-new__item {
+    grid-template-columns: 100%;
+    min-height: 400px;
+  }
+  .portfolio-new__summary-box {
+    width: 100%;
+  }
   .Summary__author-image {
     width: 100%;
     height: 100%;
