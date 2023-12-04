@@ -1966,6 +1966,14 @@ select:-webkit-autofill:focus {
     margin: 0 auto;
     width: 94%;
   }
+  .features-section {
+    padding: 2rem 0;
+  }
+  .portfolio__header,
+  .contact__header,
+  .blog__header {
+    padding: 0.5rem 0;
+  }
   .hero__grid {
     grid-template-columns: 1fr;
     grid-column-gap: 0;

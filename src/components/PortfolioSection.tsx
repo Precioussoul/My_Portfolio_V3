@@ -259,12 +259,31 @@ const PortfolioSection = () => {
             />
           ))} */}
         </div>
-        <NewPortfolioItem
-          isMobile={isMobile}
-          projectDescription='A fintech web-app that allow business of all kind that access to
+        <div className='flex flex-col gap-16 md:gap-12'>
+          <NewPortfolioItem
+            isMobile={isMobile}
+            isDevMode
+            projectTitle={"Aladdin Business App"}
+            projectDescription='A fintech web-app that allow business of all kind that access to
             banking services at the business-level, international payment
-            solutions and beyonds. Available soon. currently in development.'
-        />
+            solutions and beyonds. Available soon. currently in development. Involved in the project as the lead frontend engineer.'
+            projectLiveUrl='https://abp-dev.aladdin.com.ng/'
+            isPrivateRepo
+            techStacks='React,Redux, TypeScript, Chakra UI, Internal APIs'
+          />
+          <NewPortfolioItem
+            isMobile={isMobile}
+            toRight
+            isDevMode
+            projectTitle={"Aladdin Business App"}
+            projectDescription='A fintech web-app that allow business of all kind that access to
+            banking services at the business-level, international payment
+            solutions and beyonds. Available soon. currently in development. Involved in the project as the lead frontend engineer.'
+            projectLiveUrl='https://abp-dev.aladdin.com.ng/'
+            isPrivateRepo
+            techStacks='React,Redux, TypeScript, Chakra UI, Internal APIs'
+          />
+        </div>
 
         {/* <div className='portfolio-showmore'>
           <button

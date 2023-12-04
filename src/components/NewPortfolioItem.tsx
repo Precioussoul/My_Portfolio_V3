@@ -16,6 +16,7 @@ type NewPortFolioItemProps = {
   projectGitHubUrl?: string
   techStacks?: string
   isMobile?: boolean
+  toRight?: boolean
 }
 
 const NewPortfolioItem = ({
@@ -33,6 +34,7 @@ const NewPortfolioItem = ({
   projectLiveUrl,
   techStacks,
   isMobile,
+  toRight,
 }: NewPortFolioItemProps) => {
   const settings = {
     dots: false,
@@ -47,7 +49,11 @@ const NewPortfolioItem = ({
 
   return (
     <div className='portfolio-new__item'>
-      <div className='relative 2xl:w-[700px] w-[550px] h-full hidden md:block order-2 md:order-1'>
+      <div
+        className={`relative 2xl:w-[700px] w-[550px] h-full hidden md:block order-2 md:order-1 ${
+          toRight && "md:order-2"
+        }`}
+      >
         <Slider {...settings}>
           {images &&
             images.length > 0 &&
@@ -76,7 +82,13 @@ const NewPortfolioItem = ({
         className={`portfolio-new__summary order-1 md:order-1 bg-contain
         md:!bg-none`}
       >
-        <div className='portfolio-new__heading inline-flex flex-col justify-end items-end w-full p-4'>
+        <div
+          className={`portfolio-new__heading inline-flex flex-col   ${
+            toRight && !isMobile
+              ? "justify-start items-start"
+              : "justify-end items-end"
+          } w-full p-4`}
+        >
           <span className='portfolio-new__heading-subtitle font-semibold  '>
             {isFeatured
               ? "Featured Project"
@@ -88,13 +100,23 @@ const NewPortfolioItem = ({
             {projectTitle}
           </h2>
         </div>
-        <div className='portfolio-new__summary-box'>
+        <div
+          className={`portfolio-new__summary-box ${
+            toRight && !isMobile && "!mr-auto !ml-0"
+          }`}
+        >
           <p className='p-6 leading-6 font-medium text-[0.9rem]'>
             {projectDescription}
           </p>
         </div>
 
-        <div className='inline-flex flex-col justify-end items-end w-full p-4'>
+        <div
+          className={`inline-flex flex-col w-full p-4  ${
+            toRight && !isMobile
+              ? "justify-start items-start"
+              : "justify-end items-end"
+          } `}
+        >
           <div className='flex gap-4 items-center flex-wrap'>
             {techStacks &&
               techStacks.split(",").map((stack, idx) => (
@@ -109,7 +131,9 @@ const NewPortfolioItem = ({
                 <FaGithub className='project__link-icon' size={40} />
               </Link>
             ) : (
-              <FaBuildingLock className='project__link-icon' size={40} />
+              isPrivateRepo && (
+                <FaBuildingLock className='project__link-icon' size={40} />
+              )
             )}
             {projectLiveUrl && (
               <Link href={projectLiveUrl} target={"_blank"}>
