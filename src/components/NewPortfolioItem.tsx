@@ -29,7 +29,9 @@ const NewPortfolioItem = ({
   isDevMode,
   projectTitle,
   projectGitHubUrl,
+  projectDescription,
   projectLiveUrl,
+  techStacks,
   isMobile,
 }: NewPortFolioItemProps) => {
   const settings = {
@@ -76,39 +78,44 @@ const NewPortfolioItem = ({
       >
         <div className='portfolio-new__heading inline-flex flex-col justify-end items-end w-full p-4'>
           <span className='portfolio-new__heading-subtitle font-semibold  '>
-            Featured Project
+            {isFeatured
+              ? "Featured Project"
+              : isDevMode
+              ? "Under Development"
+              : ""}
           </span>
           <h2 className='portfolio-new__heading-title font-bold mt-4 text-2xl'>
-            Aladdin Business
+            {projectTitle}
           </h2>
         </div>
         <div className='portfolio-new__summary-box'>
           <p className='p-6 leading-6 font-medium text-[0.9rem]'>
-            A fintech web-app that allow business of all kind that access to
-            banking services at the business-level, international payment
-            solutions and beyonds. Available soon. currently in development.
+            {projectDescription}
           </p>
         </div>
 
         <div className='inline-flex flex-col justify-end items-end w-full p-4'>
           <div className='flex gap-4 items-center flex-wrap'>
-            {"React, Redux, Chakra UI, Typescript, Internal APIs,"
-              .split(",")
-              .map((stack, idx) => (
+            {techStacks &&
+              techStacks.split(",").map((stack, idx) => (
                 <p key={idx} className='font-semibold text-[0.9rem] '>
                   {stack}
                 </p>
               ))}
           </div>
           <div className='flex gap-3'>
-            <FaBuildingLock className='project__link-icon' size={40} />
-
-            <Link href={""} target={"_blank"}>
-              <FaGithub className='project__link-icon' size={40} />
-            </Link>
-            <Link href={""} target={"_blank"}>
-              <FiExternalLink className='project__link-icon' size={40} />
-            </Link>
+            {projectGitHubUrl ? (
+              <Link href={projectGitHubUrl} target={"_blank"}>
+                <FaGithub className='project__link-icon' size={40} />
+              </Link>
+            ) : (
+              <FaBuildingLock className='project__link-icon' size={40} />
+            )}
+            {projectLiveUrl && (
+              <Link href={projectLiveUrl} target={"_blank"}>
+                <FiExternalLink className='project__link-icon' size={40} />
+              </Link>
+            )}
           </div>
         </div>
       </div>

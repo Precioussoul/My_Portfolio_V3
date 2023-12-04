@@ -259,7 +259,12 @@ const PortfolioSection = () => {
             />
           ))} */}
         </div>
-        <NewPortfolioItem isMobile={isMobile} />
+        <NewPortfolioItem
+          isMobile={isMobile}
+          projectDescription='A fintech web-app that allow business of all kind that access to
+            banking services at the business-level, international payment
+            solutions and beyonds. Available soon. currently in development.'
+        />
 
         {/* <div className='portfolio-showmore'>
           <button
