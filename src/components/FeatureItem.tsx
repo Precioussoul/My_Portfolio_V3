@@ -19,7 +19,11 @@ const FeatureItem = ({
   return (
     <div className='features__item' onClick={handleActive}>
       <div className='features__icon'>
-        <h2 className={`features__heading ${active || (isActive && "active")}`}>
+        <h2
+          className={`features__heading text-[1rem] md:text-[1.2rem]  ${
+            active || (isActive && "active")
+          }`}
+        >
           {feature_heading}{" "}
           {highlightText && (
             <span className='rn-highlight'>{highlightText}</span>
@@ -35,7 +39,9 @@ const FeatureItem = ({
         </div>
       </div>
       <div className='features__summary'>
-        <p className='features__details'>{feature_details}</p>
+        <p className='features__details text-[0.85rem] md:text-[1rem]'>
+          {feature_details}
+        </p>
       </div>
     </div>
   )

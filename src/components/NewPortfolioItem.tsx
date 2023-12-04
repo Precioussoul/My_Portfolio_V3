@@ -5,7 +5,7 @@ import Slider from "react-slick"
 import {FiExternalLink} from "react-icons/fi"
 import {FaBuildingLock, FaGithub} from "react-icons/fa6"
 
-type NewPortFolioItem = {
+type NewPortFolioItemProps = {
   isPrivateRepo?: boolean
   images?: string[]
   isFeatured?: boolean
@@ -15,9 +15,23 @@ type NewPortFolioItem = {
   projectLiveUrl?: string
   projectGitHubUrl?: string
   techStacks?: string
+  isMobile?: boolean
 }
 
-const NewPortfolioItem = () => {
+const NewPortfolioItem = ({
+  isPrivateRepo,
+  images = [
+    "/assets/images/portfolio/businessAcc.png",
+    "/assets/images/portfolio/businessHero.png",
+    "/assets/images/portfolio/Aladdin-web.png",
+  ],
+  isFeatured,
+  isDevMode,
+  projectTitle,
+  projectGitHubUrl,
+  projectLiveUrl,
+  isMobile,
+}: NewPortFolioItemProps) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -33,45 +47,33 @@ const NewPortfolioItem = () => {
     <div className='portfolio-new__item'>
       <div className='relative 2xl:w-[700px] w-[550px] h-full hidden md:block order-2 md:order-1'>
         <Slider {...settings}>
-          <div className='portfolio-new__img-item'>
-            <div className='portfolio-new__item-img-box'>
-              <Image
-                width={500}
-                height={500}
-                unoptimized
-                alt=''
-                src={"/assets/images/portfolio/Aladdin-web.png"}
-                className={"portfolio-new__item-img"}
-              />
-            </div>
-          </div>
-          <div className='portfolio-new__img-item'>
-            <div className='portfolio-new__item-img-box'>
-              <Image
-                width={500}
-                height={500}
-                unoptimized
-                alt=''
-                src={"/assets/images/portfolio/businessHero.png"}
-                className={"portfolio-new__item-img"}
-              />
-            </div>
-          </div>
-          <div className='portfolio-new__img-item'>
-            <div className='portfolio-new__item-img-box'>
-              <Image
-                width={500}
-                height={500}
-                unoptimized
-                alt=''
-                src={"/assets/images/portfolio/businessAcc.png"}
-                className={"portfolio-new__item-img"}
-              />
-            </div>
-          </div>
+          {images &&
+            images.length > 0 &&
+            images.map((image, idx) => (
+              <div className='portfolio-new__img-item' key={idx}>
+                <div className='portfolio-new__item-img-box'>
+                  <Image
+                    width={500}
+                    height={500}
+                    unoptimized
+                    alt=''
+                    src={image}
+                    className={"portfolio-new__item-img"}
+                  />
+                </div>
+              </div>
+            ))}
         </Slider>
       </div>
-      <div className='portfolio-new__summary order-1 md:order-1'>
+      <div
+        style={{
+          backgroundImage: `linear-gradient(to top left,#0b1121,#0b112196),url(${
+            images.length > 0 && isMobile && images[0]
+          })`,
+        }}
+        className={`portfolio-new__summary order-1 md:order-1 bg-contain
+        md:!bg-none`}
+      >
         <div className='portfolio-new__heading inline-flex flex-col justify-end items-end w-full p-4'>
           <span className='portfolio-new__heading-subtitle font-semibold  '>
             Featured Project

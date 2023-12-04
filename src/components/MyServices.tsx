@@ -11,7 +11,7 @@ const MyServices = () => {
     <section className='features-section' ref={featureRef}>
       <div className='container'>
         <div className='features__grid'>
-          <div className='features__list'>
+          <div className='features__list order-2 md:order-1'>
             <FeatureItem
               isActive
               ratingNumer={5}
@@ -35,7 +35,7 @@ const MyServices = () => {
               feature_details='Front-End Coding as a core is to provide a good feel user-interface to give users a comfortable UX experiences when intereacting with your website.'
             />
           </div>
-          <div className='features__introduce'>
+          <div className='features__introduce order-1 md:order-2'>
             <span className='features__introduce-subHeading'>About Me</span>
             <div className='features__introduce-wrapper'>
               <h2 className='features__introduce-heading'>
@@ -140,9 +140,6 @@ const MyServices = () => {
                       height={500}
                     />
                   </div>
-                </div>
-
-                <div className='Summary__stacks-icon-box 2nd'>
                   <div className='Summary__stacks-icon'>
                     <Image
                       src='/assets/images/icons/grapQl.png'

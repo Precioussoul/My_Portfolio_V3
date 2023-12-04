@@ -1,5 +1,5 @@
 import {ContentContext} from "@/contexts/ScrollContext"
-import React, {useContext, useState} from "react"
+import React, {useContext, useEffect, useState} from "react"
 import NewPortfolioItem from "./NewPortfolioItem"
 import PortfolioItem from "./PortfolioItem"
 
@@ -214,6 +214,7 @@ const PortfolioSection = () => {
   const {portfolioRef} = useContext(ContentContext)
   const [maxPageNumber, setMaxPageNumber] = useState(6)
   const [isLoadMore, setIsLoadMore] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
 
   const handleLoadMore = () => {
     setMaxPageNumber(portfolioData.length)
@@ -223,6 +224,12 @@ const PortfolioSection = () => {
     setMaxPageNumber(6)
     setIsLoadMore(false)
   }
+
+  useEffect(() => {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+
+    setIsMobile(isMobile)
+  }, [])
 
   const projectDatas = portfolioData.slice(0, maxPageNumber)
   return (
@@ -252,7 +259,7 @@ const PortfolioSection = () => {
             />
           ))} */}
         </div>
-        <NewPortfolioItem />
+        <NewPortfolioItem isMobile={isMobile} />
 
         {/* <div className='portfolio-showmore'>
           <button

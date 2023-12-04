@@ -727,10 +727,6 @@ a {
   padding: 1.2rem 1rem 0 1rem;
 }
 
-.features__heading {
-  font-size: 1.3rem;
-}
-
 .features__heading.active {
   color: var(--color-body);
 }
@@ -760,7 +756,6 @@ a {
 }
 
 .features__details {
-  font-size: 1rem;
   line-height: 2;
 }
 
@@ -1360,8 +1355,8 @@ a {
 .Summary__stacks-icon-box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  gap: 0.25rem;
+  row-gap: 0.5rem;
   margin: 2rem 0;
   padding-bottom: 2rem;
   border-bottom: var(--border-bottom-light);
