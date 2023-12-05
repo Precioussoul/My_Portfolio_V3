@@ -1,6 +1,7 @@
 "use client"
 
 import React, {useCallback, useState} from "react"
+import {FaCodeCompare} from "react-icons/fa6"
 import {featuresProps} from "types"
 
 const FeatureItem = ({
@@ -9,6 +10,7 @@ const FeatureItem = ({
   highlightText,
   isActive,
   ratingNumer = 1,
+  Icon = FaCodeCompare,
 }: featuresProps) => {
   const [active, setactive] = useState(false)
 
@@ -31,15 +33,16 @@ const FeatureItem = ({
         </h2>{" "}
         {/* <i className={`${faIconSmall} features__icon-small`}></i> */}
         <div className='testimonial__author-rating'>
-          {Array(ratingNumer)
+          {/* {Array(ratingNumer)
             .fill("1")
             .map((_, n) => (
               <i key={n} className='fa fa-star testimonial__rating-icon'></i>
-            ))}
+            ))} */}
+          {<Icon size={28} className='testimonial__rating-icon' />}
         </div>
       </div>
       <div className='features__summary'>
-        <p className='features__details text-[0.85rem] md:text-[1rem]'>
+        <p className='features__details text-[0.8rem] md:text-[0.85rem]'>
           {feature_details}
         </p>
       </div>

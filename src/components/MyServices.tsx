@@ -2,6 +2,8 @@
 import {ContentContext} from "@/contexts/ScrollContext"
 import Image from "next/image"
 import React, {useCallback, useContext, useState} from "react"
+import {FaCodeCompare, FaLaptopCode} from "react-icons/fa6"
+import {IoCloudDone} from "react-icons/io5"
 import FeatureItem from "./FeatureItem"
 
 const MyServices = () => {
@@ -15,24 +17,21 @@ const MyServices = () => {
             <FeatureItem
               isActive
               ratingNumer={5}
-              faIconBig='fas fa-person-dots-from-line'
-              faIconSmall='fas fa-box-tissue'
+              Icon={FaLaptopCode}
               feature_heading='Frontend Development'
-              feature_details='One on One Consultation with new client to gather requirements and discuss design choices and patterns.'
+              feature_details='My expertise in frontend span across translating design to Live websites, web-apps and mobile applications. seamless API integration and Deployments. Broad strong exposure to different frontend technologies. Transitioning to Web3 and leaning to become web 2 and web 3 Engineer.'
             />
             <FeatureItem
-              faIconBig='fas fa-laptop-code'
-              faIconSmall='fas fa-mobile-alt'
               ratingNumer={3}
+              Icon={FaCodeCompare}
               feature_heading='Backend Development'
-              feature_details='Manage full-cycle design tasks, handling phases from conception to completion while maintaining guidelines of Responsive Design.'
+              feature_details='Substantial proficiency in writing backend API with NodeJS/Express, Next.js API folder. Both RESTful and GraphQL and can handles different BaaS such as firebase, superbase, Airtable, Headless CMS. Database like MongoDB and, PostGresSQL with Prisma. Authentication with Next-Auth, JWT and more.'
             />
             <FeatureItem
-              faIconBig='fab fa-uikit'
-              faIconSmall='fas fa-pen-nib'
-              feature_heading='Cloud-Computing'
+              feature_heading='Cloud and DevOps.'
               ratingNumer={2}
-              feature_details='Front-End Coding as a core is to provide a good feel user-interface to give users a comfortable UX experiences when intereacting with your website.'
+              Icon={IoCloudDone}
+              feature_details='Strong exposure to the cloud (AWS) through hands-on training and projects on Udacity, frontend master and more online courses. improving and building proficiency in this area'
             />
           </div>
           <div className='features__introduce order-1 md:order-2'>
@@ -45,8 +44,8 @@ const MyServices = () => {
             <div className='Summary__Details'>
               <div className='Summary__preview-text'>
                 <p>
-                  Started my software engineering journey (self-taught) 3 years
-                  ago while in majoring/studying in computer engineering in
+                  Started my software engineering journey (self-taught) in 2020
+                  while in majoring/studying in computer engineering in
                   polytechnic. My passion for coding/programming exceeded my
                   passion for computer hardware repairs. And since then,
                   I&apos;ve taken a lot of courses, gained a lot of experience

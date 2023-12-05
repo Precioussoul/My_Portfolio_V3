@@ -1,10 +1,11 @@
+import {IconType} from "react-icons"
+
 export type featuresProps = {
   feature_heading: string
   feature_details: string
   highlightText?: string
-  faIconBig: string
   isActive?: boolean
-  faIconSmall: string
+  Icon?: IconType
   ratingNumer?: number
 }
 export type portfolioItemProps = {

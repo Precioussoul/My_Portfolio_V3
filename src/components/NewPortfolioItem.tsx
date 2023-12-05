@@ -42,13 +42,13 @@ const NewPortfolioItem = ({
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
     cssEase: "linear",
   }
 
   return (
-    <div className='portfolio-new__item'>
+    <div className='portfolio-new__item '>
       <div
         className={`relative 2xl:w-[700px] w-[550px] h-full hidden md:block order-2 md:order-1 ${
           toRight && "md:order-2"
@@ -58,8 +58,8 @@ const NewPortfolioItem = ({
           {images &&
             images.length > 0 &&
             images.map((image, idx) => (
-              <div className='portfolio-new__img-item' key={idx}>
-                <div className='portfolio-new__item-img-box'>
+              <div className='portfolio-new__img-item  ' key={idx}>
+                <div className='portfolio-new__item-img-box bg-gradient-to-tl from-blue-950 to-slate-700 hover:bg-none'>
                   <Image
                     width={500}
                     height={500}

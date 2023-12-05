@@ -175,7 +175,7 @@ const portfolioData: [ {
 
 const PortfolioSection = () => {
   const {portfolioRef} = useContext(ContentContext)
-  const [maxPageNumber, setMaxPageNumber] = useState(6)
+  const [maxPageNumber, setMaxPageNumber] = useState(2)
   const [isLoadMore, setIsLoadMore] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
 
@@ -183,28 +183,49 @@ const PortfolioSection = () => {
     {
       isMobile: isMobile,
       isDevMode: true,
-      images: [
-        "/assets/images/portfolio/businessAcc.png",
-        "/assets/images/portfolio/businessHero.png",
-        "/assets/images/portfolio/Aladdin-web.png",
-      ],
+      toRight: false,
+      images: ["/assets/images/portfolio/businessAcc.png"],
       projectTitle: "Aladdin Business App",
       projectDescription: `A fintech web-app that allow business of all kind that access to
       banking services at the business-level, international payment,
       solutions and beyonds. Available soon. currently in development. Involved in the project as the lead frontend engineer.`,
       projectLiveUrl: "https://abp-dev.aladdin.com.ng/",
       isPrivateRepo: true,
-      techStacks: "React,Redux, TypeScript, Chakra UI, Internal APIs",
+      techStacks: "React,Redux, TypeScript, Chakra UI, Aladdin APIs",
     },
     {
       isMobile: isMobile,
       isFeatured: true,
+      toRight: true,
       images: ["/assets/images/portfolio/breej.png"],
       projectTitle: "Breej Marketplace",
       projectDescription: `A fintech platform that runs modern barter system using GoldRing and Barter Token Virtual Coin to facilitate exchange, connect, thrive and get what you need, without spending cash. Contracted and Developed the entire project frontend UI Interfaces and API Integrations.`,
       projectLiveUrl: "https://breej.io/",
       isPrivateRepo: true,
-      techStacks: "React,Redux, TypeScript, Chakra UI, Internal APIs",
+      techStacks: "Next.js, React-Query, TypeScript, TailwindCss, Breej APIs",
+    },
+    {
+      isMobile: isMobile,
+      isFeatured: true,
+      images: ["/assets/images/portfolio/homevibe-screenshot.png"],
+      projectTitle: "HomeVibe | Book Vacation",
+      projectDescription: `AirBnB Inspired real-estate marketplace platform that allows you to list a house for rents, book housing for vacations and reservation. Led and developed the entire project full-stack development`,
+      projectLiveUrl: "https://homevibe.vercel.app/",
+      projectGitHubUrl: "https://github.com/Precioussoul/HomeVibe",
+      techStacks:
+        "Next.js, TypeScript, TailwindCss, Prisma, MongoDb, Next-Auth, Cloudinary",
+    },
+    {
+      isMobile: isMobile,
+      isFeatured: true,
+      toRight: true,
+      images: ["/assets/images/portfolio/hbs_drive.png"],
+      projectTitle: "Lytebox | Google Drive Inspired",
+      projectDescription: `Google Drive Inspired full-stack web application that allow users to upload files,preview, delete, starred favorites ,download etc.. Led and developed the entire project full-stack development`,
+      projectLiveUrl: "https://lytebox.web.app/",
+      projectGitHubUrl: "https://github.com/Precioussoul/Lytebox",
+      techStacks:
+        "React, TypeScript, Sass, Firebase, Cloud Storage, Media Libraries",
     },
   ]
 
@@ -213,7 +234,7 @@ const PortfolioSection = () => {
     setIsLoadMore(true)
   }
   const resetLoadMore = () => {
-    setMaxPageNumber(6)
+    setMaxPageNumber(2)
     setIsLoadMore(false)
   }
 
@@ -227,66 +248,39 @@ const PortfolioSection = () => {
   return (
     <section className='portfolio-section' id='Portfolio' ref={portfolioRef}>
       <div className='container'>
-        {/* <div className='portfolio__header'>
-          
-          <h2 className='portfolio__header-title'>Portfolio</h2>
-          <p className='sm-prjt'>
-            I Seek Knowledge and Growth...Definitely going to Improve
-          </p>
-          <p className='sm-prjt'></p>
-        </div> */}
-        <div className='flex items-center gap-3'>
+        <div className='flex items-center gap-3 mb-8'>
           <p className='portfolio__header-subtitle !capitalize !text-xl !font-medium'>
             Latest Projects{" "}
           </p>
         </div>
-        <div className='portfolio__grid'>
-          {/* {projectDatas.map((portfolio) => (
-            <PortfolioItem
-              key={portfolio.projectId}
-              projectTechStack={portfolio.projectTechStack}
-              project_category={portfolio.project_category}
-              project_detailsText={portfolio.project_detailsText}
-              project_image_url={portfolio.project_image_url}
-              project_name={portfolio.project_name}
-              projectlink={portfolio.projectlink}
-              projectGithubLink={portfolio.projectGithubLink}
-            />
-          ))} */}
-        </div>
+
         <div className='flex flex-col gap-16 md:gap-12'>
-          <NewPortfolioItem
-            isMobile={isMobile}
-            isDevMode
-            projectTitle={"Aladdin Business App"}
-            projectDescription='A fintech web-app that allow business of all kind that access to
-            banking services at the business-level, international payment
-            solutions and beyonds. Available soon. currently in development. Involved in the project as the lead frontend engineer.'
-            projectLiveUrl='https://abp-dev.aladdin.com.ng/'
-            isPrivateRepo
-            techStacks='React,Redux, TypeScript, Chakra UI, Internal APIs'
-          />
-          <NewPortfolioItem
-            isMobile={isMobile}
-            toRight
-            isFeatured
-            images={["/assets/images/portfolio/breej.png"]}
-            projectTitle={"Breej Marketplace"}
-            projectDescription='A fintech platform that runs modern barter system using GoldRing and Barter Token Virtual Coin to facilitate exchange, connect, thrive and get what you need, without spending cash. Contracted and Developed the entire project frontend UI Interfaces and API Integrations.'
-            projectLiveUrl='https://breej.io/'
-            isPrivateRepo
-            techStacks='Next.js, React-Query, TypeScript, TailwindCSS, Breej APIs'
-          />
+          {projectDatas.map((portfolio, idx) => (
+            <NewPortfolioItem
+              key={idx}
+              isMobile={portfolio.isMobile}
+              toRight={portfolio.toRight}
+              isFeatured={portfolio.isFeatured}
+              images={portfolio.images}
+              isDevMode={portfolio.isDevMode}
+              projectTitle={portfolio.projectTitle}
+              projectDescription={portfolio.projectDescription}
+              projectLiveUrl={portfolio.projectLiveUrl}
+              projectGitHubUrl={portfolio.projectGitHubUrl}
+              isPrivateRepo={portfolio.isPrivateRepo}
+              techStacks={portfolio.techStacks}
+            />
+          ))}
         </div>
 
-        {/* <div className='portfolio-showmore'>
+        <div className='portfolio-showmore mt-8'>
           <button
             className='btn-outline'
             onClick={isLoadMore ? resetLoadMore : handleLoadMore}
           >
             {isLoadMore ? "Hide" : "Show More"}
           </button>
-        </div> */}
+        </div>
       </div>
     </section>
   )

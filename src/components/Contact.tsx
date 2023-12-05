@@ -95,9 +95,9 @@ const Contact = () => {
                   </li>
                 </ul> */}
                 <Link
-                  href='/assets/images/author/SofiyullahAbdullah_Full-stackFrontendEngineer_1.pdf'
+                  href='public/assets/images/author/Sofiyullah_full-stackFrontend.pdf'
                   download
-                  className='Download-btn'
+                  className='Download-btn mt-6'
                 >
                   Download CV
                 </Link>
