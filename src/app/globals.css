@@ -1073,9 +1073,13 @@ a {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  box-shadow: var(--shadow-1);
+  max-width: 250px;
+  width: 250px;
   background: var(--background-color-1);
   margin-bottom: 1rem;
+  border-left-width: 0.15rem;
+  border-left-style: solid;
+  border-left-color: var(--color-highlighted);
 }
 
 .resumee__tab-item {
@@ -1083,16 +1087,24 @@ a {
   color: var(--color-lightn);
   flex-basis: 25%;
   padding: 1rem 1rem;
-  border-radius: 1rem;
-  text-align: center;
   font-family: var(--font-secondary);
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
+  width: 100%;
+  margin-left: -0.1rem;
+  -webkit-transition: all;
+  -moz-transition: all;
+  -ms-transition: all;
+  -o-transition: all;
 }
 
 .resumee__tab-item.active,
 .resumee__tab-item:hover {
-  box-shadow: var(--shadow-1);
   color: var(--color-primary);
+  border-left-width: 0.25rem;
+  border-left-style: solid;
+  border-left-color: var(--color-highlighted);
+  background: var(--background-color-2);
 }
 
 .tab-content {
@@ -1100,6 +1112,9 @@ a {
   color: var(--color-lightn);
   padding: 1rem;
   animation: fadeEffect 1s;
+  min-height: 500px;
+  min-width: 600px;
+  flex: 1;
 }
 
 @keyframes fadeEffect {
