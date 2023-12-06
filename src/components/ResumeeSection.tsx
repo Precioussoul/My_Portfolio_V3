@@ -26,8 +26,8 @@ const ResumeeSection = () => {
     <section className='resumee-section' id='Resumee' ref={resumeeRef}>
       <div className='container'>
         <div className='resumee__header'>
-          <p className='resumee__header-subtitle'>Every Details About Me</p>
-          <h2 className='resumee__header-title'>Resume</h2>
+          <p className='resumee__header-subtitle'>Where I work</p>
+          <h2 className='resumee__header-title'>Work Experience</h2>
         </div>
         <ul className='resumee__tabs'>
           {/* <li

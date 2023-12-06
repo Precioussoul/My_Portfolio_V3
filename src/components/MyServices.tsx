@@ -60,7 +60,7 @@ const MyServices = () => {
 
               <div className='Summary__stacks'>
                 <h4 className='Summary__stacks-info'>
-                  Technologies that am using and worked with (
+                  Here are a few technologies I’ve been working with:(
                   <span className='rn-highlight fwb'>
                     Full-Stack Software Engineer
                   </span>
@@ -213,6 +213,20 @@ const MyServices = () => {
                   </div>
                 </div>
               </div>
+              {/*  */}
+
+              <div className='resumee__skill-showcase'>
+                <p className='resumee__skill-name'>Javascript</p>
+                <p className='resumee__skill-name'>React</p>
+                <p className='resumee__skill-name'>Typescript</p>
+                <p className='resumee__skill-name'>NextJS</p>
+                <p className='resumee__skill-name'>React Native</p>
+                <p className='resumee__skill-name'>Nodejs</p>
+                <p className='resumee__skill-name'>Solidity</p>
+                <p className='resumee__skill-name'>Python</p>
+                <p className='resumee__skill-name'>AWS</p>
+              </div>
+              {/*  */}
             </div>
           </div>
         </div>
