@@ -1053,9 +1053,10 @@ a {
 }
 
 .resumee__header-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--color-body-light);
   padding: 1rem;
+  font-family: var(--font-secondary);
 }
 
 .resumee__skill-name {
@@ -1078,7 +1079,7 @@ a {
   margin-bottom: 1rem;
   border-left-width: 0.15rem;
   border-left-style: solid;
-  border-left-color: var(--color-highlighted);
+  border-left-color: #333;
 }
 
 .resumee__tab-item {
@@ -1101,9 +1102,10 @@ a {
 .resumee__tab-item:hover {
   color: var(--color-primary);
   border-left-width: 0.25rem;
+  font-weight: 500;
   border-left-style: solid;
   border-left-color: var(--color-highlighted);
-  background: var(--background-color-2);
+  /* background: var(--background-color-2); */
 }
 
 .tab-content {

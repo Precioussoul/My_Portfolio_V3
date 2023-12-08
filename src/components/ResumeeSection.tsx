@@ -26,9 +26,9 @@ const ResumeeSection = () => {
   return (
     <section className='resumee-section' id='Resumee' ref={resumeeRef}>
       <div className='container'>
-        <div className='resumee__header'>
-          <p className='resumee__header-subtitle'>Where I work</p>
-          <h2 className='resumee__header-title'>Work Experience</h2>
+        <div className='resumee__header mb-8'>
+          <p className='resumee__header-subtitle !capitalize'>Experience</p>
+          <h2 className='resumee__header-title'>Where I&apos;ve worked</h2>
         </div>
         <div className='flex items-center justify-center'>
           <div className='flex items-start'>
@@ -101,12 +101,42 @@ const ResumeeSection = () => {
             </div>
 
             <div className='tab-content' id='ALX'>
-              ALX
+              <ExperienceItem
+                role='Software Engineer Intern'
+                company='ALX Africa'
+                start_date='January 2022'
+                end_date='January 2023'
+                bullet_points={[
+                  `Excelled in web development and maintenance through intensive training with ALX Holberton School, showcasing mastery in HTML/CSS,
+                  JavaScript/React, Python/Flask, and DevOps. Realizing a 30% boost in project delivery efficiency, and adhering to industrial standards.`,
+
+                  `Collaborated with peers to troubleshoot and resolve critical technical issues, fostering a culture of knowledge-sharing and continuous
+                  improvement. Contributing to a 20% reduction in issue resolution time and enhancing overall team efficiency.`,
+
+                  `Achieved AWS proficiency through hands-on training, practical projects, and a scholarship by Udacity/ALX. Graduated and earned an AWS
+                  Cloud Developer Nanodegree certificate. Validated expertise, resulting in a 25% increase in cloud-based project success rates`,
+                ]}
+              />{" "}
             </div>
 
             <div className='tab-content' id='BeeSpeed'>
               {/* ed */}
-              BeeSpeed
+              <ExperienceItem
+                role='Frontend Engineer'
+                company='BeeSpeed Technology'
+                start_date='August 2020'
+                end_date='December 2021'
+                bullet_points={[
+                  `Translated Figma conceptual designs into visually impeccable websites, achieving a 20% improvement in page load times through
+                  optimization of HTML, CSS, and JavaScript.`,
+
+                  `Implemented plugins and themes to enhance website functionality, increase usability, and improve website performance by 20%. This
+                  resulted in a more user-friendly, SEO-optimized, and speed-enhanced WordPress website.`,
+
+                  `Augmented website customization with Elementor and Elementor Pro Page Builder, driving a 25% surge in user engagement and a 15%
+                  enhancement in site responsiveness. Seamlessly integrated new features, yielding a 20% increase in user interaction and satisfaction.`,
+                ]}
+              />{" "}
             </div>
           </div>
         </div>
