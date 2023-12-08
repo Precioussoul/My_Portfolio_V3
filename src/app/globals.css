@@ -5,8 +5,6 @@
 
 /* Default  */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&amp;display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&amp;display=swap");
 :root {
   --color-primary: #0ea5e9;
   /* --color-secondary: #f4f5f6; */
@@ -31,8 +29,8 @@
   --transition: 0.4s;
   /* --bg-gradient-hover: linear-gradient(to right bottom, #212428, #16181c); */
   --bg-gradient-hover: #0f172a;
-  --font-primary: "Poppins", sans-serif;
-  --font-secondary: "Montserrat", sans-serif;
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Kurale", sans-serif;
   --box-shadow: 10px 12px 35px -19px rgba(0, 0, 0, 0.5);
   --border-bottom: 0.2rem solid #181a1d;
   --border-bottom-light: 0.15rem solid #181a1d;
@@ -786,6 +784,7 @@ a {
   color: var(--color-midgray);
 }
 
+.highlighted
 /*################### Portfolio---section  and Blog, contatct section inheritance*/
 
 .portfolio-section .container,
@@ -1083,7 +1082,7 @@ a {
 }
 
 .resumee__tab-item {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--color-lightn);
   flex-basis: 25%;
   padding: 1rem 1rem;
@@ -1110,11 +1109,17 @@ a {
 .tab-content {
   display: none;
   color: var(--color-lightn);
-  padding: 1rem;
+  padding: 0rem 1rem;
   animation: fadeEffect 1s;
   min-height: 500px;
-  min-width: 600px;
+  width: 700px;
+  max-width: 700px;
+  font-family: var(--font-primary);
   flex: 1;
+}
+
+.experience_item {
+  font-family: var(--font-primary);
 }
 
 @keyframes fadeEffect {

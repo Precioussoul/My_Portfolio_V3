@@ -10,6 +10,18 @@ import "aos/dist/aos.css"
 import Head from "./head"
 import {useContext, useEffect} from "react"
 import ContentContextProvider, {ContentContext} from "@/contexts/ScrollContext"
+import {Inter, Kurale} from "@next/font/google"
+
+const inter = Inter({
+  weight: ["200", "300", "400", "600", "700", "900"],
+  variable: "--font-inter",
+  subsets: ["latin"],
+})
+const kural = Kurale({
+  weight: ["400"],
+  variable: "--font-kurale",
+  subsets: ["latin"],
+})
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   const {mode} = useContext(ContentContext)
@@ -56,7 +68,9 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       */}
       <Head />
       <ContentContextProvider>
-        <body className={`${mode}`}>{children}</body>
+        <body className={`${mode} ${inter.variable} ${kural.variable}`}>
+          {children}
+        </body>
       </ContentContextProvider>
     </html>
   )
