@@ -2061,6 +2061,33 @@ select:-webkit-autofill:focus {
     grid-template-columns: 100%;
     grid-row-gap: 3rem;
   }
+  .resumee__tabs {
+    max-width: 100%;
+    width: 100%;
+    border-left: 0;
+    margin-bottom: 2rem;
+    border-bottom-width: 0.15rem;
+    border-bottom-style: solid;
+    border-bottom-color: #333;
+    overflow-x: scroll;
+  }
+  .resumee__tab-item.active,
+  .resumee__tab-item:hover {
+    color: var(--color-primary);
+    border-bottom-width: 0.25rem;
+    border-left-width: 0;
+    font-weight: 500;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-highlighted);
+  }
+  .resumee__tab-item {
+    min-width: fit-content;
+    font-size: 1rem;
+  }
+  .tab-content {
+    width: 100%;
+    max-width: 100%;
+  }
   .portfolio-new__item {
     grid-template-columns: 100%;
     min-height: 400px;
@@ -2135,9 +2162,6 @@ select:-webkit-autofill:focus {
   }
   .testimonial__author-name {
     font-size: 1.2rem;
-  }
-  .resumee__tabs {
-    flex-direction: column;
   }
   .prof__grid {
     grid-template-columns: 1fr;

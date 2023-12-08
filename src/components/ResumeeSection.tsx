@@ -31,28 +31,28 @@ const ResumeeSection = () => {
           <h2 className='resumee__header-title'>Where I&apos;ve worked</h2>
         </div>
         <div className='flex items-center justify-center'>
-          <div className='flex items-start'>
-            <ul className='resumee__tabs !flex-col gap-4'>
+          <div className='flex flex-col overflow-hidden md:flex-row items-start'>
+            <ul className='resumee__tabs   md:w-[250px] md:max-w-[250px] md:!flex-col gap-4'>
               <li
-                className='resumee__tab-item font-medium active'
+                className='resumee__tab-item line-clamp-1 font-medium active'
                 onClick={(event) => openTab(event, "Aladdin")}
               >
                 Aladdin Digital Bank
               </li>
               <li
-                className='resumee__tab-item font-medium'
+                className='resumee__tab-item line-clamp-1 font-medium'
                 onClick={(event) => openTab(event, "Connou")}
               >
                 Connou
               </li>
               <li
-                className='resumee__tab-item font-medium'
+                className='resumee__tab-item line-clamp-1 font-medium'
                 onClick={(event) => openTab(event, "ALX")}
               >
                 ALX Africa
               </li>
               <li
-                className='resumee__tab-item font-medium'
+                className='resumee__tab-item line-clamp-1 font-medium'
                 onClick={(event) => openTab(event, "BeeSpeed")}
               >
                 BeeSpeed Tech
