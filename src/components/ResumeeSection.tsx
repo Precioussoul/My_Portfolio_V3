@@ -82,7 +82,22 @@ const ResumeeSection = () => {
               />
             </div>
             <div className='tab-content' id='Connou'>
-              Connou
+              <ExperienceItem
+                role='Frontend Engineer'
+                company='Connou'
+                start_date='August 2022'
+                end_date='March 2023'
+                bullet_points={[
+                  `Spearheaded the development of the company's public-facing website with React and Next.js, implementing optimizations that led to a
+                  remarkable 40% surge in user visitation. Promoting product awareness and contributing to a 25% increase in user inquiries.`,
+
+                  `Optimized frontend performance by seamlessly integrating the Sanity Headless-CMS API with Next.js, employing data pre-rendering.
+                  Achieved a substantial 70% acceleration in website speed, enhancing user experience and streamlining content delivery`,
+
+                  `Enhanced workflow efficiency by 30% through comprehensive CI/CD pipeline integration, pull requests, code reviews, and unit testing.
+                  Conducted active maintenance using Gitlab CI/CD and automated pipelines, resulting in a streamlined development process.`,
+                ]}
+              />{" "}
             </div>
 
             <div className='tab-content' id='ALX'>
