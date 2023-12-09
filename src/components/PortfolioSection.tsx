@@ -101,26 +101,8 @@ const portfolioArchiveData: ArchivedPortfolioProps[] = [
     projectId: 12,
     projectlink: "https://github.com/Precioussoul/Serverless-c4-project",
     project_image_url: "/assets/images/portfolio/github.jpeg",
-    project_detailsText: ` </p>
-      - Developed a serverless REST API using Node.js, Typescript, AWS API
-      Gateway, and AWS Lambda. <br /> - Implemented the API to interact with
-      the application frontend developed with React, <br /> - Stored Todo User
-      data on AWS DynamoDB, and images on AWS S3 Bucket,
-      <br /> - Configured an IAM Policy to allow communication and authorized
-      access to the targeted AWS resources needed during the development.{" "}
-      <br /> - Secured the application with SignIn and SignOut features using
-      Auth0 authentication, and Integrate the secrets and certificate into the
-      application. <br /> - Deployed the Stacks of Instructions written inside{" "}
-      <code>Serverless.yaml</code> to AWS CloudFormation to initialize
-      necessary AWS Resources for our CloudNative Todo App using a Serverless
-      framework. <br /> - AWS CloudFormation is IaaC ( Infrastructure as a
-      Code), and CloudFormation knows which AWS Resources own the code we
-      wrote inside the <code>serverless</code> framework based on the
-      instruction written and where to deploy to. <br /> - Checked AWS API
-      Gateway to see our REST API endpoint and tested it with Postman after
-      deployment. <br /> - Everything worked as expected and My Todo React
-      Application consumed the Serverless REST API Effortlessly.
-    </p>`,
+    project_detailsText: ` A serverless web application that is designed and developed with AWS Lamdba, API Gateway, Express , NodeJS for backend, deployed on AWS via cloudFormation and serverless framework to serve a react application
+       `,
     projectTechStack:
       "Typescript, NodeJS, Express,Serveless Framework, API GATEWAY, AWS CLOUDFORMATION,AWS EKS,AWS LAMDBA ",
     project_category: "Serveless with NodeJS and AWS",
@@ -169,7 +151,7 @@ const portfolioArchiveData: ArchivedPortfolioProps[] = [
       " Lulu is a gaming application built on top of blockchain to reward users for keeping their africa dialect by translating words to different Africa languages and earn a token and LuLu NFT. Worked with MyComDAO as a volunteer Frontend Developer as a infant startup",
     projectTechStack: "HTML, CSS  and JavaScript",
     project_category: "Company website V1",
-    project_name: "Lulu Game (coming soon)",
+    project_name: "Lulu Game template",
   },
 ]
 

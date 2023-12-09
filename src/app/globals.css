@@ -24,7 +24,7 @@
   --color-body-light: #a6b0bd;
   --color-body-white: #a6b0bd;
   --color-lightn: #a6b0db;
-  --color-warning: #be185d;
+  --color-warning: #3bdaf6;
   --color-midgray: #3b82f6;
   --transition: 0.4s;
   /* --bg-gradient-hover: linear-gradient(to right bottom, #212428, #16181c); */
@@ -130,7 +130,7 @@ html::after {
     --color-body-light: #a6b0bd;
     --color-body-white: #a6b0bd;
     --color-lightn: #a6b0db;
-    --color-warning: #be185d;
+    --color-warning: #3bdaf6;
     --color-midgray: #3b82f6;
   }
   body.dark {
