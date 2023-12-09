@@ -22,7 +22,7 @@ const ExperienceItem = ({
   return (
     <div className='experience_item'>
       <div className=''>
-        <h3>
+        <h3 className='text-[0.94rem] md:text-xl'>
           {role} @ <span className='highlighted'>{company}</span>
         </h3>
         <div className='flex items-center gap-4 mt-2'>
