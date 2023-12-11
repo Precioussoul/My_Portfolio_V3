@@ -255,8 +255,11 @@ const PortfolioSection = () => {
           ))}
         </div>
 
-        <div className='flex items-center justify-center gap-3 my-8'>
-          <h2 className='text-neutral-300  my-8 capitalize !text-2xl !font-semibold'>
+        <div className='flex items-center flex-col justify-center gap-3 my-8'>
+          <p className='resumee__header-subtitle mt-8 !capitalize'>
+            View the Archives
+          </p>
+          <h2 className='text-neutral-300   mb-8 capitalize !text-2xl !font-semibold'>
             Other Noteworthy Projects
           </h2>
         </div>
