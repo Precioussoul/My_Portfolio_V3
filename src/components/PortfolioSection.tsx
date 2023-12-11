@@ -18,6 +18,17 @@ type ArchivedPortfolioProps = {
 const portfolioArchiveData: ArchivedPortfolioProps[] = [
   {
     projectId: 4,
+    projectlink: "https:/aladdin.ng/",
+    project_image_url: "/assets/images/portfolio/Aladdin-Mobile.png",
+    project_detailsText:
+      "Aladdin Mobile app is a fintech mobile application that provides payment solutions such as Banking services, Virtual Dollar Wallet Account, Dollar Card Services, Bills Payment and more. Contributed to the Home screens design implemntation and markeplace screen using React Native",
+    projectTechStack:
+      "Built with WordPress, React Native, Redux, Emotion/React Native, TypeScript, React Navigation and more",
+    project_category: " IOS |Android Application",
+    project_name: "Aladdin Mobile App",
+  },
+  {
+    projectId: 4,
     projectlink: "https://wealthymomnow.com/",
     project_image_url: "/assets/images/portfolio/wealthmomnow.jpg",
     project_detailsText:
@@ -65,16 +76,6 @@ const portfolioArchiveData: ArchivedPortfolioProps[] = [
       "https://github.com/Precioussoul/MyRead----Book-lending-App-React-Nd",
   },
   {
-    projectId: 9,
-    projectlink: "https://monsuratajokefoundation.com.ng/",
-    project_image_url: "/assets/images/portfolio/mafoundation.jpg",
-    project_detailsText:
-      "A Charity Foundation website built with the purpose of showcasing their work to partners through online presence. visitor can also make donations. Built with WordPress, Custom SVG, Custom CSS, Elementor Page Builder and other Add-ons Plugins.",
-    projectTechStack: "HTML, CSS, JavaScript and Wordpress",
-    project_category: "Company website",
-    project_name: "Ma Foundation",
-  },
-  {
     projectId: 10,
     projectlink: "https://medium-cms.vercel.app",
     project_image_url: "/assets/images/portfolio/medium-blog-website.jpg",
@@ -89,9 +90,9 @@ const portfolioArchiveData: ArchivedPortfolioProps[] = [
     projectlink: "https://github.com/Precioussoul/Monolith_to_Microservices",
     project_image_url: "/assets/images/portfolio/microservice3-min.png",
     project_detailsText:
-      "Udagram is a monolithic web application broken down into microservices such that database is AWS RDS, the backend is NodeJS and is further broken down into two microservices (user API, and feed API) and connected together with reverse-proxy nginx and the frontend is listening to the API on exposed port on LoadBalancer 8080 inside AWS EKS.",
+      "Udagram is a monolithic web app broken down into microservices such that  the database (AWS RDS), the backend endpoints are hosted separately and connected together with reverse-proxy nginx and the frontend is listening to the API endpoint.",
     projectTechStack:
-      "React-Iconic,Typescript, NodeJS, Express, travis CI, Docker, Kubernetes,AWS EKS, and Shell ",
+      "React, Typescript, NodeJS, travis CI, Docker, Kubernetes, AWS.",
     project_category: "Microservice Architecture",
     project_name: "Monolithic application breakdown to Microservice",
     projectGithubLink:
@@ -103,15 +104,14 @@ const portfolioArchiveData: ArchivedPortfolioProps[] = [
     project_image_url: "/assets/images/portfolio/github.jpeg",
     project_detailsText: ` A serverless web application that is designed and developed with AWS Lamdba, API Gateway, Express , NodeJS for backend, deployed on AWS via cloudFormation and serverless framework to serve a react application
        `,
-    projectTechStack:
-      "Typescript, NodeJS, Express,Serveless Framework, API GATEWAY, AWS CLOUDFORMATION,AWS EKS,AWS LAMDBA ",
+    projectTechStack: "Typescript, NodeJS, Express,Serveless Framework, AWS",
     project_category: "Serveless with NodeJS and AWS",
     project_name:
       "Serverless Todo application using AWS Lambda, AWS API Gateway and Serverless framework.",
     projectGithubLink: "https://github.com/Precioussoul/Serverless-c4-project",
   },
   {
-    projectId: 12,
+    projectId: 13,
     projectlink: "https://wouldrathergame.netlify.app/",
     project_image_url: "/assets/images/portfolio/WouldRatherGame_thumbnail.jpg",
     project_detailsText:
@@ -123,7 +123,7 @@ const portfolioArchiveData: ArchivedPortfolioProps[] = [
       "https://github.com/Precioussoul/Would-You-Rather-ND-Project-2",
   },
   {
-    projectId: 13,
+    projectId: 14,
     projectlink: "https://3rdaugustgroup.org/",
     project_image_url: "/assets/images/portfolio/3rdAugust.jpg",
     project_detailsText:
@@ -133,11 +133,11 @@ const portfolioArchiveData: ArchivedPortfolioProps[] = [
     project_name: "3rd August Company",
   },
   {
-    projectId: 14,
+    projectId: 15,
     projectlink: "https://github.com/Precioussoul/Cloud-Image-Filter",
     project_image_url: "/assets/images/portfolio/cloud-image-filter.png",
     project_detailsText:
-      "Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.",
+      "Udagram is a simple cloud application that allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.",
     projectTechStack: "AWS ElasticBeanstalk, NodeJS, Express, AWS S3",
     project_category: "Cloud Backend with AWS",
     project_name: "Udagram Image Filtering Microservice",
