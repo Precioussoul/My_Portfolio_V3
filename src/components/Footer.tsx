@@ -6,44 +6,29 @@ import React from "react"
 
 const Footer = () => {
   return (
-    <footer className='footer-section'>
+    <footer className='footer-section mt-10'>
       <div className='container'>
         <div className='footer__container'>
-          <div className='footer__logo-box'>
-            <Link href='/' className='footer nav-logo'>
-              <div className='logo'>
-                <Image
-                  src='/assets/images/author/Ai-sofiyullah.jpeg'
-                  alt='website logo'
-                  className='logo-image'
-                  width={500}
-                  height={500}
-                />
-              </div>
-              <span>HABSOF</span>
-            </Link>
-          </div>
           <div className='footer__copyright'>
-            <div className='footer__author-info'>
-              <h2 className='made-withLove'>
-                Made with{" "}
-                <span className='footer-icon'>
-                  <i className='fas fa-heart'></i>
-                </span>{" "}
-                by Sofiyullah Abdullah.
-              </h2>
-
-              <p className='footer__copyright-text upt'>
-                This website is scheduled for regular update...
-              </p>
-            </div>
             <div className='footer__copyright-plane'>
-              <p className='footer__copyright-text'>
-                &copy; <span id='copyright-year'></span> HABSOF.
+              <p className='footer__copyright-text order-2 md:order-1'>
+                Sofiyullah Abdullah (HABSOF) &copy; {new Date().getFullYear()}
               </p>
-              <p className='footer__copyright-text'>
-                &copy; Sofiyullah Abdullah (HABSOF)
-              </p>
+
+              <div className='footer__logo-box order-1 md:order-2'>
+                <Link href='/' className='nav-logo'>
+                  <div className='logo'>
+                    <Image
+                      src='/assets/images/author/Ai-sofiyullah.jpeg'
+                      alt='website logo'
+                      className='logo-image'
+                      width={500}
+                      height={500}
+                    />
+                  </div>
+                  <span>HABSOF</span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

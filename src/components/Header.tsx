@@ -98,12 +98,12 @@ const Header = () => {
                     className='nav-link features__link'
                     onClick={executeFeatureScroll}
                   >
-                    Features
+                    About Me
                   </span>
                 </li>
                 <li className='nav-item'>
                   <span className='nav-link' onClick={executeResumeeScroll}>
-                    Resume
+                    Experience
                   </span>
                 </li>
                 <li className='nav-item'>
@@ -117,18 +117,19 @@ const Header = () => {
                   </span>
                 </li>
                 <li className='nav-item'>
-                  <span className='nav-link' onClick={executeBlogScroll}>
-                    Blog
+                  <span className='nav-link' onClick={executeContactScroll}>
+                    Contact
                   </span>
                 </li>
               </ul>
 
-              <span
-                className='btn-secondary contact-me'
-                onClick={executeContactScroll}
+              <a
+                href='/assets/images/author/Sofiyullah_full-stackFrontend.pdf'
+                download
+                className='btn-secondary contact-me text-center capitalize min-w-[120px]'
               >
-                Contact Me
-              </span>
+                Resume
+              </a>
             </nav>
           </div>
         </header>
@@ -218,18 +219,19 @@ const Header = () => {
               <li className='mobile-menu__nav-item'>
                 <span
                   className='mobile-menu__nav-link'
-                  onClick={executeBlogScroll}
-                >
-                  Blog
-                </span>
-              </li>
-              <li className='mobile-menu__nav-item'>
-                <span
-                  className='mobile-menu__nav-link'
                   onClick={executeContactScroll}
                 >
                   Contact
                 </span>
+              </li>
+              <li className='mobile-menu__nav-item'>
+                <a
+                  href='public/assets/images/author/Sofiyullah_full-stackFrontend.pdf'
+                  download
+                  className='btn-secondary contact-me'
+                >
+                  Resume
+                </a>
               </li>
             </ul>
             <div className='mobile-menu find-me'>
