@@ -43,14 +43,14 @@ const HeroSection = () => {
                       <i className='fab fa-linkedin-in'></i>
                     </Link>
                   </li>
-                  <li className='hero__social-item'>
+                  {/* <li className='hero__social-item'>
                     <Link
                       href='https://twitter.com/sofiyullah_dev'
                       className='social-link'
                     >
                       <i className='fab fa-twitter'></i>
                     </Link>
-                  </li>
+                  </li> */}
                   <li className='hero__social-item'>
                     <Link
                       href='https://github.com/Precioussoul'

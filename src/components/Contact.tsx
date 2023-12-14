@@ -10,10 +10,36 @@ const Contact = () => {
     <section className='contact-section' id='Contact' ref={contactRef}>
       <div className='container'>
         <div className='contact__header'>
-          <p className='contact__header-subtitle'>Let Connect 👨‍💻</p>
-          <h2 className='contact__header-title'>Connect with me</h2>
+          <p className='contact__header-subtitle'>What&apos;s next 👨‍💻</p>
+          <h2 className='contact__header-title'>Get In Touch</h2>
         </div>
-        <div className='contact__grid'>
+
+        {/* <!-- contact grid ends here --> */}
+        <div className='contact__hint flex items-center flex-col justify-center'>
+          <p className='text-lg text-center w-1/2'>
+            Let&apos;s start an amazing journey together. I&apos;m currently
+            open to discuss new opportunities. My Inbox is always open and
+            active. Typically reply within few minutes.
+          </p>
+          <div className='mt-14'>
+            <a
+              href='mailto:habsoff@gmail.com'
+              className='btn-outline greeting__color '
+            >
+              Say Hello
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Contact
+
+/* 
+
+       <div className='contact__grid'>
           <div className='contact__intro-box'>
             <div className='contact__image-box'>
               <Image
@@ -33,8 +59,7 @@ const Contact = () => {
                   Developer
                 </p>
               </div>
-              {/* <!-- contact intro heading ends here --> */}
-              <div className='contact__intro-offer'>
+               <div className='contact__intro-offer'>
                 <p className='contact__intro-job'>
                   I am open to Full-time job and Freelance work. Connect with me
                   via gmail and call in on my account.
@@ -52,14 +77,13 @@ const Contact = () => {
                   </li>
                 </ul>
               </div>
-              {/* <!-- contact intro offer ends here --> */}
-              <div className='contact find-me'>
+               <div className='contact find-me'>
                 <h3 className='contact find-text'>Hire Me</h3>
                 <p className='contact hire_me'>
                   You will never regret it. Mark my word
                 </p>
 
-                {/* <ul className='contact social-icon-list'>
+                 <ul className='contact social-icon-list'>
                   <li className='social-item'>
                     <Link
                       href='https://web.facebook.com/profile.php?id=100065549805843'
@@ -93,7 +117,7 @@ const Contact = () => {
                       <i className='fab fa-linkedin-in'></i>
                     </Link>
                   </li>
-                </ul> */}
+                </ul> 
                 <Link
                   href='public/assets/images/author/Sofiyullah_full-stackFrontend.pdf'
                   download
@@ -102,11 +126,9 @@ const Contact = () => {
                   Download CV
                 </Link>
               </div>
-              {/* <!-- find me ends here --> */}
-            </div>
+             </div>
           </div>
-          {/* <!-- contact intro box column 1 ends here --> */}
-          <div className='contact__form-box'>
+           <div className='contact__form-box'>
             <form
               name='contact'
               method='POST'
@@ -174,12 +196,5 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          {/* <!-- contact form box column two ends here --> */}
-        </div>
-        {/* <!-- contact grid ends here --> */}
-      </div>
-    </section>
-  )
-}
-
-export default Contact
+         </div>
+*/

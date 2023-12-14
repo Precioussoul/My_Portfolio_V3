@@ -884,7 +884,19 @@ a {
   margin-bottom: 3rem;
 }
 
-.portfolio__header-title,
+.contact__hint {
+  color: var(--color-body-light);
+}
+
+.greeting__color {
+  color: var(--color-body) !important;
+}
+
+.greeting__color:hover {
+  color: var(--color-primary) !important;
+}
+
+.contact .portfolio__header-title,
 .contact__header-title,
 .blog__header-title {
   color: var(--color-body-light);
