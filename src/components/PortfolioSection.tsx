@@ -18,7 +18,7 @@ type ArchivedPortfolioProps = {
 const portfolioArchiveData: ArchivedPortfolioProps[] = [
   {
     projectId: 4,
-    projectlink: "https:/aladdin.ng/",
+    projectlink: "https://aladdin.ng",
     project_image_url: "/assets/images/portfolio/Aladdin-Mobile.png",
     project_detailsText:
       "Aladdin Mobile app is a fintech mobile application that provides payment solutions such as Banking services, Virtual Dollar Wallet Account, Dollar Card Services, Bills Payment and more. Contributed to the Home screens design implemntation and markeplace screen using React Native",
