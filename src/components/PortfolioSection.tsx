@@ -170,8 +170,8 @@ const PortfolioSection = () => {
       projectTitle: "Aladdin Business App",
       projectDescription: `A fintech web-app that allow business of all kind that access to
       banking services at the business-level, international payment,
-      solutions and beyonds. Available soon. currently in development. Involved in the project as the lead frontend engineer for a team of 5 teammate. Buy a company share today and Invest into the project `,
-      projectLiveUrl: "https://aladdin.ng/business",
+      solutions and beyonds. Available soon. currently in development. Involved in the project as the lead frontend engineer for a team of 5 teammate and developed 85% of the frontend core components and its architectures `,
+      projectLiveUrl: "https://abp-dev.aladdin.com.ng",
       isPrivateRepo: true,
       techStacks: "React,Redux, TypeScript, Chakra UI, Aladdin APIs",
     },
