@@ -65,7 +65,7 @@ const ResumeeSection = () => {
               style={{display: "block"}}
             >
               <ExperienceItem
-                role='Frontend Engineer'
+                role='Software Engineer'
                 company='Aladdin Digital Bank'
                 start_date='May 2023'
                 isPresent
@@ -83,7 +83,7 @@ const ResumeeSection = () => {
             </div>
             <div className='tab-content' id='Connou'>
               <ExperienceItem
-                role='Frontend Engineer'
+                role='Software Engineer'
                 company='Connou'
                 start_date='August 2022'
                 end_date='March 2023'
