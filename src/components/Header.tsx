@@ -124,7 +124,7 @@ const Header = () => {
               </ul>
 
               <a
-                href='/assets/images/author/Sofiyullah_full-stackFrontend.pdf'
+                href='/assets/images/author/SofiyullahAbdullah_software_engineer.pdf'
                 download
                 className='btn-secondary contact-me text-center capitalize min-w-[120px]'
               >
