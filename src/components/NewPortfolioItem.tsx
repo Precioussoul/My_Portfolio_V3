@@ -90,11 +90,7 @@ const NewPortfolioItem = ({
           } w-full p-4`}
         >
           <span className='portfolio-new__heading-subtitle font-semibold  '>
-            {isFeatured
-              ? "Featured Project"
-              : isDevMode
-              ? "Under Development"
-              : ""}
+            {isFeatured ? "Featured Project" : isDevMode ? "Coming soon" : ""}
           </span>
           <h2 className='portfolio-new__heading-title font-bold mt-4 text-xl'>
             {projectTitle}
