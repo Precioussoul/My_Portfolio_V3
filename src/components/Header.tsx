@@ -141,7 +141,7 @@ const Header = () => {
                 <div className='nav-logo'>
                   <div className='logo'>
                     <Image
-                      src='/assets/images/logo/habsof-logo.png'
+                      src='/assets/images/author/Ai-sofiyullah.jpeg'
                       alt='website logo'
                       className='logo-image'
                       width={300}
@@ -189,7 +189,7 @@ const Header = () => {
                   className='mobile-menu__nav-link'
                   onClick={executeFeatureScroll}
                 >
-                  Features
+                  About Me
                 </span>
               </li>
               <li className='mobile-menu__nav-item'>
@@ -197,7 +197,7 @@ const Header = () => {
                   className='mobile-menu__nav-link'
                   onClick={executeResumeeScroll}
                 >
-                  Resume
+                  Experience
                 </span>
               </li>
               <li className='mobile-menu__nav-item'>

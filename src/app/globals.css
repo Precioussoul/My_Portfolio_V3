@@ -277,7 +277,8 @@ a {
   margin-right: 1rem;
 }
 
-.nav-link {
+.nav-link,
+.mobile-menu__nav-link {
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
