@@ -17,15 +17,15 @@ type ArchivedPortfolioProps = {
 
 const portfolioArchiveData: ArchivedPortfolioProps[] = [
   {
-    projectId: 4,
-    projectlink: "https://aladdin.ng",
-    project_image_url: "/assets/images/portfolio/Aladdin-Mobile.png",
+    projectId: 10,
+    projectlink: "https://homevibe.vercel.app",
+    project_image_url: "/assets/images/portfolio/homevibe-screenshot.png",
     project_detailsText:
-      "Aladdin Mobile app is a fintech mobile application that provides payment solutions such as Banking services, Virtual Dollar Wallet Account, Dollar Card Services, Bills Payment and more. Contributed to the Home screens design implemntation and markeplace screen using React Native",
+      "AirBnB Inspired real-estate marketplace platform that allows you to list a house for rents, book housing for vacations and reservation. Led and developed the entire project full-stack development",
     projectTechStack:
-      "Built with WordPress, React Native, Redux, Emotion/React Native, TypeScript, React Navigation and more",
-    project_category: " IOS |Android Application",
-    project_name: "Aladdin Mobile App",
+      "Next.js, TypeScript, TailwindCss, Prisma, MongoDb, Next-Auth, Cloudinary",
+    project_category: "E-commerce",
+    project_name: "HomeVibe | Book your vacation",
   },
   {
     projectId: 4,
@@ -38,30 +38,27 @@ const portfolioArchiveData: ArchivedPortfolioProps[] = [
     project_category: "Company website",
     project_name: "WealthMomNow | E-learning website",
   },
+  {
+    projectId: 12,
+    projectlink: "https://platform.socialpr.ai",
+    project_image_url: "/assets/images/portfolio/Social-PR_dashboard.png",
+    project_detailsText:
+      "SocialPR is a platform that allow you to expand your visibility through High PR and leverage their network to rank your Article in the Top Publication Media. Contributed to the frontend development of the platform",
+    projectTechStack: "React, Typescript, TailwindCSS, NodeJS, MongoDB, 0Auth",
+    project_category: "Microservice Architecture",
+    project_name: "SocialPR AI | Leveraging AI in Publications ",
+  },
 
   {
-    projectId: 5,
-    projectlink: "https://connou.app",
-    project_image_url: "/assets/images/portfolio/connouapp-website.jpg",
-    project_detailsText:
-      " Connou | The App that Connects You with Like-minded Humans.Working at connou as a full-time software developer, responsible for development of the company website and also contribute to the development of the company mobile app using flutter",
-    projectTechStack:
-      "React,NextJS, Typescript, and Sanity CMS for content management",
-    project_category: "Company website",
-    project_name: "Connou | The App that Connects You with Like-minded Humans.",
-  },
-  {
     projectId: 7,
-    projectlink: "https://cutt.ly/UUeawGs",
-    project_image_url: "/assets/images/portfolio/Fitness-Tracker.jpg",
+    projectlink: "https://aladdin.ng",
+    project_image_url: "/assets/images/portfolio/Aladdin-Mobile.png",
     project_detailsText:
-      "A Fitness Tracker Mobile application that help fitness enthusiast to keep track of their daily exercise with historys. The app also have geo-spartial location feature enabled which tell users the direction they are heading to. Built with React Native, React Navigation, Async Storage etc. and other native features.",
+      "Aladdin Mobile app is a fintech mobile application that provides payment solutions such as Banking services, Virtual Dollar Wallet Account, Dollar Card Services, Bills Payment and more. Contributed to the Home screens design implemntation and markeplace screen using React Native",
     projectTechStack:
-      "React-Native, React Navigation, Async Storage,and other native features",
-    project_category: "Mobile-application",
-    project_name: "Fitness Tracker App",
-    projectGithubLink:
-      "https://github.com/Precioussoul/Fitness-Tracker---Mobile-Application",
+      "Built with WordPress, React Native, Redux, Emotion/React Native, TypeScript, React Navigation and more",
+    project_category: " IOS |Android Application",
+    project_name: "Aladdin Mobile App",
   },
   {
     projectId: 8,
@@ -75,28 +72,17 @@ const portfolioArchiveData: ArchivedPortfolioProps[] = [
     projectGithubLink:
       "https://github.com/Precioussoul/MyRead----Book-lending-App-React-Nd",
   },
+
   {
-    projectId: 10,
-    projectlink: "https://medium-cms.vercel.app",
-    project_image_url: "/assets/images/portfolio/medium-blog-website.jpg",
+    projectId: 5,
+    projectlink: "https://connou.app",
+    project_image_url: "/assets/images/portfolio/connouapp-website.jpg",
     project_detailsText:
-      "A blog powered by next.js and sanity cms where you can manage content from the content management system and it will reflect on the website",
-    projectTechStack: "HTML, CSS, JavaScript and Next.js and SANITY CMS",
-    project_category: "Blog website",
-    project_name: "Medium Blog Powered by CMS",
-  },
-  {
-    projectId: 11,
-    projectlink: "https://github.com/Precioussoul/Monolith_to_Microservices",
-    project_image_url: "/assets/images/portfolio/microservice3-min.png",
-    project_detailsText:
-      "Udagram is a monolithic web app broken down into microservices such that  the database (AWS RDS), the backend endpoints are hosted separately and connected together with reverse-proxy nginx and the frontend is listening to the API endpoint.",
+      " Connou | The App that Connects You with Like-minded Humans.Working at connou as a full-time software developer, responsible for development of the company website and also contribute to the development of the company mobile app using flutter",
     projectTechStack:
-      "React, Typescript, NodeJS, travis CI, Docker, Kubernetes, AWS.",
-    project_category: "Microservice Architecture",
-    project_name: "Monolithic application breakdown to Microservice",
-    projectGithubLink:
-      "https://github.com/Precioussoul/Monolith_to_Microservices",
+      "React,NextJS, Typescript, and Sanity CMS for content management",
+    project_category: "Company website",
+    project_name: "Connou | The App that Connects You with Like-minded Humans.",
   },
   {
     projectId: 12,
@@ -153,6 +139,19 @@ const portfolioArchiveData: ArchivedPortfolioProps[] = [
     project_category: "Company website V1",
     project_name: "Lulu Game template",
   },
+  {
+    projectId: 11,
+    projectlink: "https://github.com/Precioussoul/Monolith_to_Microservices",
+    project_image_url: "/assets/images/portfolio/microservice3-min.png",
+    project_detailsText:
+      "Udagram is a monolithic web app broken down into microservices such that  the database (AWS RDS), the backend endpoints are hosted separately and connected together with reverse-proxy nginx and the frontend is listening to the API endpoint.",
+    projectTechStack:
+      "React, Typescript, NodeJS, travis CI, Docker, Kubernetes, AWS.",
+    project_category: "Microservice Architecture",
+    project_name: "Monolithic application breakdown to Microservice",
+    projectGithubLink:
+      "https://github.com/Precioussoul/Monolith_to_Microservices",
+  },
 ]
 
 const PortfolioSection = () => {
@@ -164,8 +163,20 @@ const PortfolioSection = () => {
   const portfolioData: NewPortFolioItemProps[] = [
     {
       isMobile: isMobile,
+      isFeatured: true,
+      images: ["/assets/images/portfolio/Realply.png"],
+      projectTitle: "Realply | AI LinkedIn Lead Generation ",
+      projectDescription: `Realpy is an AI Linkedin Lead Generation sotware help to Scale your network, get more followers and fill your pipeline with more deals. Less effort. More results. Contributed to frontend development of Realply Dashboard`,
+      projectLiveUrl: "https://www.realply.com/",
+      isPrivateRepo: true,
+      techStacks:
+        "React.js, TypeScript, TailwindCss,  MongoDb, 0Auth, Linkedin API",
+    },
+    {
+      isMobile: isMobile,
       // isDevMode: true,
-      toRight: false,
+      isFeatured: true,
+      toRight: true,
       images: ["/assets/images/portfolio/businessAcc.png"],
       projectTitle: "Aladdin Business App",
       projectDescription: `A fintech web-app that allow business of all kind that access to
@@ -178,24 +189,13 @@ const PortfolioSection = () => {
     {
       isMobile: isMobile,
       isFeatured: true,
-      toRight: true,
+      // toRight: true,
       images: ["/assets/images/portfolio/breej.png"],
       projectTitle: "Breej Marketplace",
       projectDescription: `A fintech platform that runs modern barter system using GoldRing and Barter Token Virtual Coin to facilitate exchange, connect, thrive and get what you need, without spending cash. Contracted and Developed the entire project frontend UI Interfaces and API Integrations.`,
       projectLiveUrl: "https://breej.io/",
       isPrivateRepo: true,
       techStacks: "Next.js, React-Query, TypeScript, TailwindCss, Breej APIs",
-    },
-    {
-      isMobile: isMobile,
-      isFeatured: true,
-      images: ["/assets/images/portfolio/homevibe-screenshot.png"],
-      projectTitle: "HomeVibe | Book Vacation",
-      projectDescription: `AirBnB Inspired real-estate marketplace platform that allows you to list a house for rents, book housing for vacations and reservation. Led and developed the entire project full-stack development`,
-      projectLiveUrl: "https://homevibe.vercel.app/",
-      projectGitHubUrl: "https://github.com/Precioussoul/HomeVibe",
-      techStacks:
-        "Next.js, TypeScript, TailwindCss, Prisma, MongoDb, Next-Auth, Cloudinary",
     },
     {
       isMobile: isMobile,
