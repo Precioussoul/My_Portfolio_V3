@@ -65,14 +65,13 @@ const ResumeeSection = () => {
               style={{display: "block"}}
             >
               <ExperienceItem
-                role='Software Engineer'
+                role='Frontend Engineer'
                 company='Aladdin Digital Bank'
-                start_date='May 2023'
-                isPresent
+                start_date='April 2023'
+                end_date='January 2024'
+                // isPresent
                 bullet_points={[
-                  `Revitalized the Aladdin Mobile app, enhancing its user interface with a modern design using React-Native, Emotions, and Typescript.
-                Contributed to a 30% increase in user satisfaction by implementing intuitive navigation and interactive elements.`,
-
+                  `Revitalized the Aladdin Mobile app, enhancing its user interface with a modern design using React-Native, Emotions, and Typescript which contributed to a 30% increase in user satisfaction by implementing intuitive navigation and interactive elements.`,
                   `Streamlined API integration with Redux toolkit and RTK Query, seamlessly channeled data into the frontend UI components, reducing feature
                 implementation time by 20% and ensuring a smooth user experience.`,
 
@@ -83,10 +82,10 @@ const ResumeeSection = () => {
             </div>
             <div className='tab-content' id='Connou'>
               <ExperienceItem
-                role='Software Engineer'
+                role='Frontend Engineer'
                 company='Connou'
                 start_date='August 2022'
-                end_date='March 2023'
+                end_date='February 2023'
                 bullet_points={[
                   `Spearheaded the development of the company's public-facing website with React and Next.js, implementing optimizations that led to a
                   remarkable 40% surge in user visitation. Promoting product awareness and contributing to a 25% increase in user inquiries.`,
@@ -102,7 +101,7 @@ const ResumeeSection = () => {
 
             <div className='tab-content' id='ALX'>
               <ExperienceItem
-                role='Software Engineer Intern'
+                role='Frontend Engineer'
                 company='ALX Africa'
                 start_date='January 2022'
                 end_date='January 2023'

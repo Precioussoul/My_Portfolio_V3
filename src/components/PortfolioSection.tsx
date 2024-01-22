@@ -60,6 +60,7 @@ const portfolioArchiveData: ArchivedPortfolioProps[] = [
     project_category: " IOS |Android Application",
     project_name: "Aladdin Mobile App",
   },
+
   {
     projectId: 8,
     projectlink: "https://myreadnd.netlify.app/",
@@ -68,11 +69,20 @@ const portfolioArchiveData: ArchivedPortfolioProps[] = [
       "A web application that keep you updated of list of books , you can search for books, filter catalog options (to read now, Currently reading and will read). Bult with React, CSS, and Use Book API to fetch data.",
     projectTechStack: "HTML, CSS, JavaScript,React and BookAPI",
     project_category: "Web application ",
-    project_name: "My Read Web application",
-    projectGithubLink:
-      "https://github.com/Precioussoul/MyRead----Book-lending-App-React-Nd",
+    project_name: "Khardl | Arab Restaurant Service",
   },
-
+  // {
+  //   projectId: 8,
+  //   projectlink: "https://myreadnd.netlify.app/",
+  //   project_image_url: "/assets/images/portfolio/MyRead_thumbnail.jpg",
+  //   project_detailsText:
+  //     "A web application that keep you updated of list of books , you can search for books, filter catalog options (to read now, Currently reading and will read). Bult with React, CSS, and Use Book API to fetch data.",
+  //   projectTechStack: "HTML, CSS, JavaScript,React and BookAPI",
+  //   project_category: "Web application ",
+  //   project_name: "My Read Web application",
+  //   projectGithubLink:
+  //     "https://github.com/Precioussoul/MyRead----Book-lending-App-React-Nd",
+  // },
   {
     projectId: 5,
     projectlink: "https://connou.app",

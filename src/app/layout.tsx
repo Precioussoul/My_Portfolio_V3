@@ -27,9 +27,9 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   const {mode} = useContext(ContentContext)
   useEffect(() => {
     const Titles = [
-      "Software Engineer",
-      "Full-Stack Developer",
-      "Cloud Developer",
+      "Frontend Engineer",
+      "Full-Stack Engineer",
+      "Web3 Enthusiast",
     ]
     let count = 0
     let index = 0
