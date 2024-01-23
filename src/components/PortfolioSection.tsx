@@ -69,7 +69,7 @@ const portfolioArchiveData: ArchivedPortfolioProps[] = [
       "A web application that keep you updated of list of books , you can search for books, filter catalog options (to read now, Currently reading and will read). Bult with React, CSS, and Use Book API to fetch data.",
     projectTechStack: "HTML, CSS, JavaScript,React and BookAPI",
     project_category: "Web application ",
-    project_name: "Khardl | Arab Restaurant Service",
+    project_name: "My Read Web Application",
   },
   // {
   //   projectId: 8,
