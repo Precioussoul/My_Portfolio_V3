@@ -62,6 +62,7 @@ const portfolioData: NewPortFolioItemProps[] = [
   },
 
   {
+    isPrivateRepo: true,
     images: ["/assets/images/portfolio/Aladdin-Mobile.png"],
     projectTitle: "Aladdin Mobile App",
     projectDescription: `Aladdin Mobile app is a fintech mobile application that provides payment solutions such as Banking services, Virtual Dollar Wallet Account, Dollar Card Services, Bills Payment and more. Contributed to the Home screens design implemntation and markeplace screen using React Native`,
@@ -71,6 +72,7 @@ const portfolioData: NewPortFolioItemProps[] = [
       "React Native, Redux, Emotion/React Native, TypeScript, React Navigation",
   },
   {
+    isPrivateRepo: true,
     images: ["/assets/images/portfolio/connouapp-website.jpg"],
     projectTitle: "Connou Website",
     projectDescription: `Connou | The App that Connects You with Like-minded Humans.Working at connou as a full-time software developer, responsible for development of the company website and also contribute to the development of the company mobile app using flutter`,
@@ -80,6 +82,7 @@ const portfolioData: NewPortFolioItemProps[] = [
   {
     images: ["/assets/images/portfolio/MyRead_thumbnail.jpg"],
     projectTitle: "MyRead",
+    isPrivateRepo: true,
     projectDescription: `A web application that keep you updated of list of books , you can search for books, filter catalog options (to read now, Currently reading and will read). Bult with React, CSS, and Use Book API to fetch data.`,
     projectLiveUrl: "https://myreadnd.netlify.app/",
     techStacks: "HTML, CSS, JavaScript,React and BookAPI",
