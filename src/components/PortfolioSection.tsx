@@ -6,15 +6,14 @@ import PortfolioItem from "./PortfolioItem"
 
 const portfolioData: NewPortFolioItemProps[] = [
   {
-    toRight: true,
     images: ["/assets/images/portfolio/Social-PR_dashboard.png"],
     projectTitle: "SocialPR | Leveraging AI in Publications",
     projectDescription: `SocialPR is a platform that allow you to expand your visibility through High PR and leverage their network to rank your Article in the Top Publication Media. Contributed to the frontend development of the platform`,
     projectLiveUrl: "https://socialpr.ai",
+    isPrivateRepo: true,
     techStacks: "React, Typescript, TailwindCSS, NodeJS, MongoDB, 0Auth",
   },
   {
-    toRight: true,
     images: ["/assets/images/portfolio/businessAcc.png"],
     projectTitle: "Aladdin Business App",
     projectDescription: `A fintech web-app that allow business of all kind that access to
@@ -34,7 +33,7 @@ const portfolioData: NewPortFolioItemProps[] = [
   },
   {
     // isFeatured: true,
-    toRight: true,
+
     images: ["/assets/images/portfolio/hbs_drive.png"],
     projectTitle: "Lytebox | Google Drive Inspired",
     projectDescription: `Google Drive Inspired full-stack web application that allow users to upload files,preview, delete, starred favorites ,download etc.. Led and developed the entire project full-stack development`,
@@ -44,7 +43,6 @@ const portfolioData: NewPortFolioItemProps[] = [
       "React, TypeScript, Sass, Firebase, Cloud Storage, Media Libraries",
   },
   {
-    toRight: true,
     images: ["/assets/images/portfolio/homevibe-screenshot.png"],
     projectTitle: "HomeVibe | Book your vacation",
     projectDescription: `AirBnB Inspired real-estate marketplace platform that allows you to list a house for rents, book housing for vacations and reservation. Led and developed the entire project full-stack development`,
@@ -54,17 +52,16 @@ const portfolioData: NewPortFolioItemProps[] = [
       "Next.js, TypeScript, TailwindCss, Prisma, MongoDb, Next-Auth, Cloudinary",
   },
   {
-    toRight: true,
     images: ["/assets/images/portfolio/wealthmomnow.jpg"],
     projectTitle: "WealthMomNow | E-learning website",
     projectDescription: `Wealthymomnow Website is an online-courses website for solo-instructor. I am responsible for building this website from scratch together with the design, content and couses upload to the backend of the website.`,
     projectLiveUrl: "https://wealthymomnow.com/",
+    isPrivateRepo: true,
     techStacks:
       "WordPress, Astra Theme, TutorLMS, Elementor Pro, Content Writing",
   },
 
   {
-    toRight: true,
     images: ["/assets/images/portfolio/Aladdin-Mobile.png"],
     projectTitle: "Aladdin Mobile App",
     projectDescription: `Aladdin Mobile app is a fintech mobile application that provides payment solutions such as Banking services, Virtual Dollar Wallet Account, Dollar Card Services, Bills Payment and more. Contributed to the Home screens design implemntation and markeplace screen using React Native`,
@@ -74,7 +71,6 @@ const portfolioData: NewPortFolioItemProps[] = [
       "React Native, Redux, Emotion/React Native, TypeScript, React Navigation",
   },
   {
-    toRight: true,
     images: ["/assets/images/portfolio/connouapp-website.jpg"],
     projectTitle: "Connou Website",
     projectDescription: `Connou | The App that Connects You with Like-minded Humans.Working at connou as a full-time software developer, responsible for development of the company website and also contribute to the development of the company mobile app using flutter`,
@@ -82,7 +78,6 @@ const portfolioData: NewPortFolioItemProps[] = [
     techStacks: "React, NextJS, Typescript, Sanity CMS",
   },
   {
-    toRight: true,
     images: ["/assets/images/portfolio/MyRead_thumbnail.jpg"],
     projectTitle: "MyRead",
     projectDescription: `A web application that keep you updated of list of books , you can search for books, filter catalog options (to read now, Currently reading and will read). Bult with React, CSS, and Use Book API to fetch data.`,
