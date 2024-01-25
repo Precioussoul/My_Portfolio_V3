@@ -171,17 +171,17 @@ const PortfolioSection = () => {
   const [isMobile, setIsMobile] = useState(false)
 
   const portfolioData: NewPortFolioItemProps[] = [
-    {
-      isMobile: isMobile,
-      isFeatured: true,
-      images: ["/assets/images/portfolio/Realply.png"],
-      projectTitle: "Realply | AI LinkedIn Lead Generation ",
-      projectDescription: `Realpy is an AI Linkedin Lead Generation sotware help to Scale your network, get more followers and fill your pipeline with more deals. Less effort. More results. Contributed to frontend development of Realply Dashboard`,
-      projectLiveUrl: "https://www.realply.com/",
-      isPrivateRepo: true,
-      techStacks:
-        "React.js, TypeScript, TailwindCss,  MongoDb, 0Auth, Linkedin API",
-    },
+    // {
+    //   isMobile: isMobile,
+    //   isFeatured: true,
+    //   images: ["/assets/images/portfolio/Realply.png"],
+    //   projectTitle: "Realply | AI LinkedIn Lead Generation ",
+    //   projectDescription: `Realpy is an AI Linkedin Lead Generation sotware help to Scale your network, get more followers and fill your pipeline with more deals. Less effort. More results. Contributed to frontend development of Realply Dashboard`,
+    //   projectLiveUrl: "https://www.realply.com/",
+    //   isPrivateRepo: true,
+    //   techStacks:
+    //     "React.js, TypeScript, TailwindCss,  MongoDb, 0Auth, Linkedin API",
+    // },
     {
       isMobile: isMobile,
       // isDevMode: true,
