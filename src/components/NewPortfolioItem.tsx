@@ -48,7 +48,7 @@ const NewPortfolioItem = ({
   }
 
   return (
-    <div className='portfolio-new__item '>
+    <div className='portfolio-new__item rounded-md'>
       <div
         style={{
           backgroundImage: `linear-gradient(to top left,#0b1121,#0b112196),url(${
@@ -66,7 +66,7 @@ const NewPortfolioItem = ({
           <span className='portfolio-new__heading-subtitle font-semibold  '>
             {isFeatured ? "Featured Project" : isDevMode ? "Coming soon" : ""}
           </span>
-          <h2 className='portfolio-new__heading-title font-bold mt-4 text-xl'>
+          <h2 className='portfolio-new__heading-title font-bold mt-4 text-lg'>
             {projectTitle}
           </h2>
         </div>

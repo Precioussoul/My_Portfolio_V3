@@ -801,11 +801,22 @@ a {
 }
 
 .portfolio-new__item {
-  /* min-height: 400px; */
+  /*min-height: 400px;
+  */
+  box-shadow: var(--shadow-1);
+  transition: all 0.4s;
   position: relative;
   width: 100%;
   min-height: 400px;
   background-color: var(--background-color-2);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.portfolio-new__item:hover {
+  transform: translateY(-0.4rem);
 }
 
 .portfolio-new__img-item {
