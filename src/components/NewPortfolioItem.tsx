@@ -50,43 +50,17 @@ const NewPortfolioItem = ({
   return (
     <div className='portfolio-new__item '>
       <div
-        className={`relative 2xl:w-[700px] w-[550px] h-full hidden md:block order-2 md:order-1 ${
-          toRight && "md:order-2"
-        }`}
-      >
-        <Slider {...settings}>
-          {images &&
-            images.length > 0 &&
-            images.map((image, idx) => (
-              <div className='portfolio-new__img-item  ' key={idx}>
-                <div className='portfolio-new__item-img-box bg-gradient-to-tl from-blue-950 to-slate-700 hover:bg-none'>
-                  <Image
-                    width={500}
-                    height={500}
-                    unoptimized
-                    alt=''
-                    src={image}
-                    className={"portfolio-new__item-img"}
-                  />
-                </div>
-              </div>
-            ))}
-        </Slider>
-      </div>
-      <div
         style={{
           backgroundImage: `linear-gradient(to top left,#0b1121,#0b112196),url(${
-            images.length > 0 && isMobile && images[0]
+            images.length > 0 && images[0]
           })`,
         }}
         className={`portfolio-new__summary order-1 md:order-1 bg-contain
-        md:!bg-none`}
+         `}
       >
         <div
           className={`portfolio-new__heading inline-flex flex-col   ${
-            toRight && !isMobile
-              ? "justify-start items-start"
-              : "justify-end items-end"
+            toRight ? "justify-start items-start" : "justify-end items-end"
           } w-full p-4`}
         >
           <span className='portfolio-new__heading-subtitle font-semibold  '>
@@ -96,11 +70,7 @@ const NewPortfolioItem = ({
             {projectTitle}
           </h2>
         </div>
-        <div
-          className={`portfolio-new__summary-box ${
-            toRight && !isMobile && "!mr-auto !ml-0"
-          }`}
-        >
+        <div className={`portfolio-new__summary-box ${toRight && " "}`}>
           <p className='p-6 leading-6 font-medium text-[0.9rem]'>
             {projectDescription}
           </p>
@@ -108,9 +78,7 @@ const NewPortfolioItem = ({
 
         <div
           className={`inline-flex flex-col w-full p-4  ${
-            toRight && !isMobile
-              ? "justify-start items-start"
-              : "justify-end items-end"
+            toRight ? "justify-start items-start" : "justify-end items-end"
           } `}
         >
           <div className='flex gap-4 items-center flex-wrap'>

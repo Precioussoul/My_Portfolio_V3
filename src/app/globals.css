@@ -804,16 +804,14 @@ a {
   /* min-height: 400px; */
   position: relative;
   width: 100%;
-  height: 400px;
+  min-height: 400px;
   background-color: var(--background-color-2);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 .portfolio-new__img-item {
   position: relative;
   width: 100%;
-  height: 400px;
+  min-height: 400px;
   overflow: hidden;
 }
 
