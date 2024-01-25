@@ -55,7 +55,7 @@ const NewPortfolioItem = ({
             images.length > 0 && images[0]
           })`,
         }}
-        className={`portfolio-new__summary order-1 md:order-1 bg-contain
+        className={`portfolio-new__summary rounded-md order-1 md:order-1 bg-contain
          `}
       >
         <div
@@ -70,7 +70,9 @@ const NewPortfolioItem = ({
             {projectTitle}
           </h2>
         </div>
-        <div className={`portfolio-new__summary-box ${toRight && " "}`}>
+        <div
+          className={`portfolio-new__summary-box rounded-md ${toRight && " "}`}
+        >
           <p className='p-6 leading-6 font-medium text-[0.9rem]'>
             {projectDescription}
           </p>
