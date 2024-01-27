@@ -71,7 +71,7 @@ const NewPortfolioItem = ({
           </h2>
         </div>
         <div
-          className={`portfolio-new__summary-box rounded-md ${toRight && " "}`}
+          className={`portfolio-new__summary-box rounded-tl-md rounded-bl-md ${toRight && " "}`}
         >
           <p className='p-6 leading-6 font-medium text-[0.9rem]'>
             {projectDescription}
