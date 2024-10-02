@@ -3,8 +3,13 @@ import {useState, useEffect} from 'react';
 import { FaSun, FaMoon } from 'react-icons/fa'
 
 const ThemeToggle = () => {
-    const [theme, setTheme] = useState('light');
-  
+    const getSystemTheme = () => {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        return prefersDark ? 'dark' : 'light';
+      };
+    
+      const [theme, setTheme] = useState(getSystemTheme);
+      
     useEffect(() => {
       document.documentElement.setAttribute('data-theme', theme);
     }, [theme]);
@@ -16,8 +21,8 @@ const ThemeToggle = () => {
     return (
     <button
       onClick={toggleTheme}
-      className={`w-16 h-8 rounded-full flex p-1  duration-200 overflow-hidden ease-in-out outline-none  ${
-        theme === 'light' ? 'bg-gray-200 items-center justify-start border-2 border-blue-600' : 'bg-gray-800 items-center justify-end border-none'
+      className={`w-16 h-8 rounded-full flex p-1 transition-colors duration-200 overflow-hidden ease-in-out outline-none ${
+        theme === 'light' ? 'bg-gray-200  border-2 border-blue-600' : 'bg-gray-800  border-none'
       }`}
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
     >
@@ -25,6 +30,8 @@ const ThemeToggle = () => {
         className={`w-6 h-6 rounded-full duration-200 ease-in-out ${
           theme === 'dark' ? ' bg-white' : ' bg-white'
         } flex items-center justify-center `}
+        style={{ transform: theme === 'light' ? 'translateX(0)' : 'translateX(2rem)' }}
+
       >
         {theme === 'dark' ? (
           <FaMoon className="w-4 h-4 text-blue-600" />

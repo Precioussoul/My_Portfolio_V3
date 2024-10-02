@@ -85,9 +85,7 @@ const Header = () => {
                 </div>
                 <span>HABSOF</span>
               </Link>
-              <button className='hamburger-menu' onClick={openMobileNav}>
-                <i className='fas fa-bars'></i>
-              </button>
+
               <ul className='nav-list'>
                 <li className='nav-item'>
                   <span className='nav-link active' onClick={executeHomeScroll}>
@@ -125,6 +123,9 @@ const Header = () => {
               </ul>
               <div className="flex items-center gap-2">
                 <ThemeToggle/>
+                <button className='hamburger-menu' onClick={openMobileNav}>
+                <i className='fas fa-bars'></i>
+              </button>
               <a
                 href='/assets/images/author/SofiyullahAbdullah_frontendEngineer.pdf'
                 download
