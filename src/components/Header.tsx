@@ -2,8 +2,9 @@
 import {ContentContext} from "@/contexts/ScrollContext"
 import Image from "next/image"
 import Link from "next/link"
-import {useRouter} from "next/router"
+import { GoDownload } from "react-icons/go";
 import React, {useContext, useEffect, useState} from "react"
+import ThemeToggle from "./ThemeToggle"
 
 const Header = () => {
   const [desktopNav, setDesktopNav] = useState(true)
@@ -122,14 +123,17 @@ const Header = () => {
                   </span>
                 </li>
               </ul>
-              
+              <div className="flex items-center gap-2">
+                <ThemeToggle/>
               <a
                 href='/assets/images/author/SofiyullahAbdullah_frontendEngineer.pdf'
                 download
-                className='btn-secondary contact-me text-center capitalize min-w-[120px]'
-              >
-                Resume
+                className='btn-secondary contact-me text-center capitalize min-w-[120px] flex items-center justify-center gap-2'
+                >
+                <span>Resume</span>
+                <GoDownload/>
               </a>
+                </div>
             </nav>
           </div>
         </header>

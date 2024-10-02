@@ -67,6 +67,14 @@ const HeroSection = () => {
                   <li className='skill-item'>
                     <Image
                       src='/assets/images/icons/icons-16.png'
+                      alt='WordPress'
+                      width={500}
+                      height={500}
+                    />
+                  </li>
+                  <li className='skill-item'>
+                    <Image
+                      src='/assets/images/icons/javascript.png'
                       alt='HTML'
                       width={500}
                       height={500}
@@ -74,16 +82,8 @@ const HeroSection = () => {
                   </li>
                   <li className='skill-item'>
                     <Image
-                      src='/assets/images/icons/node-js.png'
+                      src='/assets/images/icons/icons-08.png'
                       alt='React'
-                      width={500}
-                      height={500}
-                    />
-                  </li>
-                  <li className='skill-item'>
-                    <Image
-                      src='/assets/images/icons/aws-2.svg'
-                      alt='WordPress'
                       width={500}
                       height={500}
                     />
