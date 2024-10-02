@@ -122,7 +122,7 @@ const Header = () => {
                   </span>
                 </li>
               </ul>
-
+              
               <a
                 href='/assets/images/author/SofiyullahAbdullah_frontendEngineer.pdf'
                 download

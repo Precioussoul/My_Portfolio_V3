@@ -51,7 +51,7 @@ const NewPortfolioItem = ({
     <div className='portfolio-new__item rounded-md'>
       <div
         style={{
-          backgroundImage: `linear-gradient(to top left,#0b1121,#0b112196),url(${
+          backgroundImage: `var(--portfolio-gradient),url(${
             images.length > 0 && images[0]
           })`,
         }}
@@ -83,7 +83,7 @@ const NewPortfolioItem = ({
             toRight ? "justify-start items-start" : "justify-end items-end"
           } `}
         >
-          <div className='flex gap-4 items-center flex-wrap'>
+          <div className='flex gap-4 items-center flex-wrap portfolio-new__stack_text'>
             {techStacks &&
               techStacks.split(",").map((stack, idx) => (
                 <p key={idx} className='font-semibold text-[0.9rem] '>
