@@ -10,9 +10,20 @@ const ThemeToggle = () => {
     
       const [theme, setTheme] = useState(getSystemTheme);
       
+    // Sync the theme with system settings and manual toggle
     useEffect(() => {
-      document.documentElement.setAttribute('data-theme', theme);
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+        const handleSystemThemeChange = (e:any) => {
+        setTheme(e.matches ? 'dark' : 'light');
+        };
+        mediaQuery.addEventListener('change', handleSystemThemeChange);
+        document.documentElement.setAttribute('data-theme', theme);
+        return () => {
+        mediaQuery.removeEventListener('change', handleSystemThemeChange);
+        };
     }, [theme]);
+
   
     const toggleTheme = () => {
       setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
