@@ -16,10 +16,10 @@ const TestimonialItem = ({author_speech, author_name, author_position, author_im
         />
         <div>
           <h3 className='font-semibold text-lg highlighted'>{author_name}</h3>
-          <p className='text-gray-600'>{author_position}</p>
+          <p className='text-gray-600 text-[0.9rem]'>{author_position}</p>
         </div>
       </div>
-      <p className='text-gray-700'>{author_speech}</p>
+      <p className='text-gray-700 text-[0.9rem] leading-5'>{author_speech}</p>
     </div>
   )
 }
