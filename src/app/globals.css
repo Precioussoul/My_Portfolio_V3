@@ -1585,12 +1585,6 @@ a {
 
 .testimonial__box {
   color: var(--color-body-light);
-  margin-bottom: 2rem;
-  margin: 0 auto;
-  width: 500px;
-  margin-bottom: 3rem;
-  margin-top: 4rem;
-  z-index: 2;
   border-radius: 1rem;
   box-shadow: var(--shadow-1);
   -webkit-border-radius: 1rem;

@@ -5,7 +5,7 @@ import {TestimonialProps} from "types"
 
 const TestimonialItem = ({author_speech, author_name, author_position, author_imageUrl, is_long_speech}: TestimonialProps) => {
   return (
-    <div className={`testimonial bg-[var(--hero-bg)] p-6 rounded-lg shadow-md ${is_long_speech ? "min-w-[700px]" : "min-w-[500px]"}`}>
+    <div className={`testimonial__box bg-[var(--hero-bg)] p-6 rounded-lg shadow-md ${is_long_speech ? "min-w-[700px]" : "min-w-[500px]"}`}>
       <div className='flex items-center mb-4'>
         <Image
           src={author_imageUrl}
@@ -16,10 +16,10 @@ const TestimonialItem = ({author_speech, author_name, author_position, author_im
         />
         <div>
           <h3 className='font-semibold text-lg highlighted'>{author_name}</h3>
-          <p className='text-gray-600 text-[0.9rem]'>{author_position}</p>
+          <p className='text-[0.9rem]'>{author_position}</p>
         </div>
       </div>
-      <p className='text-gray-700 text-[0.9rem] leading-5'>{author_speech}</p>
+      <p className='text-[0.9rem] leading-5'>{author_speech}</p>
     </div>
   )
 }
