@@ -28,10 +28,10 @@ const ResumeeSection = () => {
         <div className='flex items-center justify-center'>
           <div className='flex flex-col overflow-hidden md:flex-row items-start'>
             <ul className='resumee__tabs  md:!flex-col gap-8 md:gap-4 '>
-              <li className='resumee__tab-item line-clamp-1 font-medium active' onClick={(event) => openTab(event, "Benmore")}>
+              {/* <li className='resumee__tab-item line-clamp-1 font-medium active' onClick={(event) => openTab(event, "Benmore")}>
                 Benmore Technology
-              </li>
-              <li className='resumee__tab-item line-clamp-1 font-medium' onClick={(event) => openTab(event, "Aladdin")}>
+              </li> */}
+              <li className='resumee__tab-item line-clamp-1 font-medium active' onClick={(event) => openTab(event, "Aladdin")}>
                 Aladdin Digital Bank
               </li>
               <li className='resumee__tab-item line-clamp-1 font-medium' onClick={(event) => openTab(event, "Connou")}>
@@ -45,7 +45,7 @@ const ResumeeSection = () => {
               </li>
             </ul>
 
-            <div className='tab-content active' id='Benmore' style={{display: "block"}}>
+            {/* <div className='tab-content active' id='Benmore' style={{display: "block"}}>
               <ExperienceItem
                 role='Full-stack Engineer'
                 company='Benmore Technology'
@@ -62,8 +62,8 @@ const ResumeeSection = () => {
                     promotion to Full-Stack Engineer.`,
                 ]}
               />
-            </div>
-            <div className='tab-content' id='Aladdin'>
+            </div> */}
+            <div className='tab-content' id='Aladdin' style={{display: "block"}}>
               <ExperienceItem
                 role='Frontend Engineer'
                 company='Aladdin Digital Bank'

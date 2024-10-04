@@ -39,7 +39,7 @@ const Testimonial = () => {
   }, [])
 
   return (
-    <section className='testimonial__section' id='testimonial'>
+    <section className='testimonial__section mt-24 pt-12' id='testimonial'>
       <div className='container testimonial__container'>
         <div className='testimonial__header'>
           <p className='testimonial__header-subtitle'>Hear from those that I have worked with</p>
