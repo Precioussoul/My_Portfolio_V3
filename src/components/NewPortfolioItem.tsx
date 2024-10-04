@@ -1,7 +1,4 @@
-import Image from "next/image"
 import Link from "next/link"
-import React, {useEffect} from "react"
-import Slider from "react-slick"
 import {FiExternalLink} from "react-icons/fi"
 import {FaBuildingLock, FaGithub} from "react-icons/fa6"
 

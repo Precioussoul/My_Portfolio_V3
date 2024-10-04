@@ -7,6 +7,7 @@ export const testimonialData: TestimonialProps[] = [
       "We at @Connou have been collaborating with Sofi for a number of months and we highly recommend him. Sofi possesses excellent qualities such as the ability to work independently, a deep understanding of various technologies, quick learning and drive. These attributes make him an exceptional fit for a dynamic and agile start-up. The quality that stands out the most is his strong motivation and passion for software engineering.",
     author_name: "Mike Mock",
     author_position: "CTO - Connou",
+    is_long_speech: true,
   },
   {
     author_imageUrl: "/assets/images/testimonial/rec6.jpeg",
@@ -14,6 +15,7 @@ export const testimonialData: TestimonialProps[] = [
       "I am writing to highly recommend Sofi for any web development project. Sofi recently developed our company website and the end result exceeded our expectations. From the beginning, Sofi demonstrated a strong understanding of our needs and was able to translate them into a functional and visually appealing website. He is also a great communicator and was able to manage the project effectively, ensuring that deadlines were met and that the final product was of the highest quality. I would not hesitate to work with Sofi again and I strongly recommend him for any web development project. Please do not hesitate to contact me if you require any further information.",
     author_name: "Lukas Georg Kromminga",
     author_position: "CEO - Connou",
+    is_long_speech: true,
   },
   {
     author_imageUrl: "/assets/images/testimonial/rec5.jpeg",

@@ -11,9 +11,7 @@ const ThemeToggle = () => {
   const [theme, setTheme] = useState("light") // Default to 'light' to avoid mismatch
   const [hydrated, setHydrated] = useState(false) // Hydration detection
 
-  // Sync the theme with system settings and manual toggle
   useEffect(() => {
-    // This ensures the component is fully mounted before applying theme
     setHydrated(true)
 
     // Set the theme after hydration
@@ -32,7 +30,6 @@ const ThemeToggle = () => {
     }
   }, [])
 
-  // Update theme attribute in document root
   useEffect(() => {
     if (hydrated) {
       document.documentElement.setAttribute("data-theme", theme)
@@ -43,7 +40,6 @@ const ThemeToggle = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"))
   }
 
-  // Avoid rendering the button until hydration is complete
   if (!hydrated) return <></>
 
   return (

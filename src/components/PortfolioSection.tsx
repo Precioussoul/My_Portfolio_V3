@@ -1,8 +1,5 @@
-import {ContentContext} from "@/contexts/ScrollContext"
-import React, {useContext, useEffect, useState} from "react"
-import {FaCode} from "react-icons/fa6"
+import React, {useState} from "react"
 import NewPortfolioItem, {NewPortFolioItemProps} from "./NewPortfolioItem"
-import PortfolioItem from "./PortfolioItem"
 
 const portfolioData: NewPortFolioItemProps[] = [
   {
@@ -39,8 +36,7 @@ const portfolioData: NewPortFolioItemProps[] = [
     projectDescription: `Google Drive Inspired full-stack web application that allow users to upload files,preview, delete, starred favorites ,download etc.. Led and developed the entire project full-stack development`,
     projectLiveUrl: "https://lytebox.web.app/",
     projectGitHubUrl: "https://github.com/Precioussoul/Lytebox",
-    techStacks:
-      "React, TypeScript, Sass, Firebase, Cloud Storage, Media Libraries",
+    techStacks: "React, TypeScript, Sass, Firebase, Cloud Storage, Media Libraries",
   },
   {
     images: ["/assets/images/portfolio/homevibe-screenshot.png"],
@@ -48,8 +44,7 @@ const portfolioData: NewPortFolioItemProps[] = [
     projectDescription: `AirBnB Inspired real-estate marketplace platform that allows you to list a house for rents, book housing for vacations and reservation. Led and developed the entire project full-stack development`,
     projectLiveUrl: "https://homevibe.vercel.app",
     projectGitHubUrl: "https://github.com/Precioussoul/HomeVibe",
-    techStacks:
-      "Next.js, TypeScript, TailwindCss, Prisma, MongoDb, Next-Auth, Cloudinary",
+    techStacks: "Next.js, TypeScript, TailwindCss, Prisma, MongoDb, Next-Auth, Cloudinary",
   },
   {
     images: ["/assets/images/portfolio/wealthmomnow.jpg"],
@@ -57,8 +52,7 @@ const portfolioData: NewPortFolioItemProps[] = [
     projectDescription: `Wealthymomnow Website is an online-courses website for solo-instructor. I am responsible for building this website from scratch together with the design, content and couses upload to the backend of the website.`,
     projectLiveUrl: "https://wealthymomnow.com/",
     isPrivateRepo: true,
-    techStacks:
-      "WordPress, Astra Theme, TutorLMS, Elementor Pro, Content Writing",
+    techStacks: "WordPress, Astra Theme, TutorLMS, Elementor Pro, Content Writing",
   },
 
   {
@@ -66,10 +60,8 @@ const portfolioData: NewPortFolioItemProps[] = [
     images: ["/assets/images/portfolio/Aladdin-Mobile.png"],
     projectTitle: "Aladdin Mobile App",
     projectDescription: `Aladdin Mobile app is a fintech mobile application that provides payment solutions such as Banking services, Virtual Dollar Wallet Account, Dollar Card Services, Bills Payment and more. Contributed to the Home screens design implemntation and markeplace screen using React Native`,
-    projectLiveUrl:
-      "https://play.google.com/store/apps/details?id=com.aladdin.digital",
-    techStacks:
-      "React Native, Redux, Emotion/React Native, TypeScript, React Navigation",
+    projectLiveUrl: "https://play.google.com/store/apps/details?id=com.aladdin.digital",
+    techStacks: "React Native, Redux, Emotion/React Native, TypeScript, React Navigation",
   },
   {
     isPrivateRepo: true,
@@ -90,7 +82,6 @@ const portfolioData: NewPortFolioItemProps[] = [
 ]
 
 const PortfolioSection = () => {
-  const {portfolioRef} = useContext(ContentContext)
   const [maxPageNumber, setMaxPageNumber] = useState(6)
   const [isLoadMore, setIsLoadMore] = useState(false)
 
@@ -105,12 +96,10 @@ const PortfolioSection = () => {
 
   const projectDatas = portfolioData.slice(0, maxPageNumber)
   return (
-    <section className='portfolio-section' id='Portfolio' ref={portfolioRef}>
+    <section className='portfolio-section' id='portfolio'>
       <div className='container'>
         <div className='flex items-center gap-3 mb-8'>
-          <p className='portfolio__header-subtitle !capitalize !text-xl !font-medium'>
-            Latest Projects{" "}
-          </p>
+          <p className='portfolio__header-subtitle !capitalize !text-xl !font-medium'>Latest Projects </p>
         </div>
 
         <div className='portfolio__grid'>
@@ -133,10 +122,7 @@ const PortfolioSection = () => {
         </div>
 
         <div className='portfolio-showmore mt-8'>
-          <button
-            className='btn-outline'
-            onClick={isLoadMore ? resetLoadMore : handleLoadMore}
-          >
+          <button className='btn-outline' onClick={isLoadMore ? resetLoadMore : handleLoadMore}>
             {isLoadMore ? "Hide" : "Show More"}
           </button>
         </div>

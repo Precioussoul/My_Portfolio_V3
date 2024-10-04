@@ -3,9 +3,9 @@ import Image from "next/image"
 import React from "react"
 import {TestimonialProps} from "types"
 
-const TestimonialItem = ({author_speech, author_name, author_position, author_imageUrl}: TestimonialProps) => {
+const TestimonialItem = ({author_speech, author_name, author_position, author_imageUrl, is_long_speech}: TestimonialProps) => {
   return (
-    <div className='testimonial p-6 rounded-lg shadow-md min-w-[500px]'>
+    <div className={`testimonial bg-[var(--hero-bg)] p-6 rounded-lg shadow-md ${is_long_speech ? "min-w-[700px]" : "min-w-[500px]"}`}>
       <div className='flex items-center mb-4'>
         <Image
           src={author_imageUrl}

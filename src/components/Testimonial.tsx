@@ -1,12 +1,9 @@
 "use client"
-import React, {useContext, useEffect} from "react"
+import React, {useEffect} from "react"
 import TestimonialItem from "./TestimonialItem"
-import {ContentContext} from "@/contexts/ScrollContext"
 import {testimonialData} from "@/data/testimonial"
 
 const Testimonial = () => {
-  const {testimonialRef} = useContext(ContentContext)
-
   useEffect(() => {
     function autoScrollHorizontal() {
       const container = document.getElementById("testimonial-container")!!
@@ -42,7 +39,7 @@ const Testimonial = () => {
   }, [])
 
   return (
-    <section className='testimonial__section' id='Testimonial' ref={testimonialRef}>
+    <section className='testimonial__section' id='testimonial'>
       <div className='container testimonial__container'>
         <div className='testimonial__header'>
           <p className='testimonial__header-subtitle'>Hear from those that I have worked with</p>

@@ -1,12 +1,7 @@
 "use client"
-import Link from "next/link"
-import React, {useContext} from "react"
-import Image from "next/image"
-import {ContentContext} from "@/contexts/ScrollContext"
 import ExperienceItem from "./ExperienceItem"
 
 const ResumeeSection = () => {
-  const {resumeeRef} = useContext(ContentContext)
   function openTab(evt: any, TabName: string) {
     const resumeeTabs = document.querySelectorAll(".resumee__tab-item")
     const tabContents = document.querySelectorAll(".tab-content")
@@ -24,7 +19,7 @@ const ResumeeSection = () => {
   }
 
   return (
-    <section className='resumee-section' id='Resumee' ref={resumeeRef}>
+    <section className='resumee-section' id='resumee'>
       <div className='container'>
         <div className='resumee__header mb-8'>
           <p className='resumee__header-subtitle !capitalize'>Experience</p>
@@ -33,37 +28,42 @@ const ResumeeSection = () => {
         <div className='flex items-center justify-center'>
           <div className='flex flex-col overflow-hidden md:flex-row items-start'>
             <ul className='resumee__tabs  md:!flex-col gap-8 md:gap-4 '>
-              <li
-                className='resumee__tab-item line-clamp-1 font-medium active'
-                onClick={(event) => openTab(event, "Aladdin")}
-              >
+              <li className='resumee__tab-item line-clamp-1 font-medium active' onClick={(event) => openTab(event, "Benmore")}>
+                Benmore Technology
+              </li>
+              <li className='resumee__tab-item line-clamp-1 font-medium' onClick={(event) => openTab(event, "Aladdin")}>
                 Aladdin Digital Bank
               </li>
-              <li
-                className='resumee__tab-item line-clamp-1 font-medium'
-                onClick={(event) => openTab(event, "Connou")}
-              >
+              <li className='resumee__tab-item line-clamp-1 font-medium' onClick={(event) => openTab(event, "Connou")}>
                 Connou
               </li>
-              <li
-                className='resumee__tab-item line-clamp-1 font-medium'
-                onClick={(event) => openTab(event, "ALX")}
-              >
+              <li className='resumee__tab-item line-clamp-1 font-medium' onClick={(event) => openTab(event, "ALX")}>
                 ALX Africa
               </li>
-              <li
-                className='resumee__tab-item line-clamp-1 font-medium'
-                onClick={(event) => openTab(event, "BeeSpeed")}
-              >
+              <li className='resumee__tab-item line-clamp-1 font-medium' onClick={(event) => openTab(event, "BeeSpeed")}>
                 BeeSpeed Tech
               </li>
             </ul>
 
-            <div
-              className='tab-content active'
-              id='Aladdin'
-              style={{display: "block"}}
-            >
+            <div className='tab-content active' id='Benmore' style={{display: "block"}}>
+              <ExperienceItem
+                role='Full-stack Engineer'
+                company='Benmore Technology'
+                start_date='February 2024'
+                end_date='Present'
+                // isPresent
+                bullet_points={[
+                  ` Currently developing backend systems with Python and Django, and frontend interfaces using HTML, CSS, Tailwind, and JavaScript;
+                  autonomously leading a full-stack project aimed at improving system efficiency by 25%.`,
+                  `Previously served as a Frontend Engineer for 5 months, single-handedly delivering 4 frontend projects, resulting in a 30% increase in user
+                  engagement and a 20% improvement in conversion rates for client MVPs.`,
+
+                  `Contributed to a 15% increase in client onboarding success rate, significantly enhancing the firm's reputation and client base, leading to a
+                    promotion to Full-Stack Engineer.`,
+                ]}
+              />
+            </div>
+            <div className='tab-content' id='Aladdin'>
               <ExperienceItem
                 role='Frontend Engineer'
                 company='Aladdin Digital Bank'

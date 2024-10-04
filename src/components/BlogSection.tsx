@@ -1,18 +1,13 @@
 "use client"
 
-import {ContentContext} from "@/contexts/ScrollContext"
-import React, {useContext} from "react"
 import BlogItem from "./BlogItem"
 
 const BlogSection = () => {
-  const {blogRef} = useContext(ContentContext)
   return (
-    <section className='blog-section' id='Blog' ref={blogRef}>
+    <section className='blog-section' id='blog'>
       <div className='container'>
         <div className='blog__header'>
-          <p className='blog__header-subtitle'>
-            i write about CloudNative Software Development 👨‍💻
-          </p>
+          <p className='blog__header-subtitle'>i write about CloudNative Software Development 👨‍💻</p>
           <h2 className='blog__header-title'>My blog</h2>
         </div>
         <div className='blog__grid'>

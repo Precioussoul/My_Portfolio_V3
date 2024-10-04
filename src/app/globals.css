@@ -32,6 +32,7 @@
   --border-bottom: 0.2rem solid #181a1d;
   --border-bottom-light: 0.15rem solid #181a1d;
   --portfolio-gradient: linear-gradient(to top left, #0b1121, #0b112196);
+  --hero-bg: rgba(0, 0, 0, 0.01);
 }
 
 :root[data-theme="light"] {
@@ -100,6 +101,7 @@
     --border-bottom: 0.2rem solid #181a1d;
     --border-bottom-light: 0.15rem solid #181a1d;
     --portfolio-gradient: linear-gradient(to top left, #0b1121, #0b112196);
+    --hero-bg: rgba(0, 0, 0, 0.01);
   }
 }
 
@@ -1549,7 +1551,6 @@ a {
 .testimonial__container {
   padding-bottom: 3rem;
   border-bottom: var(--border-bottom);
-  margin-bottom: 3rem;
 }
 
 #testimonial-container {
@@ -1857,10 +1858,6 @@ select:-webkit-autofill:focus {
 }
 
 /* footer-container */
-
-.footer-section {
-  padding: 3rem 0 0 0;
-}
 
 .footer__container {
   /* text-align: center; */

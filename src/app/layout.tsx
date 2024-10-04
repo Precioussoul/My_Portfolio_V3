@@ -1,16 +1,8 @@
 "use client"
-// Import Swiper styles
-import "swiper/css"
-import "swiper/css/navigation"
-import "swiper/css/pagination"
-import "swiper/css/keyboard"
 import "./globals.css"
-import AOS from "aos"
-import "aos/dist/aos.css"
 import Head from "./head"
-import {useContext, useEffect} from "react"
-import ContentContextProvider, {ContentContext} from "@/contexts/ScrollContext"
-import {Inter, Kurale} from "@next/font/google"
+import {useEffect} from "react"
+import {Inter, Kurale} from "next/font/google"
 
 const inter = Inter({
   weight: ["200", "300", "400", "600", "700", "900"],
@@ -24,13 +16,8 @@ const kural = Kurale({
 })
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
-  const {mode} = useContext(ContentContext)
   useEffect(() => {
-    const Titles = [
-      "Frontend Engineer",
-      "Full-Stack Engineer",
-      "Web3 Enthusiast",
-    ]
+    const Titles = ["Frontend Engineer", "Full-Stack Engineer", "Web3 Enthusiast"]
     let count = 0
     let index = 0
     let currentTitle = ""
@@ -44,9 +31,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       currentTitle = Titles[count]
       title = currentTitle.slice(0, ++index)
 
-      document
-        .querySelectorAll(".typing-text")
-        .forEach((typing) => (typing.textContent = title))
+      document.querySelectorAll(".typing-text").forEach((typing) => (typing.textContent = title))
 
       if (title.length === currentTitle.length) {
         count++
@@ -67,11 +52,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <Head />
-      <ContentContextProvider>
-        <body className={`${mode} ${inter.variable} ${kural.variable}`}>
-          {children}
-        </body>
-      </ContentContextProvider>
+      <body className={`${inter.variable} ${kural.variable}`}>{children}</body>
     </html>
   )
 }

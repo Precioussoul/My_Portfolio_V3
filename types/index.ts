@@ -22,6 +22,7 @@ export type TestimonialProps = {
   author_name: string
   author_position: string
   author_imageUrl: string
+  is_long_speech?: boolean
 }
 
 export type BlogItemProps = {
