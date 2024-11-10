@@ -65,7 +65,7 @@ const ResumeeSection = () => {
             </div>
             <div className='tab-content' id='Nethermind'>
               <ExperienceItem
-                role='Frontend Engineer (Web) Intern'
+                role='Frontend Engineer (Web3) Intern'
                 company='Nethermind'
                 start_date='April 2024'
                 end_date='July 2024'
