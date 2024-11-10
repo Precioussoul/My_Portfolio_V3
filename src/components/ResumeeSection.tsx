@@ -28,24 +28,24 @@ const ResumeeSection = () => {
         <div className='flex items-center justify-center'>
           <div className='flex flex-col overflow-hidden md:flex-row items-start'>
             <ul className='resumee__tabs  md:!flex-col gap-8 md:gap-4 '>
-              {/* <li className='resumee__tab-item line-clamp-1 font-medium active' onClick={(event) => openTab(event, "Benmore")}>
+              <li className='resumee__tab-item line-clamp-1 font-medium active' onClick={(event) => openTab(event, "Benmore")}>
                 Benmore Technology
-              </li> */}
-              <li className='resumee__tab-item line-clamp-1 font-medium active' onClick={(event) => openTab(event, "Aladdin")}>
-                Aladdin Digital Bank
+              </li>
+              <li className='resumee__tab-item line-clamp-1 font-medium' onClick={(event) => openTab(event, "Nethermind")}>
+                Nethermind
+              </li>
+              <li className='resumee__tab-item line-clamp-1 font-medium' onClick={(event) => openTab(event, "Aladdin")}>
+                Aladdin
               </li>
               <li className='resumee__tab-item line-clamp-1 font-medium' onClick={(event) => openTab(event, "Connou")}>
                 Connou
-              </li>
-              <li className='resumee__tab-item line-clamp-1 font-medium' onClick={(event) => openTab(event, "ALX")}>
-                ALX Africa
               </li>
               <li className='resumee__tab-item line-clamp-1 font-medium' onClick={(event) => openTab(event, "BeeSpeed")}>
                 BeeSpeed Tech
               </li>
             </ul>
 
-            {/* <div className='tab-content active' id='Benmore' style={{display: "block"}}>
+            <div className='tab-content active' id='Benmore' style={{display: "block"}}>
               <ExperienceItem
                 role='Full-stack Engineer'
                 company='Benmore Technology'
@@ -53,17 +53,34 @@ const ResumeeSection = () => {
                 end_date='Present'
                 // isPresent
                 bullet_points={[
-                  ` Currently developing backend systems with Python and Django, and frontend interfaces using HTML, CSS, Tailwind, and JavaScript;
-                  autonomously leading a full-stack project aimed at improving system efficiency by 25%.`,
-                  `Previously served as a Frontend Engineer for 5 months, single-handedly delivering 4 frontend projects, resulting in a 30% increase in user
-                  engagement and a 20% improvement in conversion rates for client MVPs.`,
+                  ` Developing backend systems with Python and Django, and frontend interfaces with React, React-Native, and Typescript, while independently
+                    leading a full-stack project aimed at improving system efficiency by 25%.`,
+                  `Served as a Frontend Engineer for 5 months, delivering 4 frontend projects, resulting in a 30% increase in user engagement and a 20%
+                    improvement in conversion rates for client MVPs.`,
 
-                  `Contributed to a 15% increase in client onboarding success rate, significantly enhancing the firm's reputation and client base, leading to a
-                    promotion to Full-Stack Engineer.`,
+                  `Collaborated with cross-functional teams to identify and resolve performance bottlenecks, optimizing application speed and reducing load
+                  times by 40%.`,
                 ]}
               />
-            </div> */}
-            <div className='tab-content' id='Aladdin' style={{display: "block"}}>
+            </div>
+            <div className='tab-content' id='Nethermind'>
+              <ExperienceItem
+                role='Frontend Engineer (Web) Intern'
+                company='Nethermind'
+                start_date='April 2024'
+                end_date='July 2024'
+                bullet_points={[
+                  `Gained hands-on experience with blockchain technologies through two projects, expanding knowledge of decentralized systems.`,
+
+                  `Contributed to frontend development for two blockchain projects, improving UI/UX and increasing user satisfaction by 25% while reducing
+user drop-off rates by 20%.`,
+
+                  `Collaborated with the development team to integrate blockchain features into web applications, boosting transaction processing speed by
+30% and enhancing user experience.`,
+                ]}
+              />{" "}
+            </div>
+            <div className='tab-content' id='Aladdin'  >
               <ExperienceItem
                 role='Frontend Engineer'
                 company='Aladdin Digital Bank'
@@ -99,29 +116,12 @@ const ResumeeSection = () => {
               />{" "}
             </div>
 
-            <div className='tab-content' id='ALX'>
-              <ExperienceItem
-                role='Frontend Engineer'
-                company='ALX Africa'
-                start_date='January 2022'
-                end_date='January 2023'
-                bullet_points={[
-                  `Excelled in web development and maintenance through intensive training with ALX Holberton School, showcasing mastery in HTML/CSS,
-                  JavaScript/React, Python/Flask, and DevOps. Realizing a 30% boost in project delivery efficiency, and adhering to industrial standards.`,
 
-                  `Collaborated with peers to troubleshoot and resolve critical technical issues, fostering a culture of knowledge-sharing and continuous
-                  improvement. Contributing to a 20% reduction in issue resolution time and enhancing overall team efficiency.`,
-
-                  `Achieved AWS proficiency through hands-on training, practical projects, and a scholarship by Udacity/ALX. Graduated and earned an AWS
-                  Cloud Developer Nanodegree certificate. Validated expertise, resulting in a 25% increase in cloud-based project success rates`,
-                ]}
-              />{" "}
-            </div>
 
             <div className='tab-content' id='BeeSpeed'>
               {/* ed */}
               <ExperienceItem
-                role='Frontend Engineer'
+                role='Frontend Web Developer'
                 company='BeeSpeed Technology'
                 start_date='August 2020'
                 end_date='December 2021'
