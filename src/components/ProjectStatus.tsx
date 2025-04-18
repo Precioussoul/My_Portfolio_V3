@@ -10,41 +10,41 @@ export type ProjectStatusProps = {
 }
 
 const ProjectStatus = ({status, className = "", size = "md", pulseAnimation = true, showLabel = true}: ProjectStatusProps) => {
-  // Define status configurations with enhanced colors
+  // Define status configurations with refined colors
   const statusConfig = {
     "ongoing": {
       icon: FaPlayCircle,
-      color: "text-emerald-500",
-      bgColor: "bg-emerald-500",
-      borderColor: "border-emerald-500",
-      hoverBg: "hover:bg-emerald-500/30",
+      color: "text-emerald-600",
+      bgColor: "bg-emerald-100",
+      textBgColor: "bg-emerald-600",
+      borderColor: "border-emerald-600/30",
       label: "Ongoing",
       description: "Project is actively being developed",
     },
     "in-progress": {
       icon: FaCog,
-      color: "text-blue-500",
-      bgColor: "!bg-blue-500",
-      borderColor: "!border-blue-500",
-      hoverBg: "hover:bg-blue-500/30",
+      color: "text-sky-600",
+      bgColor: "bg-sky-100",
+      textBgColor: "bg-sky-600",
+      borderColor: "border-sky-600/30",
       label: "In Progress",
       description: "Project is under active development",
     },
     "concluded": {
       icon: FaCheckCircle,
-      color: "!text-purple-500",
-      bgColor: "!bg-purple-500",
-      borderColor: "border-purple-500",
-      hoverBg: "hover:bg-purple-500/30",
+      color: "text-violet-700",
+      bgColor: "bg-violet-300",
+      textBgColor: "bg-violet-600",
+      borderColor: "border-violet-600/30",
       label: "Concluded",
       description: "Project has been successfully completed",
     },
     "paused": {
       icon: FaPauseCircle,
-      color: "text-amber-500",
-      bgColor: "bg-amber-500",
-      borderColor: "border-amber-500",
-      hoverBg: "hover:bg-amber-500/30",
+      color: "text-amber-600",
+      bgColor: "bg-amber-100",
+      textBgColor: "bg-amber-600",
+      borderColor: "border-amber-600/30",
       label: "Paused",
       description: "Project is temporarily on hold",
     },
@@ -78,17 +78,22 @@ const ProjectStatus = ({status, className = "", size = "md", pulseAnimation = tr
 
   return (
     <div
-      className={` bg-gray-200 dark:bg-gray-800 relative inline-flex items-center gap-2 rounded-full border ${currentStatus.borderColor} border-opacity-30 ${currentStatus.hoverBg} ${sizeClasses[size].padding} ${sizeClasses[size].container} font-medium transition-all duration-300 hover:shadow-md ${className}`}
+      className={`relative inline-flex items-center gap-2 rounded-full 
+        ${currentStatus.bgColor} 
+        border ${currentStatus.borderColor} 
+        ${sizeClasses[size].padding} ${sizeClasses[size].container} 
+        font-medium transition-all duration-300 hover:shadow-sm ${className}`}
+      style={{boxShadow: "0 1px 2px rgba(0,0,0,0.08)"}}
       title={currentStatus.description}
     >
       {/* Animated dot for active statuses */}
       {(status === "ongoing" || status === "in-progress") && pulseAnimation && (
-        <span className='absolute flex'>
+        <span className='relative flex h-2 w-2'>
           <span
-            className={`absolute inline-flex h-full w-full rounded-full opacity-75 animate-ping ${currentStatus.bgColor}`}
-            style={{animationDuration: "2s"}}
+            className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-85 ${currentStatus.textBgColor}`}
+            style={{animationDuration: "3s"}}
           ></span>
-          <span className={`relative rounded-full ${sizeClasses[size].dot} ${currentStatus.bgColor}`}></span>
+          <span className={`relative inline-flex rounded-full h-2 w-2 ${currentStatus.textBgColor}`}></span>
         </span>
       )}
 

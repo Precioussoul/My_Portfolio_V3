@@ -3,6 +3,50 @@ import NewPortfolioItem, {NewPortFolioItemProps} from "./NewPortfolioItem"
 
 const portfolioData: NewPortFolioItemProps[] = [
   {
+    images: ["/assets/images/portfolio/Rental_Cover.png"],
+    projectTitle: "LandlordLink Solutions | Simplify Properties Mgt.",
+    projectDescription: `Landlordlink Solutions is a platform that help streamlined your rental business.Manage properties, tenants, chats and payments all in one place. Led Entire full-stack development from scratch to deployment`,
+    projectLiveUrl: "https://landlordlinksolutions.ca/",
+    techStacks: "Python, Django, JavaScript, HTMX, TailwindCss, Django Channels (web-socket), Postgres, Redis, Signals,  Stripe-Connect, Cloudinary",
+    projectYear: "2025",
+    projectStatus: "concluded",
+    isPrivateRepo: true,
+  },
+  {
+    images: ["/assets/images/portfolio/cargo_cover.png"],
+    projectTitle: "CargoCredible | Review and Rate Cargo Incs",
+    projectDescription: `CargoCredible is a trusted trucking community platform where Truck Drivers, Carriers,& Industry Professionals can instantly review, rate, and find reliable services. Contributed to the v1 frontend development`,
+    projectLiveUrl: "https://cargocredible.com/",
+    techStacks: "Python, Django template,  HTML, TailwindCss, JavaScript",
+    projectYear: "2024",
+    projectStatus: "ongoing",
+    isPrivateRepo: true,
+    stackArea: "Frontend",
+  },
+  {
+    images: ["/assets/images/portfolio/astra_cover.png"],
+    projectTitle: "Astra Wellbeing | Positive HealthCare Support ",
+    projectDescription: `Astra Wellbeing helps healthcare organizations engage and retain their workforce by empowering patients, families, and peers to send real-time messages of positive support to staff. Contributed to UI modules of the employee portal`,
+    projectLiveUrl: "https://www.astrawellbeing.com/",
+    techStacks: "UI Delivery, Backend Handover,  HTML, TailwindCss, JavaScript",
+    projectYear: "2024",
+    projectStatus: "concluded",
+    isPrivateRepo: true,
+    stackArea: "Frontend",
+  },
+
+  {
+    images: ["/assets/images/portfolio/357_company_cover.png"],
+    projectTitle: "357 Company | End-to-End Logistics",
+    projectDescription: `357Company is an Last Mile Delivery & End-to-End Logistics platform Streamlining the Shipping Process for Supply Chain & Logistics Leaders. Implemented their frontend UI for the portal app login.`,
+    projectLiveUrl: "https://357company.com/",
+    techStacks: "Python, Django template, TailwindCss, JavaScript",
+    projectYear: "2024",
+    projectStatus: "concluded",
+    isPrivateRepo: true,
+    stackArea: "Frontend",
+  },
+  {
     images: ["/assets/images/portfolio/hbs_drive.png"],
     projectTitle: "Lytebox | Google Drive Inspired",
     projectDescription: `Google Drive Inspired full-stack web application that allow users to upload files,preview, delete, starred favorites ,download etc.. Led and developed the entire project full-stack development`,
@@ -21,6 +65,7 @@ const portfolioData: NewPortFolioItemProps[] = [
     techStacks: "React Native, Redux, Emotion/React Native, TypeScript, React Navigation",
     projectYear: "2023",
     projectStatus: "concluded",
+    stackArea: "Mobile",
   },
   {
     isPrivateRepo: true,
@@ -41,6 +86,7 @@ const portfolioData: NewPortFolioItemProps[] = [
     techStacks: "HTML, CSS, JavaScript,React and BookAPI",
     projectYear: "2021",
     projectStatus: "concluded",
+    stackArea: "Frontend",
   },
 ]
 
@@ -81,6 +127,7 @@ const PortfolioSection = () => {
               techStacks={portfolio.techStacks}
               projectYear={portfolio.projectYear}
               projectStatus={portfolio.projectStatus}
+              stackArea={portfolio.stackArea}
             />
           ))}
         </div>

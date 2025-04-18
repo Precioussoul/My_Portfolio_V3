@@ -5,7 +5,6 @@
 
 /* Default  */
 
-:root,
 :root[data-theme="dark"] {
   --color-primary: #0ea5e9;
   --color-secondary: #0b1121;

@@ -2,6 +2,7 @@ import Link from "next/link"
 import {FiExternalLink} from "react-icons/fi"
 import {FaBuildingLock, FaGithub} from "react-icons/fa6"
 import ProjectStatus from "./ProjectStatus"
+import StackStatus from "./StackStatus"
 
 export type NewPortFolioItemProps = {
   isPrivateRepo?: boolean
@@ -15,6 +16,7 @@ export type NewPortFolioItemProps = {
   toRight?: boolean
   projectYear?: string
   projectStatus?: "ongoing" | "in-progress" | "concluded" | "paused" // New status prop
+  stackArea?: "Frontend" | "Backend" | "Full-stack" | "Mobile" | "Database" | "UI/UX"
 }
 
 const NewPortfolioItem = ({
@@ -29,6 +31,8 @@ const NewPortfolioItem = ({
   techStacks,
   isMobile,
   projectYear,
+  stackArea = "Full-stack", // Default to Full-stack
+
   toRight,
 }: NewPortFolioItemProps) => {
   return (
@@ -56,7 +60,7 @@ const NewPortfolioItem = ({
           <h2 className='portfolio-new__heading-title font-bold mt-4 text-lg'>{projectTitle}</h2>
         </div>
         <div className={`w-11/12 flex flex-col gap-4 ${toRight ? "mr-auto" : "ml-auto"} mt-8  `}>
-          <div className='bg-white dark:bg-slate-900/90 backdrop-blur rounded-lg shadow-lg p-4'>
+          <div className='bg-white dark:bg-slate-900/90 backdrop-blur rounded-tl-lg rounded-bl-lg shadow-lg p-4'>
             <p className='text-gray-600 dark:text-gray-200 leading-relaxed text-sm line-clamp-4 w-full font-medium'>{projectDescription}</p>
           </div>
           <div className={`inline-flex flex-col w-full py-4 ${toRight ? "justify-start items-start" : "justify-end items-end"} `}>
@@ -95,13 +99,15 @@ const NewPortfolioItem = ({
             </div>
           )}
         </div>
-        <div className='absolute top-4 left-4 border border-gray-300 rounded-2xl text-white text-sm font-semibold bg-gray-500/50 dark:bg-black/40 p-2 '>
+        <div className='absolute top-4 left-4 border block min-w-[50px] border-blue-600 rounded-2xl text-white text-sm font-semibold bg-gray-600/50 dark:bg-black/40 p-2 '>
           {projectYear}
         </div>
-        <div className='absolute bottom-4 left-4'>
+        <div className='absolute bottom-4 left-4 flex gap-4 items-center'>
           {projectStatus && (
             <ProjectStatus status={projectStatus} size='sm' pulseAnimation={projectStatus === "ongoing" || projectStatus === "in-progress"} />
           )}
+
+          {stackArea && <StackStatus stack={stackArea} size='sm' variant='chip' />}
         </div>
       </div>
     </div>
