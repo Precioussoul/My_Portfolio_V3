@@ -33,6 +33,7 @@ const ThemeToggle = () => {
   useEffect(() => {
     if (hydrated) {
       document.documentElement.setAttribute("data-theme", theme)
+      document.documentElement.classList.toggle("dark", theme === "dark")
     }
   }, [theme, hydrated])
 
