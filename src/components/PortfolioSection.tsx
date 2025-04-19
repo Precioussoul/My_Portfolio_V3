@@ -39,7 +39,7 @@ const portfolioData: NewPortFolioItemProps[] = [
   {
     images: ["/assets/images/portfolio/pointguard_cover.png"],
     projectTitle: "Pointguard | Credit Monitoring and Financial Literacy",
-    projectDescription: `Pointguard is a mobile-app that allow you to monitor your credits from the major credible bureaus. Led entire frontend mobile, paused due to some breaus issues`,
+    projectDescription: `Pointguard is a mobile-app that allow you to monitor your credits from the major credible bureaus. Led entire frontend mobile, paused due to some bureaus issues`,
     techStacks: "React Native, Expo, Nativewind, Typescript, React-Query, Zustand, Google Sign-in",
     projectYear: "2025",
     projectStatus: "paused",
