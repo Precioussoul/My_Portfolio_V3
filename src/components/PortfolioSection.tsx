@@ -3,6 +3,30 @@ import NewPortfolioItem, {NewPortFolioItemProps} from "./NewPortfolioItem"
 
 const portfolioData: NewPortFolioItemProps[] = [
   {
+    images: ["/assets/images/portfolio/Creative_cover.png"],
+    projectTitle: "Creative Block | Unblocked the Creative Artist",
+    projectDescription: `Creative Block is a mobile platform that help you overcome creative blocks through peers, mentors and resources . Led the entire frontend mobile development from scratch to apple store connect (testflight and app store - soon)`,
+    techStacks:
+      "React Native, Expo, Nativewind, Typescript, React-Query, Zustand, Real-time Chat (Websocket), Google Sign-in, Apple-Sign-in, Push-Notification, TestFlight, App store (soon)",
+    projectYear: "2025",
+    projectStatus: "in-progress",
+    isPrivateRepo: true,
+    stackArea: "Mobile",
+  },
+
+  {
+    images: ["/assets/images/portfolio/sproost_cover.png"],
+    projectTitle: "Sproost | Creating Instant Equity with Home Renovations",
+    projectDescription: `Sproost Mobile is a platform that help you in Creating Instant Equity with Home Renovations . Contributed 70% backend-support to the mobile-app API. Project cover admin web-app and mobile for users`,
+    projectLiveUrl: "https://www.gosproost.com/",
+    techStacks:
+      "Python, Django-REST, API Development, RBAC Model, Firebase-admin (notification), Postgres, Redis, Signals, Cloudinary, Flutter (frontend)",
+    projectYear: "2025",
+    projectStatus: "ongoing",
+    isPrivateRepo: true,
+    stackArea: "Backend",
+  },
+  {
     images: ["/assets/images/portfolio/Rental_Cover.png"],
     projectTitle: "LandlordLink Solutions | Simplify Properties Mgt.",
     projectDescription: `Landlordlink Solutions is a platform that help streamlined your rental business.Manage properties, tenants, chats and payments all in one place. Led Entire full-stack development from scratch to deployment`,
@@ -11,6 +35,16 @@ const portfolioData: NewPortFolioItemProps[] = [
     projectYear: "2025",
     projectStatus: "concluded",
     isPrivateRepo: true,
+  },
+  {
+    images: ["/assets/images/portfolio/pointguard_cover.png"],
+    projectTitle: "Pointguard | Credit Monitoring and Financial Literacy",
+    projectDescription: `Pointguard is a mobile-app that allow you to monitor your credits from the major credible bureaus. Led entire frontend mobile, paused due to some breaus issues`,
+    techStacks: "React Native, Expo, Nativewind, Typescript, React-Query, Zustand, Google Sign-in",
+    projectYear: "2025",
+    projectStatus: "paused",
+    isPrivateRepo: true,
+    stackArea: "Mobile",
   },
   {
     images: ["/assets/images/portfolio/cargo_cover.png"],
