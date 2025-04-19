@@ -117,7 +117,7 @@ const portfolioData: NewPortFolioItemProps[] = [
     isPrivateRepo: true,
     projectDescription: `A web application that keep you updated of list of books , you can search for books, filter catalog options (to read now, Currently reading and will read). Bult with React, CSS, and Use Book API to fetch data.`,
     projectLiveUrl: "https://myreadnd.netlify.app/",
-    techStacks: "HTML, CSS, JavaScript,React and BookAPI",
+    techStacks: "HTML, CSS, JavaScript,React, BookAPI",
     projectYear: "2021",
     projectStatus: "concluded",
     stackArea: "Frontend",
