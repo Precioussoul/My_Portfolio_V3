@@ -99,9 +99,12 @@ const NewPortfolioItem = ({
             </div>
           )}
         </div>
-        <div className='absolute top-4 left-4 border block min-w-[50px] border-blue-600 rounded-2xl text-white text-sm font-semibold bg-gray-600/50 dark:bg-black/40 p-2 '>
-          {projectYear}
+        <div className='absolute top-4 left-4'>
+          <div className='border border-blue-600 rounded-2xl bg-blue-800/70 dark:bg-gray-600/70 text-white text-sm font-semibold p-2 min-w-[50px] flex items-center justify-center backdrop-blur-md'>
+            {projectYear}
+          </div>
         </div>
+
         <div className='absolute bottom-4 left-4 flex gap-4 items-center'>
           {projectStatus && (
             <ProjectStatus status={projectStatus} size='sm' pulseAnimation={projectStatus === "ongoing" || projectStatus === "in-progress"} />
