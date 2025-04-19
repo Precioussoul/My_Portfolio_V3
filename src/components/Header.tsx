@@ -124,7 +124,7 @@ const Header = () => {
                   <i className='fas fa-bars'></i>
                 </button>
                 <a
-                  href='/assets/images/author/SofiyullahAbdullah_frontendEngineer.pdf'
+                  href='/assets/images/author/Sofiyullah_full-stack_latest.pdf'
                   download
                   className='btn-secondary contact-me text-center capitalize min-w-[120px] flex items-center justify-center gap-2'
                 >

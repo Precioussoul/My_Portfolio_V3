@@ -50,16 +50,16 @@ const ResumeeSection = () => {
                 role='Full-stack Engineer'
                 company='Benmore Technology'
                 start_date='February 2024'
-                end_date='Present'
+                end_date='April 2025 (Layoff)'
                 // isPresent
                 bullet_points={[
-                  ` Developing backend systems with Python and Django, and frontend interfaces with React, React-Native, and Typescript, while independently
-                    leading a full-stack project aimed at improving system efficiency by 25%.`,
-                  `Served as a Frontend Engineer for 5 months, delivering 4 frontend projects, resulting in a 30% increase in user engagement and a 20%
-                    improvement in conversion rates for client MVPs.`,
+                  `Serve as a Forward Deployed Engineer, working closely with clients to understand their needs and deliver tailored full-stack solutions, guiding them through every stage from discovery to deployment.`,
 
-                  `Collaborated with cross-functional teams to identify and resolve performance bottlenecks, optimizing application speed and reducing load
-                  times by 40%.`,
+                  `Lead development of backend systems using Python (Django) and frontend interfaces with React, React Native, and TypeScript, independently delivering a full-stack project that improved system efficiency by 25%.`,
+
+                  `Partnered with clients and internal teams to identify and resolve performance bottlenecks, optimizing application speed and reducing load times by 40%.`,
+
+                  `Act as the primary point of contact for clients, ensuring clear communication and aligning project goals, while driving the timely delivery of high-quality software that meets business objectives.`,
                 ]}
               />
             </div>
@@ -80,7 +80,7 @@ user drop-off rates by 20%.`,
                 ]}
               />{" "}
             </div>
-            <div className='tab-content' id='Aladdin'  >
+            <div className='tab-content' id='Aladdin'>
               <ExperienceItem
                 role='Frontend Engineer'
                 company='Aladdin Digital Bank'
@@ -115,8 +115,6 @@ user drop-off rates by 20%.`,
                 ]}
               />{" "}
             </div>
-
-
 
             <div className='tab-content' id='BeeSpeed'>
               {/* ed */}
