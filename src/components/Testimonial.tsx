@@ -1,38 +1,65 @@
 "use client"
-import React, {useEffect} from "react"
+import React, {useEffect, useRef} from "react"
 import TestimonialItem from "./TestimonialItem"
 import {testimonialData} from "@/data/testimonial"
 
-const Testimonial = () => {
-  useEffect(() => {
-    function autoScrollHorizontal() {
-      const container = document.getElementById("testimonial-container")!!
-      let scrollSpeed = 1 // Default scroll speed
-      let autoScroll: any
+const Testimonial: React.FC = () => {
+  const containerRef = useRef<HTMLDivElement | null>(null)
 
-      function startAutoScroll() {
+  useEffect(() => {
+    function autoScrollHorizontal(): void {
+      const container = containerRef.current
+      if (!container) return
+
+      let scrollSpeed: number = 1 // Default scroll speed
+      let autoScroll: NodeJS.Timeout
+      let isScrolling: boolean = true
+
+      function startAutoScroll(): void {
         autoScroll = setInterval(() => {
-          container.scrollLeft += scrollSpeed // Move the scroll horizontally
-          if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
-            container.scrollLeft = 0 // Reset to the beginning when reaching the end
+          if (!isScrolling) return
+
+          // Check if we're at or near the end
+          if (container && container.scrollLeft >= container.scrollWidth - container.clientWidth - 5) {
+            // Smoothly reset to the beginning with a small delay
+            isScrolling = false
+            setTimeout(() => {
+              container.scrollLeft = 0
+              isScrolling = true
+            }, 500)
+          } else {
+            container ? (container.scrollLeft += scrollSpeed) : null
           }
         }, 20) // The higher this value, the slower the scroll
       }
 
-      function stopAutoScroll() {
+      function stopAutoScroll(): void {
         clearInterval(autoScroll)
       }
 
-      container.addEventListener("mouseenter", () => {
+      const handleMouseEnter = (): void => {
         scrollSpeed = 0.2 // Slow down scrolling on hover
-      })
+      }
 
-      container.addEventListener("mouseleave", () => {
+      const handleMouseLeave = (): void => {
         scrollSpeed = 1 // Resume normal scrolling speed on mouse leave
-      })
+      }
+
+      container.addEventListener("mouseenter", handleMouseEnter)
+      container.addEventListener("mouseleave", handleMouseLeave)
 
       // Start the auto scroll on page load
       startAutoScroll()
+      function cleanupFunc() {
+        stopAutoScroll()
+        if (container) {
+          container.removeEventListener("mouseenter", handleMouseEnter)
+          container.removeEventListener("mouseleave", handleMouseLeave)
+        }
+      }
+
+      // Cleanup function
+      return cleanupFunc()
     }
 
     autoScrollHorizontal()
@@ -45,7 +72,7 @@ const Testimonial = () => {
           <p className='testimonial__header-subtitle'>Hear from those that I have worked with</p>
           <h3 className='testimonial__header-title'>Testimonials</h3>
         </div>
-        <div id='testimonial-container' className='flex items-center gap-20 overflow-x-scroll'>
+        <div id='testimonial-container' ref={containerRef} className='flex items-center gap-20 overflow-x-scroll'>
           {testimonialData.map((testimonial, idx) => (
             <TestimonialItem key={idx} {...testimonial} />
           ))}

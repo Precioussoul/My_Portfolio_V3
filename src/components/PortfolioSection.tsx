@@ -5,7 +5,7 @@ const portfolioData: NewPortFolioItemProps[] = [
   {
     images: ["/assets/images/portfolio/Creative_cover.png"],
     projectTitle: "Creative Block | Unblocked the Creatives",
-    projectDescription: `Creative Block is a mobile platform that help you overcome creative blocks through peers, mentors and resources . Led the entire frontend mobile development from scratch to apple store connect (testflight and app store - soon)`,
+    projectDescription: `Led the end-to-end development of the mobile app, from initial UI architecture to deployment on Apple Store Connect (TestFlight). Built the entire frontend from scratch, integrating features for peer collaboration, mentorship, and resource sharing to help users overcome creative blocks. Currently pending App Store release.`,
     techStacks:
       "React Native, Expo, Nativewind, Typescript, React-Query, Zustand, Real-time Chat (Websocket), Google Sign-in, Apple-Sign-in, Push-Notification, TestFlight, App store (soon)",
     projectYear: "2025",
@@ -17,7 +17,7 @@ const portfolioData: NewPortFolioItemProps[] = [
   {
     images: ["/assets/images/portfolio/sproost_cover.png"],
     projectTitle: "Sproost | Creating Instant Equity with Home Renovations",
-    projectDescription: `Sproost Mobile is a platform that help you in Creating Instant Equity with Home Renovations . Contributed 70% backend-support to the mobile-app API. Project cover admin web-app and mobile for users`,
+    projectDescription: `Delivered 70% of the backend logic powering the mobile app, enabling users to plan renovations that build instant home equity. Supported both the admin web dashboard and the user-facing mobile app with scalable, API-driven features.`,
     projectLiveUrl: "https://www.gosproost.com/",
     techStacks:
       "Python, Django-REST, API Development, RBAC Model, Firebase-admin (notification), Postgres, Redis, Signals, Cloudinary, Flutter (frontend)",
@@ -29,7 +29,7 @@ const portfolioData: NewPortFolioItemProps[] = [
   {
     images: ["/assets/images/portfolio/Rental_Cover.png"],
     projectTitle: "LandlordLink Solutions | Simplify Properties Mgt.",
-    projectDescription: `Landlordlink Solutions is a platform that help streamlined your rental business.Manage properties, tenants, chats and payments all in one place. Led Entire full-stack development from scratch to deployment`,
+    projectDescription: `Spearheaded the full-stack development of the platform—from initial architecture to deployment. Built and integrated core features including property management, tenant onboarding, real-time chat, and payment workflows, streamlining rental operations into a single, efficient solution.`,
     projectLiveUrl: "https://landlordlinksolutions.ca/",
     techStacks: "Python, Django, JavaScript, HTMX, TailwindCss, Django Channels (web-socket), Postgres, Redis, Signals,  Stripe-Connect, Cloudinary",
     projectYear: "2025",
@@ -39,7 +39,7 @@ const portfolioData: NewPortFolioItemProps[] = [
   {
     images: ["/assets/images/portfolio/pointguard_cover.png"],
     projectTitle: "Pointguard | Credit Monitoring and Financial Literacy",
-    projectDescription: `Pointguard is a mobile-app that allow you to monitor your credits from the major credible bureaus. Led entire frontend mobile, paused due to some bureaus issues`,
+    projectDescription: `Led the complete frontend development of a mobile app designed to help users monitor their credit scores across major credit bureaus. Delivered core UI and feature implementation before the project was paused due to third-party bureau integration issues.`,
     techStacks: "React Native, Expo, Nativewind, Typescript, React-Query, Zustand, Google Sign-in",
     projectYear: "2025",
     projectStatus: "paused",
@@ -49,7 +49,7 @@ const portfolioData: NewPortFolioItemProps[] = [
   {
     images: ["/assets/images/portfolio/cargo_cover.png"],
     projectTitle: "CargoCredible | Review and Rate Cargo Incs",
-    projectDescription: `CargoCredible is a trusted trucking community platform where Truck Drivers, Carriers,& Industry Professionals can instantly review, rate, and find reliable services. Contributed to the v1 frontend development`,
+    projectDescription: `Contributed to the initial version of the platform’s frontend, enabling truck drivers, carriers, and logistics professionals to rate, review, and discover trusted service providers within the industry. Focused on building responsive UI components and ensuring smooth user experience across devices.`,
     projectLiveUrl: "https://cargocredible.com/",
     techStacks: "Python, Django template,  HTML, TailwindCss, JavaScript",
     projectYear: "2024",
@@ -60,7 +60,7 @@ const portfolioData: NewPortFolioItemProps[] = [
   {
     images: ["/assets/images/portfolio/astra_cover.png"],
     projectTitle: "Astra Wellbeing | Positive HealthCare Support ",
-    projectDescription: `Astra Wellbeing helps healthcare organizations engage and retain their workforce by empowering patients, families, and peers to send real-time messages of positive support to staff. Contributed to UI modules of the employee portal`,
+    projectDescription: `Contributed to building core UI modules for the employee portal, enabling real-time delivery of positive messages from patients, families, and peers. Helped enhance staff engagement and retention through thoughtful, responsive interface design.`,
     projectLiveUrl: "https://www.astrawellbeing.com/",
     techStacks: "UI Delivery, Backend Handover,  HTML, TailwindCss, JavaScript",
     projectYear: "2024",
@@ -72,7 +72,7 @@ const portfolioData: NewPortFolioItemProps[] = [
   {
     images: ["/assets/images/portfolio/357_company_cover.png"],
     projectTitle: "357 Company | End-to-End Logistics",
-    projectDescription: `357Company is an Last Mile Delivery & End-to-End Logistics platform Streamlining the Shipping Process for Supply Chain & Logistics Leaders. Implemented their frontend UI for the portal app login.`,
+    projectDescription: `Implemented the frontend UI for the portal login experience, ensuring a smooth and secure entry point for logistics professionals managing end-to-end shipping operations.`,
     projectLiveUrl: "https://357company.com/",
     techStacks: "Python, Django template, TailwindCss, JavaScript",
     projectYear: "2024",
@@ -83,7 +83,7 @@ const portfolioData: NewPortFolioItemProps[] = [
   {
     images: ["/assets/images/portfolio/hbs_drive.png"],
     projectTitle: "Lytebox | Google Drive Inspired",
-    projectDescription: `Google Drive Inspired full-stack web application that allow users to upload files,preview, delete, starred favorites ,download etc.. Led and developed the entire project full-stack development`,
+    projectDescription: `Designed and built a full-stack web application inspired by Google Drive. Implemented features including file upload, preview, download, deletion, and favorite/starred marking. Led the entire development lifecycle—from database design to frontend UI and deployment.`,
     projectLiveUrl: "https://lytebox.web.app/",
     projectGitHubUrl: "https://github.com/Precioussoul/Lytebox",
     techStacks: "React, TypeScript, Sass, Firebase, Cloud Storage, Media Libraries",
@@ -94,7 +94,7 @@ const portfolioData: NewPortFolioItemProps[] = [
     isPrivateRepo: true,
     images: ["/assets/images/portfolio/Aladdin-Mobile.png"],
     projectTitle: "Aladdin Mobile App",
-    projectDescription: `Aladdin Mobile app is a fintech mobile application that provides payment solutions such as Banking services, Virtual Dollar Wallet Account, Dollar Card Services, Bills Payment and more. Contributed to the Home screens design implemntation and markeplace screen using React Native`,
+    projectDescription: `Implemented core UI for the Home and Marketplace screens, supporting features like virtual dollar wallets, banking services, and bill payments. Focused on creating a seamless and visually engaging user experience for fintech services.`,
     projectLiveUrl: "https://play.google.com/store/apps/details?id=com.aladdin.digital",
     techStacks: "React Native, Redux, Emotion/React Native, TypeScript, React Navigation",
     projectYear: "2023",
@@ -105,7 +105,7 @@ const portfolioData: NewPortFolioItemProps[] = [
     isPrivateRepo: true,
     images: ["/assets/images/portfolio/connouapp-website.jpg"],
     projectTitle: "Connou Website",
-    projectDescription: `Connou | The App that Connects You with Like-minded Humans.Working at connou as a full-time software developer, responsible for development of the company website and also contribute to the development of the company mobile app using flutter`,
+    projectDescription: `Developed and maintained the company website, ensuring a responsive and user-friendly experience. Focused on optimizing the website's performance and seamless integration to connect users with like-minded individuals.`,
     projectLiveUrl: "https://connou.app",
     techStacks: "React, NextJS, Typescript, Sanity CMS",
     projectYear: "2022",
@@ -115,7 +115,7 @@ const portfolioData: NewPortFolioItemProps[] = [
     images: ["/assets/images/portfolio/MyRead_thumbnail.jpg"],
     projectTitle: "MyRead",
     isPrivateRepo: true,
-    projectDescription: `A web application that keep you updated of list of books , you can search for books, filter catalog options (to read now, Currently reading and will read). Bult with React, CSS, and Use Book API to fetch data.`,
+    projectDescription: `Built a web application that helps users stay updated with a personalized book catalog. Features include searching for books, filtering by status (to read, currently reading, will read), and fetching book data from an external API. Focused on delivering a smooth and intuitive user experience for book discovery and organization.`,
     projectLiveUrl: "https://myreadnd.netlify.app/",
     techStacks: "HTML, CSS, JavaScript,React, BookAPI",
     projectYear: "2021",
