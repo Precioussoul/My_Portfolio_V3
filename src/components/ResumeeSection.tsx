@@ -50,7 +50,7 @@ const ResumeeSection = () => {
                 role='Full-stack Engineer'
                 company='Benmore Technology'
                 start_date='February 2024'
-                end_date='April 2025 (Layoff)'
+                end_date='April 2025'
                 // isPresent
                 bullet_points={[
                   `Serve as a Forward Deployed Engineer, working closely with clients to understand their needs and deliver tailored full-stack solutions, guiding them through every stage from discovery to deployment.`,

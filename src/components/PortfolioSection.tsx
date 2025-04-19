@@ -4,7 +4,7 @@ import NewPortfolioItem, {NewPortFolioItemProps} from "./NewPortfolioItem"
 const portfolioData: NewPortFolioItemProps[] = [
   {
     images: ["/assets/images/portfolio/Creative_cover.png"],
-    projectTitle: "Creative Block | Unblocked the Creative Artist",
+    projectTitle: "Creative Block | Unblocked the Creatives",
     projectDescription: `Creative Block is a mobile platform that help you overcome creative blocks through peers, mentors and resources . Led the entire frontend mobile development from scratch to apple store connect (testflight and app store - soon)`,
     techStacks:
       "React Native, Expo, Nativewind, Typescript, React-Query, Zustand, Real-time Chat (Websocket), Google Sign-in, Apple-Sign-in, Push-Notification, TestFlight, App store (soon)",
