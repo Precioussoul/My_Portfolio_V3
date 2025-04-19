@@ -120,7 +120,7 @@ export default function Home() {
       <ScrollIndicator sections={sections} activeSection={activeSection} onSectionClick={scrollToSection} />
 
       {/* Header with activeSection passed for highlighting current nav item */}
-      <Header activeSection={activeSection} onNavClick={scrollToSection} />
+      <Header />
 
       {/* Hero section */}
       <AnimatedSection id='hero' className='min-h-screen' animationType='scale' ref={sectionRefs.hero}>

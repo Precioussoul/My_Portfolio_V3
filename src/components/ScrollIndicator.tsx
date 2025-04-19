@@ -1,6 +1,6 @@
 "use client"
 
-import {motion, useScroll, useSpring} from "framer-motion"
+import {motion, useScroll, useSpring} from "motion/react"
 import {useEffect, useState} from "react"
 
 interface Section {
@@ -61,7 +61,7 @@ const ScrollIndicator: React.FC<ScrollIndicatorProps> = ({sections = [], activeS
               <span
                 className={`
                 w-2 h-2 rounded-full transition-all duration-300 ease-out
-                ${activeSection === section.id ? "bg-blue-500 scale-150" : "bg-gray-400 group-hover:bg-blue-400"}
+                ${activeSection === section.id ? "bg-blue-500 scale-150" : "bg-gray-400 dark:bg-gray-700 group-hover:bg-blue-400"}
               `}
               />
 

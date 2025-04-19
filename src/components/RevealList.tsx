@@ -1,7 +1,7 @@
 "use client"
 
 import React, {useRef, ReactNode} from "react"
-import {motion, useInView, Variants} from "framer-motion"
+import {motion, useInView, Variants} from "motion/react"
 
 type RevealDirection = "up" | "down" | "left" | "right"
 
