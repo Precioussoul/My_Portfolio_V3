@@ -149,7 +149,7 @@ export default function Home() {
       </section>
 
       {/* Services section */}
-      <section id='services' className='py-20'>
+      <section id='services' className='py-5'>
         {isMobile ? (
           // Simpler version for mobile
           <MyServices />
@@ -164,7 +164,7 @@ export default function Home() {
       </section>
 
       {/* Resume section */}
-      <section id='resume' className='py-20'>
+      <section id='resume' className='py-5'>
         {isMobile ? (
           // Simpler version for mobile
           <ResumeeSection />
@@ -177,7 +177,7 @@ export default function Home() {
       </section>
 
       {/* Portfolio section */}
-      <section id='portfolio' className='py-20'>
+      <section id='portfolio' className='py-5'>
         {isMobile ? (
           // Simpler version for mobile
           <PortfolioSection />
@@ -192,7 +192,7 @@ export default function Home() {
       </section>
 
       {/* Testimonial section */}
-      <section id='testimonial' className='py-20'>
+      <section id='testimonial' className='py-5'>
         {isMobile ? (
           // Simpler version for mobile
           <Testimonial />
@@ -207,7 +207,7 @@ export default function Home() {
       </section>
 
       {/* Contact section */}
-      <section id='contact' className='py-20'>
+      <section id='contact' className='py-5'>
         {isMobile ? (
           // Simpler version for mobile
           <Contact />

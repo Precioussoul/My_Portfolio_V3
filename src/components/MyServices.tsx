@@ -33,95 +33,29 @@ const MyServices = () => {
           <div className='features__introduce order-1 md:order-2'>
             <span className='features__introduce-subHeading'>About Me</span>
             <div className='features__introduce-wrapper'>
-              <h2 className='features__introduce-heading'>The Journey began with a &quot;just start&quot; Mindset.</h2>
+              <h2 className='features__introduce-heading'>I don't know it all But I always deliver.</h2>
+              <span className='italic text-sm'>That’s not just a statement; it’s the foundation of my work ethic.</span>
             </div>
             <div className='Summary__Details'>
               <div className='Summary__preview-text'>
                 <p>
-                  Started my software engineering journey (self-taught) in 2020 while in majoring/studying in computer engineering in polytechnic. My
-                  passion for coding/programming exceeded my passion for computer hardware repairs. And since then, I&apos;ve taken a lot of courses,
-                  gained a lot of experience and work remotely for startups, direct clients and collaborated with talented people to build saas products.
-                  Outside of work, I spend most of my time inside (introvert) doing one of the following: Taking courses online (50%), watching
-                  movies(20%), surving social media (10%) and family(20%).
+                  Coming from Africa, I’ve seen firsthand how talented developers are often overlooked — not because we lack skill, but because of where
+                  we’re from. Even with the rise of remote work and the advantage of overlapping time zones with Europe & LATAM, misconceptions still
+                  linger. Talent doesn’t have a nationality — <strong>it has drive, discipline, and delivery.</strong> And I bring all three. <br /> <br />{" "}
+                  My academic background? Not elite. I didn’t come from a top-tier university or a traditional tech bootcamp. But I came with hunger.{" "}
+                  <strong> Hunger to learn. Hunger to grow.</strong> Hunger to prove that what I lack in textbook knowledge, I make up for in real-world
+                  results. <br /> <br /> I’ll be honest — I’m not good at Data Structures and Algorithms. Not even close to being the best. But I don’t let
+                  that stop me. Because in real-world development, the problems aren’t always academic — they’re practical. And when it comes to building
+                  actual products that work,<strong> I show up, I figure it out, adhere to best practices, make it scalable and I deliver.</strong> Every
+                  time. <br /> <br /> I’ve worked across multiple stacks, handled full projects on my own, adapted to tools and frameworks on the fly, and
+                  always held myself to one standard:
+                  <strong> deliver because someone trusted you enough to pay you.</strong> That’s integrity. <br /> <br /> If you’re looking to hire
+                  someone who checks all the right boxes on paper — I may not be your candidate. But if you want someone who{" "}
+                  <strong> values your time, your money, your trust </strong> — someone who learns fast, adapts faster, and always delivers —{" "}
+                  <strong>then let’s talk.</strong>
                 </p>
               </div>
 
-              <div className='Summary__stacks'>
-                <h4 className='Summary__stacks-info'>
-                  Here are a few technologies I’ve been working with:(
-                  <span className='rn-highlight fwb'>Full-Stack Software Engineer</span>
-                  ):
-                </h4>
-                <div className='Summary__stacks-icon-box'>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/icons-18.png' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/javascript.png' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/icons-16.png' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/reactredux.png' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/next-js.svg' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/sanity.svg' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/node-js.png' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/express.png' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/mongodb.png' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/grapQl.png' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/postgres.png' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/firebase-480.png' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/icons-08.png' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/aws-2.svg' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/google-cloud-2.svg' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/docker-3.svg' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/kubernets.svg' alt='' width={500} height={500} />
-                  </div>
-                  <div className='Summary__stacks-icon'>
-                    <Image src='/assets/images/icons/travis-ci.svg' alt='' width={500} height={500} />
-                  </div>
-                </div>
-              </div>
-              {/*  */}
-
-              <div className='resumee__skill-showcase'>
-                <p className='resumee__skill-name'>Javascript</p>
-                <p className='resumee__skill-name'>React</p>
-                <p className='resumee__skill-name'>Typescript</p>
-                <p className='resumee__skill-name'>NextJS</p>
-                <p className='resumee__skill-name'>React Native</p>
-                <p className='resumee__skill-name'>Nodejs</p>
-                <p className='resumee__skill-name'>Solidity</p>
-                <p className='resumee__skill-name'>Python</p>
-                <p className='resumee__skill-name'>AWS</p>
-              </div>
               {/*  */}
             </div>
           </div>

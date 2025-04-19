@@ -57,11 +57,11 @@ const NewPortfolioItem = ({
          `}
       >
         <div className={`portfolio-new__heading inline-flex flex-col   ${toRight ? "justify-start items-start" : "justify-end items-end"} w-full p-4`}>
-          <h2 className='portfolio-new__heading-title font-bold mt-4 text-lg'>{projectTitle}</h2>
+          <h2 className='light-text font-bold mt-4 text-lg'>{projectTitle}</h2>
         </div>
         <div className={`w-11/12 flex flex-col gap-4 ${toRight ? "mr-auto" : "ml-auto"} mt-8  `}>
           <div className='bg-white dark:bg-slate-900/90 backdrop-blur rounded-tl-lg rounded-bl-lg shadow-lg p-4'>
-            <p className='text-gray-600 dark:text-gray-200 leading-relaxed text-sm line-clamp-4 w-full font-medium'>{projectDescription}</p>
+            <p className='light-text  leading-relaxed text-sm line-clamp-4 w-full font-medium'>{projectDescription}</p>
           </div>
           <div className={`inline-flex flex-col w-full py-4 ${toRight ? "justify-start items-start" : "justify-end items-end"} `}>
             <div className='flex gap-2 items-center flex-wrap'>
@@ -69,7 +69,7 @@ const NewPortfolioItem = ({
                 techStacks.split(",").map((stack, idx) => (
                   <p
                     key={idx}
-                    className='font-medium bg-gray-100 border-2 border-blue-500  dark:bg-gray-800 dark:text-gray-200 text-gray-700 rounded-xl shadow-sm p-2 !text-xs '
+                    className='font-medium bg-gray-100 border-2 border-blue-500  dark:bg-gray-800 light-text rounded-xl shadow-sm p-2 !text-xs '
                   >
                     {stack}
                   </p>
