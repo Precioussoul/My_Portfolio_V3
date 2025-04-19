@@ -1,7 +1,7 @@
 "use client"
 
 import {Poppins} from "next/font/google"
-import {useEffect, useState, useRef, RefObject} from "react"
+import {useEffect, useState} from "react"
 import {motion} from "framer-motion"
 import Header from "@/components/Header"
 import HeroSection from "@/components/HeroSection"
@@ -30,6 +30,8 @@ interface Section {
 export default function Home() {
   // For active navigation tracking
   const [activeSection, setActiveSection] = useState<string>("hero")
+  // To detect if we're on mobile
+  const [isMobile, setIsMobile] = useState<boolean>(false)
 
   // Define sections for navigation
   const sections: Section[] = [
@@ -40,16 +42,6 @@ export default function Home() {
     {id: "testimonial", label: "Testimonials"},
     {id: "contact", label: "Contact"},
   ]
-
-  // Section refs for intersection observer
-  const sectionRefs: Record<string, RefObject<HTMLElement>> = {
-    hero: useRef<HTMLElement>(null),
-    services: useRef<HTMLElement>(null),
-    resume: useRef<HTMLElement>(null),
-    portfolio: useRef<HTMLElement>(null),
-    testimonial: useRef<HTMLElement>(null),
-    contact: useRef<HTMLElement>(null),
-  }
 
   // Smooth scroll to section
   const scrollToSection = (sectionId: string): void => {
@@ -91,74 +83,141 @@ export default function Home() {
     return () => observer.disconnect()
   }, [])
 
-  // Add cursor effect (optional)
+  // Check if we're on mobile
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+
+    // Check on initial load
+    checkMobile()
+
+    // Check on resize
+    window.addEventListener("resize", checkMobile)
+    return () => window.removeEventListener("resize", checkMobile)
+  }, [])
+
+  // Add cursor effect (only for desktop)
   const [mousePosition, setMousePosition] = useState<{x: number; y: number}>({x: 0, y: 0})
 
   useEffect(() => {
+    // Skip on mobile
+    if (isMobile) return
+
     const handleMouseMove = (e: MouseEvent): void => {
       setMousePosition({x: e.clientX, y: e.clientY})
     }
 
     window.addEventListener("mousemove", handleMouseMove)
     return () => window.removeEventListener("mousemove", handleMouseMove)
-  }, [])
+  }, [isMobile])
 
   return (
-    <div className={`${inter.className} relative overflow-hidden`}>
-      {/* Custom cursor (optional) */}
-      <motion.div
-        className='w-6 h-6 rounded-full bg-indigo-500 bg-opacity-30 fixed pointer-events-none z-50 hidden lg:block'
-        animate={{
-          x: mousePosition.x - 12,
-          y: mousePosition.y - 12,
-          scale: 1,
-        }}
-        transition={{type: "spring", damping: 10, stiffness: 50}}
-      />
+    <div className={`${inter.className} relative`}>
+      {/* Custom cursor (only on desktop) */}
+      {!isMobile && (
+        <motion.div
+          className='w-6 h-6 rounded-full bg-indigo-500 bg-opacity-30 fixed pointer-events-none z-50 hidden lg:block'
+          animate={{
+            x: mousePosition.x - 12,
+            y: mousePosition.y - 12,
+            scale: 1,
+          }}
+          transition={{type: "spring", damping: 10, stiffness: 50}}
+        />
+      )}
 
-      {/* Scroll indicator and side navigation */}
-      <ScrollIndicator sections={sections} activeSection={activeSection} onSectionClick={scrollToSection} />
+      {/* Scroll indicator and side navigation (only on desktop) */}
+      {!isMobile && <ScrollIndicator sections={sections} activeSection={activeSection} onSectionClick={scrollToSection} />}
 
-      {/* Header with activeSection passed for highlighting current nav item */}
+      {/* Header */}
       <Header />
 
       {/* Hero section */}
-      <AnimatedSection id='hero' className='min-h-screen' animationType='scale' ref={sectionRefs.hero}>
-        <ParallaxEffect depth={0.3} direction='up'>
+      <section id='hero' className='min-h-screen'>
+        {isMobile ? (
+          // Simpler version for mobile
           <HeroSection />
-        </ParallaxEffect>
-      </AnimatedSection>
+        ) : (
+          // Animated version for desktop
+          <AnimatedSection id='hero-animated' className='h-full' animationType='scale'>
+            <ParallaxEffect depth={0.3} direction='up'>
+              <HeroSection />
+            </ParallaxEffect>
+          </AnimatedSection>
+        )}
+      </section>
 
       {/* Services section */}
-      <AnimatedSection id='services' className='py-20' delay={0.1} ref={sectionRefs.services}>
-        <RevealList staggerDelay={0.1} direction='up'>
+      <section id='services' className='py-20'>
+        {isMobile ? (
+          // Simpler version for mobile
           <MyServices />
-        </RevealList>
-      </AnimatedSection>
+        ) : (
+          // Animated version for desktop
+          <AnimatedSection id='services-animated' className='h-full' delay={0.1}>
+            <RevealList staggerDelay={0.1} direction='up'>
+              <MyServices />
+            </RevealList>
+          </AnimatedSection>
+        )}
+      </section>
 
       {/* Resume section */}
-      <AnimatedSection id='resume' className='py-20' animationType='fadeLeft' delay={0.1} ref={sectionRefs.resume}>
-        <ResumeeSection />
-      </AnimatedSection>
+      <section id='resume' className='py-20'>
+        {isMobile ? (
+          // Simpler version for mobile
+          <ResumeeSection />
+        ) : (
+          // Animated version for desktop
+          <AnimatedSection id='resume-animated' className='h-full' animationType='fadeLeft' delay={0.1}>
+            <ResumeeSection />
+          </AnimatedSection>
+        )}
+      </section>
 
       {/* Portfolio section */}
-      <AnimatedSection id='portfolio' className='py-20' delay={0.1} ref={sectionRefs.portfolio}>
-        <RevealList staggerDelay={0.15} direction='up'>
+      <section id='portfolio' className='py-20'>
+        {isMobile ? (
+          // Simpler version for mobile
           <PortfolioSection />
-        </RevealList>
-      </AnimatedSection>
+        ) : (
+          // Animated version for desktop
+          <AnimatedSection id='portfolio-animated' className='h-full' delay={0.1}>
+            <RevealList staggerDelay={0.15} direction='up'>
+              <PortfolioSection />
+            </RevealList>
+          </AnimatedSection>
+        )}
+      </section>
 
       {/* Testimonial section */}
-      <AnimatedSection id='testimonial' className='py-20' animationType='fadeRight' delay={0.1} ref={sectionRefs.testimonial}>
-        <ParallaxEffect depth={0.1} direction='up'>
+      <section id='testimonial' className='py-20'>
+        {isMobile ? (
+          // Simpler version for mobile
           <Testimonial />
-        </ParallaxEffect>
-      </AnimatedSection>
+        ) : (
+          // Animated version for desktop
+          <AnimatedSection id='testimonial-animated' className='h-full' animationType='fadeRight' delay={0.1}>
+            <ParallaxEffect depth={0.1} direction='up'>
+              <Testimonial />
+            </ParallaxEffect>
+          </AnimatedSection>
+        )}
+      </section>
 
       {/* Contact section */}
-      <AnimatedSection id='contact' className='py-20' animationType='scale' delay={0.1} ref={sectionRefs.contact}>
-        <Contact />
-      </AnimatedSection>
+      <section id='contact' className='py-20'>
+        {isMobile ? (
+          // Simpler version for mobile
+          <Contact />
+        ) : (
+          // Animated version for desktop
+          <AnimatedSection id='contact-animated' className='h-full' animationType='scale' delay={0.1}>
+            <Contact />
+          </AnimatedSection>
+        )}
+      </section>
 
       {/* Footer doesn't need animation */}
       <Footer />
