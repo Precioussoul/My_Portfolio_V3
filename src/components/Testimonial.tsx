@@ -7,9 +7,9 @@ const Testimonial: React.FC = () => {
   const containerRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
-    function autoScrollHorizontal(): void {
+    function autoScrollHorizontal(): () => void {
       const container = containerRef.current
-      if (!container) return
+      if (!container) return () => {}
 
       let scrollSpeed: number = 1 // Default scroll speed
       let autoScroll: NodeJS.Timeout
@@ -20,15 +20,19 @@ const Testimonial: React.FC = () => {
           if (!isScrolling) return
 
           // Check if we're at or near the end
-          if (container && container.scrollLeft >= container.scrollWidth - container.clientWidth - 5) {
+          //@ts-ignore
+          if (container.scrollLeft >= container.scrollWidth - container.clientWidth - 5) {
             // Smoothly reset to the beginning with a small delay
             isScrolling = false
             setTimeout(() => {
-              container.scrollLeft = 0
-              isScrolling = true
+              if (container) {
+                container.scrollLeft = 0
+                isScrolling = true
+              }
             }, 500)
           } else {
-            container ? (container.scrollLeft += scrollSpeed) : null
+            // @ts-ignore
+            container.scrollLeft += scrollSpeed
           }
         }, 20) // The higher this value, the slower the scroll
       }
@@ -50,19 +54,20 @@ const Testimonial: React.FC = () => {
 
       // Start the auto scroll on page load
       startAutoScroll()
-      function cleanupFunc() {
-        stopAutoScroll()
-        if (container) {
-          container.removeEventListener("mouseenter", handleMouseEnter)
-          container.removeEventListener("mouseleave", handleMouseLeave)
-        }
-      }
 
-      // Cleanup function
-      return cleanupFunc()
+      // Cleanup function - return the function itself, don't call it
+      return function cleanupFunc() {
+        stopAutoScroll()
+        container.removeEventListener("mouseenter", handleMouseEnter)
+        container.removeEventListener("mouseleave", handleMouseLeave)
+      }
     }
 
-    autoScrollHorizontal()
+    // Call autoScrollHorizontal and store its return value (the cleanup function)
+    const cleanup = autoScrollHorizontal()
+
+    // Return the cleanup function for useEffect
+    return cleanup
   }, [])
 
   return (
