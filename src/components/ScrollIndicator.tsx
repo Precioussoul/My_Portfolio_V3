@@ -46,7 +46,7 @@ const ScrollIndicator: React.FC<ScrollIndicatorProps> = ({sections = [], activeS
   return (
     <>
       {/* Top progress bar */}
-      <motion.div className='fixed top-0 left-0 right-0 h-1 bg-indigo-500 z-50 origin-left' style={{scaleX}} />
+      <motion.div className='fixed top-0 left-0 right-0 h-1 bg-blue-500 z-50 origin-left' style={{scaleX}} />
 
       {/* Side section indicators */}
       <div className='fixed right-6 top-1/2 transform -translate-y-1/2 z-40 hidden lg:block'>
@@ -61,7 +61,7 @@ const ScrollIndicator: React.FC<ScrollIndicatorProps> = ({sections = [], activeS
               <span
                 className={`
                 w-2 h-2 rounded-full transition-all duration-300 ease-out
-                ${activeSection === section.id ? "bg-indigo-500 scale-150" : "bg-gray-400 group-hover:bg-indigo-400"}
+                ${activeSection === section.id ? "bg-blue-500 scale-150" : "bg-gray-400 group-hover:bg-blue-400"}
               `}
               />
 
@@ -69,7 +69,7 @@ const ScrollIndicator: React.FC<ScrollIndicatorProps> = ({sections = [], activeS
                 className={`
                 pl-3 text-sm transition-all duration-300 ease-out opacity-0 
                 group-hover:opacity-100 absolute right-full pr-2
-                ${activeSection === section.id ? "text-indigo-500" : "text-gray-500"}
+                ${activeSection === section.id ? "text-blue-500" : "text-gray-500"}
               `}
               >
                 {section.label}
@@ -81,7 +81,7 @@ const ScrollIndicator: React.FC<ScrollIndicatorProps> = ({sections = [], activeS
 
       {/* Back to top button */}
       <motion.button
-        className='fixed bottom-6 right-6 bg-indigo-500 text-white p-3 rounded-full shadow-lg z-40'
+        className='fixed bottom-6 right-6 bg-blue-500 text-white p-3 rounded-full shadow-lg z-40'
         onClick={scrollToTop}
         initial={{opacity: 0, y: 20}}
         animate={{
