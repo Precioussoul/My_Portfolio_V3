@@ -32,6 +32,8 @@
   --border-bottom-light: 0.15rem solid #181a1d;
   --portfolio-gradient: linear-gradient(to top left, #0b1121, #0b112196);
   --hero-bg: rgba(0, 0, 0, 0.01);
+  --color-light-text: #a6b0db;
+  --color-light-title: #a6b0db;
 }
 
 :root[data-theme="light"] {
@@ -71,6 +73,7 @@
   --border-bottom: 0.2rem solid #0077ff30;
   --border-bottom-light: 0.15rem solid #181a1d;
   --portfolio-gradient: linear-gradient(to top left, #0b112196, #0066ff40);
+  --color-light-title: #fafafa;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -101,6 +104,7 @@
     --border-bottom-light: 0.15rem solid #181a1d;
     --portfolio-gradient: linear-gradient(to top left, #0b1121, #0b112196);
     --hero-bg: rgba(0, 0, 0, 0.01);
+    --color-light-title: #a6b0db;
   }
 }
 
@@ -215,6 +219,7 @@ html::after {
     --border-bottom: 0.2rem solid #0077ff30;
     --border-bottom-light: 0.15rem solid #181a1d;
     --portfolio-gradient: linear-gradient(to top left, #0b112196, #0066ff40);
+    --color-light-title: #fafafa;
   }
   body.dark {
     background: var(--background-color-1);
@@ -295,13 +300,19 @@ a {
 
 @media (min-width: 1400px) {
   .container {
-    width: 1320px;
+    width: 1350px;
   }
 }
 
 @media (min-width: 1530px) {
   .container {
-    width: 1440px;
+    width: 1480px;
+  }
+}
+
+@media (min-width: 1730px) {
+  .container {
+    width: 1680px;
   }
 }
 
@@ -999,6 +1010,10 @@ a {
 
 .light-text {
   color: var(--color-lightn);
+}
+
+.light-title {
+  color: var(--color-light-title);
 }
 
 .greeting__color {

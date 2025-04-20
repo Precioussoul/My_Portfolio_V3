@@ -57,7 +57,7 @@ const NewPortfolioItem = ({
          `}
       >
         <div className={`portfolio-new__heading inline-flex flex-col   ${toRight ? "justify-start items-start" : "justify-end items-end"} w-full p-4`}>
-          <h2 className='light-text font-bold mt-4 text-lg'>{projectTitle}</h2>
+          <h2 className='light-title font-bold mt-4 text-lg'>{projectTitle}</h2>
         </div>
         <div className={`w-11/12 flex flex-col gap-4 ${toRight ? "mr-auto" : "ml-auto"} mt-8  `}>
           <div className='bg-white dark:bg-slate-900/90 backdrop-blur rounded-tl-lg rounded-bl-lg shadow-lg p-4'>

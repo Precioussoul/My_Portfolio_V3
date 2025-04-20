@@ -7,7 +7,7 @@ const portfolioData: NewPortFolioItemProps[] = [
     projectTitle: "Creative Block | Unblocked the Creatives",
     projectDescription: `Led the end-to-end development of the mobile app, from initial UI architecture to deployment on Apple Store Connect (TestFlight). Built the entire frontend from scratch, integrating features for peer collaboration, mentorship, and resource sharing to help users overcome creative blocks. Currently pending App Store release.`,
     techStacks:
-      "React Native, Expo, Nativewind, Typescript, React-Query, Zustand, Real-time Chat (Websocket), Google Sign-in, Apple-Sign-in, Push-Notification, TestFlight, App store (soon)",
+      "React Native, Expo, Nativewind, Typescript, React-Query, Zustand, WebSocket, Google Sign-in, Apple-Sign-in, Push-Notification, TestFlight, App store (soon)",
     projectYear: "2025",
     projectStatus: "in-progress",
     isPrivateRepo: true,
@@ -19,8 +19,7 @@ const portfolioData: NewPortFolioItemProps[] = [
     projectTitle: "Sproost | Creating Instant Equity with Home Renovations",
     projectDescription: `Delivered 70% of the backend logic powering the mobile app, enabling users to plan renovations that build instant home equity. Supported both the admin web dashboard and the user-facing mobile app with scalable, API-driven features.`,
     projectLiveUrl: "https://www.gosproost.com/",
-    techStacks:
-      "Python, Django-REST, API Development, RBAC Model, Firebase-admin (notification), Postgres, Redis, Signals, Cloudinary, Flutter (frontend)",
+    techStacks: "Python, Django-REST, API, RBAC Model, Cloud-messaging, Postgres, Redis, Signals, Cloudinary, Flutter",
     projectYear: "2025",
     projectStatus: "ongoing",
     isPrivateRepo: true,
@@ -31,7 +30,7 @@ const portfolioData: NewPortFolioItemProps[] = [
     projectTitle: "LandlordLink Solutions | Simplify Properties Mgt.",
     projectDescription: `Spearheaded the full-stack development of the platform—from initial architecture to deployment. Built and integrated core features including property management, tenant onboarding, real-time chat, and payment workflows, streamlining rental operations into a single, efficient solution.`,
     projectLiveUrl: "https://landlordlinksolutions.ca/",
-    techStacks: "Python, Django, JavaScript, HTMX, TailwindCss, Django Channels (web-socket), Postgres, Redis, Signals,  Stripe-Connect, Cloudinary",
+    techStacks: "Python, Django, JavaScript, HTMX, TailwindCss, Channels, Postgres, Redis, Signals,  Stripe-Connect, Cloudinary",
     projectYear: "2025",
     projectStatus: "concluded",
     isPrivateRepo: true,
@@ -51,7 +50,7 @@ const portfolioData: NewPortFolioItemProps[] = [
     projectTitle: "CargoCredible | Review and Rate Cargo Incs",
     projectDescription: `Contributed to the initial version of the platform’s frontend, enabling truck drivers, carriers, and logistics professionals to rate, review, and discover trusted service providers within the industry. Focused on building responsive UI components and ensuring smooth user experience across devices.`,
     projectLiveUrl: "https://cargocredible.com/",
-    techStacks: "Python, Django template,  HTML, TailwindCss, JavaScript",
+    techStacks: "Python, Django template,  HTML, TailwindCss, JavaScript, UI handover",
     projectYear: "2024",
     projectStatus: "ongoing",
     isPrivateRepo: true,
@@ -146,7 +145,7 @@ const PortfolioSection = () => {
           <h2 className='resumee__header-title'>Featured Projects</h2>
         </div>
 
-        <div className='portfolio__grid'>
+        <div className='grid grid-cols-1 md:grid-cols-2 1xl:grid-cols-3 gap-10'>
           {projectDatas.map((portfolio, idx) => (
             <NewPortfolioItem
               key={idx}
