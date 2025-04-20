@@ -10,7 +10,7 @@ const Contact = () => {
         </div>
 
         <div className='contact__hint flex items-center flex-col justify-center'>
-          <p className='md:text-lg text-center w-full md:w-1/2 md:leading-10'>
+          <p className='md:text-lg text-center w-full md:w-1/2 md:leading-10 leading-10'>
             If you’re looking for someone who respects the opportunity, values your time and trust, and delivers with integrity — I’m ready. I may not know
             it all, but I learn fast, adapt faster, and I always show up. Let’s build something great together.
           </p>
