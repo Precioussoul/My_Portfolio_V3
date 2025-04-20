@@ -44,17 +44,17 @@ const MyServices = () => {
                   LATAM, misconceptions still linger. Talent doesn&apos;t have a nationality — <strong>it has drive, discipline, and delivery.</strong> And
                   I bring all three. <br /> <br /> My academic background? Not elite. I didn&apos;t come from a top-tier university or a traditional tech
                   bootcamp. But I came with hunger. <strong> Hunger to learn. Hunger to grow.</strong> Hunger to prove that what I lack in textbook
-                  knowledge, I make up for in real-world results. <br /> <br /> I’ve explored Data Structures & Algorithms (DSA), but I don’t shine in it
-                  and often feel like I’m just cramming for the sake of it. My focus, however, is on solving real-world problems with clean architecture,
-                  excellent UX, and consistent product delivery. While DSA has its place, my strength lies in building things that work — and ship. And
-                  when it comes to building actual products that work,
+                  knowledge, I make up for in real-world results. <br /> <br /> I&apos;ve explored Data Structures & Algorithms (DSA), but I don&apos;t
+                  shine in it and often feel like I&apos;m just cramming for the sake of it. My focus, however, is on solving real-world problems with
+                  clean architecture, excellent UX, and consistent product delivery. While DSA has its place, my strength lies in building things that work
+                  — and ship. And when it comes to building actual products that work,
                   <strong> I show up, I figure it out, adhere to best practices, make it scalable and I deliver.</strong> Every time. <br /> <br />{" "}
                   I&apos;ve worked across multiple stacks, handled full projects on my own, adapted to tools and frameworks on the fly, and always held
                   myself to one standard:
-                  <strong> deliver because someone trusted you enough to pay you.</strong> That&apos;s integrity. <br /> <br /> If you're looking for
-                  someone who understands <strong>product thinking, writes clean code, and connects frontend and backend </strong> — let's build something
-                  amazing. I value your time, money, and trust, and I learn fast, adapt faster, and always deliver.{" "}
-                  <strong>Let's talk if that resonates with you!</strong>
+                  <strong> deliver because someone trusted you enough to pay you.</strong> That&apos;s integrity. <br /> <br /> If you&apos;re looking for
+                  someone who understands <strong>product thinking, writes clean code, and connects frontend and backend </strong> — let&apos;s build
+                  something amazing. I value your time, money, and trust, and I learn fast, adapt faster, and always deliver.{" "}
+                  <strong>Let&apos;s talk if that resonates with you!</strong>
                 </p>
               </div>
 
