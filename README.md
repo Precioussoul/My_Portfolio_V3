@@ -1,8 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+ # 🧑‍💻 My_Portfolio_V3
 
-## Getting Started
+Welcome to the third version of my personal portfolio — built with [Next.js](https://nextjs.org/) and bootstrapped using [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-First, run the development server:
+## 🚀 Getting Started
+
+To run the development server locally:
 
 ```bash
 npm run dev
@@ -12,28 +14,38 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Once it's running, open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Start editing the page by modifying `app/page.tsx`. The app supports hot reloading, so your changes will update automatically.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 📡 API Routes
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+API routes are available at [http://localhost:3000/api/hello](http://localhost:3000/api/hello).  
+They can be modified in `pages/api/hello.ts`.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The `pages/api` directory is mapped to `/api/*` and is used for building backend functionality.
 
-## Learn More
+## 🖋 Fonts
 
-To learn more about Next.js, take a look at the following resources:
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) for optimal font loading, specifically using Inter from Google Fonts.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📚 Learn More
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To dive deeper into the technologies used:
 
-## Deploy on Vercel
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Next.js Learn](https://nextjs.org/learn)
+- [Next.js GitHub](https://github.com/vercel/next.js)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# My_Portfolio_V3
+The easiest way to deploy this portfolio is with [Vercel](https://vercel.com/), the creators of Next.js.  
+Learn more about deploying [here](https://nextjs.org/docs/deployment).
+
+---
+
+## 🙏 Attribution
+
+If you find this project helpful or inspiring, feel free to fork it — just remember to credit me. Cheers!
+
+--- 
