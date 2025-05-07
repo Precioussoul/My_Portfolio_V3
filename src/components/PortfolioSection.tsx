@@ -18,12 +18,12 @@ const portfolioData: NewPortFolioItemProps[] = [
     images: ["/assets/images/portfolio/sproost_cover.png"],
     projectTitle: "Sproost | Creating Instant Equity with Home Renovations",
     projectDescription: `Delivered 70% of the backend logic powering the mobile app, enabling users to plan renovations that build instant home equity. Supported both the admin web dashboard and the user-facing mobile app with scalable, API-driven features.`,
-    projectLiveUrl: "https://www.gosproost.com/",
+    projectLiveUrl: "https://www.gosproost.com/mobile-app",
     techStacks: "Python, Django-REST, API, RBAC Model, Cloud-messaging, Postgres, Redis, Signals, Cloudinary, Flutter",
     projectYear: "2025",
-    projectStatus: "ongoing",
+    projectStatus: "in-progress",
     isPrivateRepo: true,
-    stackArea: "Backend",
+    stackArea: "Mobile",
   },
   {
     images: ["/assets/images/portfolio/Rental_Cover.png"],
@@ -38,10 +38,10 @@ const portfolioData: NewPortFolioItemProps[] = [
   {
     images: ["/assets/images/portfolio/pointguard_cover.png"],
     projectTitle: "Pointguard | Credit Monitoring and Financial Literacy",
-    projectDescription: `Led the complete frontend development of a mobile app designed to help users monitor their credit scores across major credit bureaus. Delivered core UI and feature implementation before the project was paused due to third-party bureau integration issues.`,
+    projectDescription: `Led the complete frontend development of a mobile app designed to help users monitor their credit scores across major credit bureaus. Delivered core UI and feature implementation before the project was paused on backend due to third-party bureau integration issues.`,
     techStacks: "React Native, Expo, Nativewind, Typescript, React-Query, Zustand, Google Sign-in",
     projectYear: "2025",
-    projectStatus: "paused",
+    projectStatus: "concluded",
     isPrivateRepo: true,
     stackArea: "Mobile",
   },
@@ -52,7 +52,7 @@ const portfolioData: NewPortFolioItemProps[] = [
     projectLiveUrl: "https://cargocredible.com/",
     techStacks: "Python, Django template,  HTML, TailwindCss, JavaScript, UI handover",
     projectYear: "2024",
-    projectStatus: "ongoing",
+    projectStatus: "concluded",
     isPrivateRepo: true,
     stackArea: "Frontend",
   },
@@ -161,6 +161,7 @@ const PortfolioSection = () => {
               projectYear={portfolio.projectYear}
               projectStatus={portfolio.projectStatus}
               stackArea={portfolio.stackArea}
+              stackAreaAlt={portfolio.stackAreaAlt}
             />
           ))}
         </div>

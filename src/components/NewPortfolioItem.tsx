@@ -17,6 +17,7 @@ export type NewPortFolioItemProps = {
   projectYear?: string
   projectStatus?: "ongoing" | "in-progress" | "concluded" | "paused" // New status prop
   stackArea?: "Frontend" | "Backend" | "Full-stack" | "Mobile" | "Database" | "UI/UX"
+  stackAreaAlt?: "Frontend" | "Backend" | "Full-stack" | "Mobile" | "Database" | "UI/UX"
 }
 
 const NewPortfolioItem = ({
@@ -32,6 +33,7 @@ const NewPortfolioItem = ({
   isMobile,
   projectYear,
   stackArea = "Full-stack", // Default to Full-stack
+  stackAreaAlt, // Default to Full-stack
 
   toRight,
 }: NewPortFolioItemProps) => {
@@ -109,8 +111,10 @@ const NewPortfolioItem = ({
           {projectStatus && (
             <ProjectStatus status={projectStatus} size='sm' pulseAnimation={projectStatus === "ongoing" || projectStatus === "in-progress"} />
           )}
-
-          {stackArea && <StackStatus stack={stackArea} size='sm' variant='chip' />}
+          <div className='flex items-center gap-2'>
+            {stackArea && <StackStatus stack={stackArea} size='sm' variant='chip' />}
+            {stackAreaAlt && <StackStatus stack={stackAreaAlt} size='sm' variant='chip' />}
+          </div>
         </div>
       </div>
     </div>

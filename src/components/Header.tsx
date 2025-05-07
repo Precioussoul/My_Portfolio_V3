@@ -93,8 +93,8 @@ const Header = () => {
                   </a>
                 </li>
                 <li className='nav-item'>
-                  <a href='#features' className='nav-link features__link'>
-                    About Me
+                  <a href='#portfolio' className='nav-link'>
+                    Portfolio
                   </a>
                 </li>
                 <li className='nav-item'>
@@ -103,10 +103,11 @@ const Header = () => {
                   </a>
                 </li>
                 <li className='nav-item'>
-                  <a href='#portfolio' className='nav-link'>
-                    Portfolio
+                  <a href='#features' className='nav-link features__link'>
+                    About Me
                   </a>
                 </li>
+
                 <li className='nav-item'>
                   <a href='#testimonial' className='nav-link'>
                     Testimonial

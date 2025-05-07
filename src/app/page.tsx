@@ -148,36 +148,8 @@ export default function Home() {
         )}
       </section>
 
-      {/* Services section */}
-      <section id='services' className='py-5'>
-        {isMobile ? (
-          // Simpler version for mobile
-          <MyServices />
-        ) : (
-          // Animated version for desktop
-          <AnimatedSection id='services-animated' className='h-full' delay={0.1}>
-            <RevealList staggerDelay={0.1} direction='up'>
-              <MyServices />
-            </RevealList>
-          </AnimatedSection>
-        )}
-      </section>
-
-      {/* Resume section */}
-      <section id='resume' className='py-5'>
-        {isMobile ? (
-          // Simpler version for mobile
-          <ResumeeSection />
-        ) : (
-          // Animated version for desktop
-          <AnimatedSection id='resume-animated' className='h-full' animationType='fadeLeft' delay={0.1}>
-            <ResumeeSection />
-          </AnimatedSection>
-        )}
-      </section>
-
       {/* Portfolio section */}
-      <section id='portfolio' className='py-5'>
+      <section id='portfolio' className=''>
         {isMobile ? (
           // Simpler version for mobile
           <PortfolioSection />
@@ -191,8 +163,36 @@ export default function Home() {
         )}
       </section>
 
+      {/* Resume section */}
+      <section id='resume' className='mt-10'>
+        {isMobile ? (
+          // Simpler version for mobile
+          <ResumeeSection />
+        ) : (
+          // Animated version for desktop
+          <AnimatedSection id='resume-animated' className='h-full' animationType='fadeLeft' delay={0.1}>
+            <ResumeeSection />
+          </AnimatedSection>
+        )}
+      </section>
+
+      {/* Services section */}
+      <section id='services' className=''>
+        {isMobile ? (
+          // Simpler version for mobile
+          <MyServices />
+        ) : (
+          // Animated version for desktop
+          <AnimatedSection id='services-animated' className='h-full' delay={0.1}>
+            <RevealList staggerDelay={0.1} direction='up'>
+              <MyServices />
+            </RevealList>
+          </AnimatedSection>
+        )}
+      </section>
+
       {/* Testimonial section */}
-      <section id='testimonial' className='py-5'>
+      <section id='testimonial' className=''>
         {isMobile ? (
           // Simpler version for mobile
           <Testimonial />
@@ -207,7 +207,7 @@ export default function Home() {
       </section>
 
       {/* Contact section */}
-      <section id='contact' className='py-5'>
+      <section id='contact' className=''>
         {isMobile ? (
           // Simpler version for mobile
           <Contact />
