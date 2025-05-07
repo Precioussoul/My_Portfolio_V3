@@ -137,21 +137,21 @@ const MyServices = () => {
             <div className='Summary__Details'>
               <div className='Summary__preview-text'>
                 <p>
-                  Hi, <strong>I'm Sofiyullah “Sofi” Abdullah — a frontend-first full-stack engineer </strong> with 5+ years of experience helping startups
-                  and product teams turn ideas into <strong>scalable, user-loved applications.</strong>
+                  Hi, <strong>I&apos;m Sofiyullah &quot;Sofi&quot; Abdullah — a frontend-first full-stack engineer </strong> with 5+ years of experience
+                  helping startups and product teams turn ideas into <strong>scalable, user-loved applications.</strong>
                   <br />
                   <br />I specialize in building clean, maintainable, and fast-performing products using{" "}
                   <strong> React, React Native, Next.js, TypeScript, Node.js, and Python/Django. </strong> I bridge the gap between beautiful interfaces
                   and solid backend logic—making sure everything feels seamless to your users and your dev team.
                   <br />
                   <br />
-                  Whether you're building an MVP, scaling a live product, or redesigning a clunky UI, I bring more than just code—I bring a product-first
-                  mindset, a sharp eye for UX, and a get-it-done attitude.
+                  Whether you&apos;re building an MVP, scaling a live product, or redesigning a clunky UI, I bring more than just code—I bring a
+                  product-first mindset, a sharp eye for UX, and a get-it-done attitude.
                   <br />
                   <br />
                   <strong>What You Get When We Work Together:</strong> <br />
                   ✅ Pixel-perfect UIs that delight users <br />
-                  ✅ Clean full-stack code that's easy to scale and maintain
+                  ✅ Clean full-stack code that&apos;s easy to scale and maintain
                   <br />
                   ✅ Product thinking baked into every feature
                   <br />
@@ -160,8 +160,8 @@ const MyServices = () => {
                   ✅ Clear communication and full ownership of delivery
                   <br />
                   <br />
-                  I've helped founders launch MVPs, led UI overhauls for web and mobile apps, and shipped production-ready apps in cross-functional teams.
-                  I don't just write code—I solve real product and user challenges. <strong>Let's build something that matters.</strong>
+                  I&apos;ve helped founders launch MVPs, led UI overhauls for web and mobile apps, and shipped production-ready apps in cross-functional
+                  teams. I don&apos;t just write code—I solve real product and user challenges. <strong>Let&apos;s build something that matters.</strong>
                 </p>
               </div>
             </div>
