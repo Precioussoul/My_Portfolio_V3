@@ -36,8 +36,8 @@ const HeroSection = () => {
                     </Link>
                   </li>
                   <li className='hero__social-item'>
-                    <Link href='https://twitter.com/sofiyullah_dev' className='social-link'>
-                      <i className='fab fa-twitter'></i>
+                    <Link href='https://wa.me/+2347066017184' className='social-link'>
+                      <i className='fab fa-whatsapp'></i>
                     </Link>
                   </li>
                   <li className='hero__social-item'>

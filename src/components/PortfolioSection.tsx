@@ -9,7 +9,7 @@ const portfolioData: NewPortFolioItemProps[] = [
     techStacks:
       "React Native, Expo, Nativewind, Typescript, React-Query, Zustand, WebSocket, Google Sign-in, Apple-Sign-in, Push-Notification, TestFlight, App store (soon)",
     projectYear: "2025",
-    projectStatus: "in-progress",
+    projectStatus: "paused",
     isPrivateRepo: true,
     stackArea: "Mobile",
   },
@@ -21,9 +21,9 @@ const portfolioData: NewPortFolioItemProps[] = [
     projectLiveUrl: "https://www.gosproost.com/mobile-app",
     techStacks: "Python, Django-REST, API, RBAC Model, Cloud-messaging, Postgres, Redis, Signals, Cloudinary, Flutter",
     projectYear: "2025",
-    projectStatus: "in-progress",
+    projectStatus: "concluded",
     isPrivateRepo: true,
-    stackArea: "Mobile",
+    stackArea: "Backend",
   },
   {
     images: ["/assets/images/portfolio/Rental_Cover.png"],

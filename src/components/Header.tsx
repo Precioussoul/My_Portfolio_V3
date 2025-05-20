@@ -201,7 +201,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className='mobile-menu social-item'>
-                  <Link href='https://wa.me/message/BRIY767QKKCIL1' className='social-link'>
+                  <Link href='https://wa.me/+2347066017184' className='social-link'>
                     <i className='fab fa-whatsapp'></i>
                   </Link>
                 </li>
