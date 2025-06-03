@@ -118,7 +118,12 @@ const Header = () => {
                 <button className='hamburger-menu' onClick={openMobileNav}>
                   <i className='fas fa-bars'></i>
                 </button>
-                <a href='https://www.upwork.com/freelancers/~01f29ab3be7e243195' target='_blank' rel='noopener noreferrer' className='block group '>
+                <a
+                  href='https://www.upwork.com/freelancers/~01f29ab3be7e243195'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='group hidden lg:block'
+                >
                   <div className='relative flex items-center justify-center px-6 py-3 font-medium text-white bg-[#4AB030] shadow-xl hover:bg-[#4AB030] rounded-full hover:shadow-xl transform hover:scale-105 transition-all duration-300 min-w-[200px] border border-transparent hover:border-white/20'>
                     <span className='font-semibold tracking-wide'>Hire Me on Upwork</span>
                   </div>
