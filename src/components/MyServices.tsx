@@ -90,7 +90,7 @@ const MyServices = () => {
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration: 0.5, delay: 0.2}}
-                className='bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md w-full'
+                className='bg-slate-800 p-6 rounded-xl shadow-md w-full'
               >
                 <h4 className='font-bold text-xl mb-6'>Technologies I Work With</h4>
 
@@ -111,10 +111,7 @@ const MyServices = () => {
                         {src: "/assets/images/icons/express.png", label: "Express"},
                         {src: "/assets/images/icons/google-cloud-2.svg", label: "Google Cloud"},
                       ].map(({src, label}, i) => (
-                        <div
-                          key={i}
-                          className='flex flex-col items-center p-3 bg-gray-50 dark:bg-slate-700 rounded-lg transition-transform hover:scale-105 shrink-0'
-                        >
+                        <div key={i} className='flex flex-col items-center p-3 bg-slate-700 rounded-lg transition-transform hover:scale-105 shrink-0'>
                           <div className='w-12 h-12 relative mb-2'>
                             <Image src={src} alt={label} fill className='object-contain' />
                           </div>

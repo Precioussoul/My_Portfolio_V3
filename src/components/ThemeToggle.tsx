@@ -8,7 +8,7 @@ const ThemeToggle = () => {
     return prefersDark ? "dark" : "light"
   }
 
-  const [theme, setTheme] = useState("light") // Default to 'light' to avoid mismatch
+  const [theme, setTheme] = useState("dark") // Default to 'light' to avoid mismatch
   const [hydrated, setHydrated] = useState(false) // Hydration detection
 
   useEffect(() => {

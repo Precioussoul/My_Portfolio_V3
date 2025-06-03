@@ -2,7 +2,7 @@ import React from "react"
 import {FaPlayCircle, FaPauseCircle, FaCheckCircle, FaCog} from "react-icons/fa"
 
 export type ProjectStatusProps = {
-  status: "ongoing" | "in-progress" | "concluded" | "paused"
+  status: "ongoing" | "in-progress" | "concluded" | "staging"
   className?: string
   size?: "sm" | "md" | "lg"
   pulseAnimation?: boolean
@@ -39,14 +39,15 @@ const ProjectStatus = ({status, className = "", size = "md", pulseAnimation = tr
       label: "Concluded",
       description: "Project has been successfully completed",
     },
-    "paused": {
-      icon: FaPauseCircle,
+
+    "staging": {
+      icon: FaCog,
       color: "text-amber-600",
       bgColor: "bg-amber-100",
       textBgColor: "bg-amber-600",
       borderColor: "border-amber-600/30",
-      label: "Paused",
-      description: "Project is temporarily on hold",
+      label: "Staging",
+      description: "Project is under active development",
     },
   }
 

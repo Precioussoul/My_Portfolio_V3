@@ -113,24 +113,15 @@ const Header = () => {
                     Testimonial
                   </a>
                 </li>
-                <li className='nav-item'>
-                  <a href='#contact' className='nav-link'>
-                    Contact
-                  </a>
-                </li>
               </ul>
               <div className='flex items-center gap-2'>
-                <ThemeToggle />
                 <button className='hamburger-menu' onClick={openMobileNav}>
                   <i className='fas fa-bars'></i>
                 </button>
-                <a
-                  href='/assets/images/author/Sofiyullah_full-stack_latest.pdf'
-                  download
-                  className='btn-secondary contact-me text-center capitalize min-w-[120px] flex items-center justify-center gap-2'
-                >
-                  <span>Resume</span>
-                  <GoDownload />
+                <a href='https://www.upwork.com/freelancers/~01f29ab3be7e243195' target='_blank' rel='noopener noreferrer' className='block group '>
+                  <div className='relative flex items-center justify-center px-6 py-3 font-medium text-white bg-[#4AB030] shadow-xl hover:bg-[#4AB030] rounded-full hover:shadow-xl transform hover:scale-105 transition-all duration-300 min-w-[200px] border border-transparent hover:border-white/20'>
+                    <span className='font-semibold tracking-wide'>Hire Me on Upwork</span>
+                  </div>
                 </a>
               </div>
             </nav>
