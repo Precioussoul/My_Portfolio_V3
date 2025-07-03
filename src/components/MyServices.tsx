@@ -76,9 +76,11 @@ const MyServices = () => {
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 !items-start'>
           <div className='flex flex-col gap-5 w-full'>
             <div className='w-full  h-10/12 relative rounded-xl overflow-hidden shadow-md'>
-              <img
+              <Image
                 src='/assets/images/author/a-builder-at-heart.jpg' // Replace with your actual image path
                 alt='Sofi in traditional attire'
+                width={1000}
+                height={1000}
                 className='w-full h-full object-cover'
               />
               <div className='absolute bottom-0 w-full bg-black/50 text-white text-sm p-2 text-center italic'>

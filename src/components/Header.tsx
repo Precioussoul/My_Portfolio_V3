@@ -120,7 +120,7 @@ const Header = () => {
                 </button>
                 <a href='mailto:habsoff@gmail.com' className='group hidden lg:block'>
                   <div className='relative flex items-center justify-center px-6 py-3 font-medium text-white bg-gradient-to-r from-blue-500 to-blue-600 shadow-xl hover:from-blue-600 hover:to-blue-700 rounded-full hover:shadow-xl transform hover:scale-105 transition-all duration-300 min-w-[200px] border border-transparent hover:border-white/20'>
-                    <span className='font-semibold tracking-wide'>Let's Talk</span>
+                    <span className='font-semibold tracking-wide'>Let&apos;s Talk</span>
                   </div>
                 </a>
               </div>
