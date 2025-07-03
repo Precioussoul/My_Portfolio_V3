@@ -14,16 +14,21 @@ const Contact = () => {
             If you’re looking for someone who respects the opportunity, values your time and trust, and delivers with integrity — I’m ready. I may not know
             it all, but I learn fast, adapt faster, and I always show up. Let’s build something great together.
           </p>
-          <div className='mt-16'>
-            <a
-              href='https://www.upwork.com/freelancers/~01f29ab3be7e243195'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='btn-outline greeting__color'
-            >
-              Send Invite
-            </a>
-            <small className='text-center my-4 block'>Let’s talk about your next project on Upwork</small>
+          <div className='mt-16 flex flex-col items-center gap-4'>
+            <div className='flex flex-wrap justify-center gap-4'>
+              <a href='mailto:sofiyullah.work@gmail.com' className='btn-outline greeting__color px-6 py-3 rounded-md hover:bg-blue-800 transition-colors'>
+                Email Me
+              </a>
+              <a
+                href='https://www.linkedin.com/in/sofiyullah-abdullah' // Replace with your LinkedIn profile
+                target='_blank'
+                rel='noopener noreferrer'
+                className='btn-outline greeting__color px-6 py-3 rounded-md hover:bg-blue-800 transition-colors'
+              >
+                LinkedIn
+              </a>
+            </div>
+            <small className='text-center my-2 block'>I'm always open to discussing new projects and opportunities</small>
           </div>
         </div>
       </div>
